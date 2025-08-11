@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://Cagataygultekin.github.io/sitemap.xml
