@@ -8,16 +8,13 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  links:
-    - icon: fas fa-envelope
-      url: mailto:cagatay600@hotmail.com
-      label: Email
-    - icon: fab fa-github
-      url: https://github.com/Cagataygultekin
-      label: GitHub
-    - icon: fab fa-linkedin
-      url: https://www.linkedin.com/in/%C3%A7a%C4%9Fatay-g%C3%BCltekin-7603b41a2/
-      label: LinkedIn
+  more_info: |
+    <div class="profile-links" style="margin-top:12px; display:flex; gap:12px; align-items:center;">
+      <a href="mailto:cagatay600@hotmail.com" aria-label="Email"><i class="fas fa-envelope fa-lg"></i></a>
+      <a href="https://github.com/Cagataygultekin" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github fa-lg"></i></a>
+      <a href="https://www.linkedin.com/in/%C3%A7a%C4%9Fatay-g%C3%BCltekin-7603b41a2/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+      <a href="https://scholar.google.com/citations?user=qc6CJjYAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar ai-lg"></i></a>
+    </div>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
