@@ -8,12 +8,19 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  address:            # keep empty to hide the address block
-  more_info: |
-    {% include social.html %}
+  links:
+    - icon: fas fa-envelope
+      url: mailto:cagatay600@hotmail.com
+      label: Email
+    - icon: fab fa-github
+      url: https://github.com/Cagataygultekin
+      label: GitHub
+    - icon: fab fa-linkedin
+      url: https://www.linkedin.com/in/%C3%A7a%C4%9Fatay-g%C3%BCltekin-7603b41a2/
+      label: LinkedIn
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
