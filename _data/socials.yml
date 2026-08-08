@@ -4,43 +4,43 @@
 
 # acm_id: # your dl.acm.org/profile/id
 # blogger_url: # your blogger URL
-# bluesky_url: # your bluesky URL
-# dblp_url: # your DBLP profile url
-# discord_id: # your discord id (18-digit unique numerical identifier)
+# bluesky_url: # your Bluesky URL
+# dblp_url: # your DBLP profile URL
+# discord_id: # your Discord ID
 email: cagatay600@hotmail.com
-# facebook_id: # your facebook id
-# flickr_id: # your flickr id
+# facebook_id: # your Facebook ID
+# flickr_id: # your Flickr ID
 github_username: Cagataygultekin
-# gitlab_username: # your GitLab user name
-# hal_id: # your HAL id (https://hal.science/)
-# ieee_id: # your ieeexplore.ieee.org/author/id
-# instagram_id: # your instagram id
-# kaggle_id: # your kaggle id
-# keybase_username: # your keybase user name
-# lastfm_id: # your lastfm id
-# lattes_id: # your ID on Lattes (Brazilian Lattes CV)
-# leetcode_id: # your LeetCode id
+# gitlab_username: # your GitLab username
+# hal_id: # your HAL ID
+# ieee_id: # your IEEE ID
+# instagram_id: # your Instagram ID
+# kaggle_id: # your Kaggle ID
+# keybase_username: # your Keybase username
+# lastfm_id: # your Last.fm ID
+# lattes_id: # your Lattes ID
+# leetcode_id: # your LeetCode ID
 linkedin_username: cagataygultekinn
-# mastodon_username: # your mastodon instance+username in the format instance.tld/@username
+# mastodon_username: # instance.tld/@username
 # medium_username: # your Medium username
 # orcid_id: # your ORCID ID
 # osf_id: # your OSF ID
-# pinterest_id: # your pinterest id
-# publons_id: # your ID on Publons
+# pinterest_id: # your Pinterest ID
+# publons_id: # your Publons ID
 # quora_username: # your Quora username
-# research_gate_profile: # your profile on ResearchGate
-# scopus_id: # your profile on Scopus
+# research_gate_profile: # your ResearchGate profile
+# scopus_id: # your Scopus ID
 # semanticscholar_id: # your Semantic Scholar ID
-# spotify_id: # your spotify id
-# stackoverflow_id: # your stackoverflow id
-# strava_userid: # your strava user id
-# telegram_username: # your Telegram user name
-# unsplash_id: # your unsplash id
-# wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
-# whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-# wikidata_id: # your wikidata id
-# wikipedia_id: # your wikipedia id (Case sensitive)
-# work_url: # work page URL
-# x_username: # your X handle
-# youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
-# zotero_username: # your zotero username
+# spotify_id: # your Spotify ID
+# stackoverflow_id: # your Stack Overflow ID
+# strava_userid: # your Strava ID
+# telegram_username: # your Telegram username
+# unsplash_id: # your Unsplash ID
+# wechat_qr: # filename saved under assets/img/
+# whatsapp_number: # full international number
+# wikidata_id: # your Wikidata ID
+# wikipedia_id: # your Wikipedia ID
+# work_url: # your work page URL
+# x_username: # your X username
+# youtube_id: # your YouTube ID
+# zotero_username: # your Zotero username
