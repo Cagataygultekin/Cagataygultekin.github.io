@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2025-10-01 09:00:00+02:00
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Completed my master's thesis, **“Predicting Macroscopic Crowd Properties Using the SWIM Algorithm,”** at TUM in collaboration with accu:rate GmbH.
