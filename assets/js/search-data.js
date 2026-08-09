@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-academic-work",
           title: "academic work",
-          description: "Master&#39;s thesis and seminar work completed at the Technical University of Munich.",
+          description: "Research and academic work completed at the Technical University of Munich.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/academic-work/";
