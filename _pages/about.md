@@ -24,8 +24,8 @@ latest_posts:
   enabled: false
 ---
 
-I am a software engineer based in Munich, focused on building reliable backend systems, APIs, and data-intensive applications. My experience spans Python and Java/Spring services, microservices, database architectures, automation workflows, and secure system-to-system integrations.
+I am a software engineer based in Munich, working across backend systems, data-intensive applications, and applied machine learning.
 
-Alongside backend engineering, I work with machine learning and scientific computing. For my master's thesis at the Technical University of Munich, completed in collaboration with accu:rate GmbH, I built surrogate models for predicting evacuation times from crowd simulations and investigated sampling-efficient experiment design.
+I design and implement production-oriented services with Python and Java, including APIs, microservices, database architectures, automation workflows, and secure system-to-system integrations. My project work has also covered static-analysis tooling, company registry and legal data platforms, scientific software, and machine learning pipelines built around simulation data.
 
-I enjoy turning complex technical problems into reliable, measurable systems, especially where software engineering, data, and machine learning meet.
+I enjoy owning technical problems end to end: understanding the domain, shaping the architecture, implementing the core system, validating it with measurable results, and leaving behind software that is reproducible and maintainable. This site documents selected projects in more detail, including the engineering decisions, trade-offs, and outcomes behind them.
