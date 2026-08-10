@@ -28,6 +28,15 @@ The evaluation covers a controlled room-based scenario and a regulation-derived 
 
 ### Understanding Linear Regions of ReLU Networks
 
-This seminar paper examines how ReLU neural networks partition their input space into linear regions and how this geometric structure relates to expressivity, robustness, and over-parameterization. It was written and presented for the Selected Topics in Machine Learning Research seminar under Prof. Dr. Stephan Günnemann at TUM.
+This seminar paper examines how ReLU neural networks partition their input space into linear regions and how this geometric structure relates to expressivity, robustness, trainability, and over-parameterization. It distinguishes the large theoretical capacity of deep networks from the smaller number of activation patterns that are often reached in practice.
 
-The complete seminar paper and a longer project description can be added here in the next update.
+The paper also reviews robustness guarantees based on local affine behavior, limitations of transferring results from shallow univariate networks to deeper architectures, and the role of mild over-parameterization in the optimization landscape.
+
+<div class="mt-3 mb-5">
+  <a class="btn btn-primary mr-2" href="{{ '/academic-work/seminar-paper/' | relative_url }}">
+    Read detailed overview
+  </a>
+  <a class="btn btn-outline-primary" href="{{ '/assets/pdf/Cagatay_Gultekin_Seminar_Paper_ReLU_Linear_Regions.pdf' | relative_url }}" target="_blank" rel="noopener">
+    <i class="fa-solid fa-file-pdf"></i>&nbsp; Download seminar paper PDF
+  </a>
+</div>
