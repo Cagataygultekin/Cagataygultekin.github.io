@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Finalized the C++/MPI high-performance simulation project and published the completed work on GitHub.
+Completed the C++/MPI high-performance simulation project and published the final implementation on GitHub.

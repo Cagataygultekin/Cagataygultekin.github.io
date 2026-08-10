@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Celebrated my graduation from the Technical University of Munich at the graduation ceremony.
-
+Attended the graduation ceremony of the **Technical University of Munich (TUM)**.

@@ -1,9 +1,8 @@
 ---
 layout: post
-date: 2025-03-01 09:00:00+01:00
-display_date: Mar 2025
+date: 2025-03-03 09:00:00+01:00
 inline: true
 related_posts: false
 ---
 
-Began my master's thesis collaboration with **accu:rate GmbH**, building a machine learning pipeline for simulation-efficient evacuation time prediction.
+Joined **accu:rate GmbH** as a Machine Learning Research Engineer for a company-collaborative master's thesis project. I built an end-to-end pipeline connecting crowd:it simulations with neural surrogate models and sampling strategies.

@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Concluded my M.Sc. Informatics studies at the Technical University of Munich.
+Completed the M.Sc. Informatics program at the **Technical University of Munich (TUM)**.

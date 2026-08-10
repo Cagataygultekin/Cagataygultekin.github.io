@@ -1,80 +1,146 @@
 ---
 layout: page
-title: Evacuation Prediction with Neural Surrogate Models
-description: A master's thesis project developed with accu:rate GmbH and TUM to reduce the simulation cost of evacuation analysis.
+title: Simulation-Efficient Evacuation Prediction
+description: An end-to-end machine learning pipeline for predicting multi-story evacuation times with far fewer crowd simulations.
 img: assets/img/projects/master-thesis/prediction-results.png
 importance: 1
 category: professional
 permalink: /projects/evacuation-prediction/
 ---
 
-## Project overview
+I built a machine learning workflow at **accu:rate GmbH**, in collaboration with the **Technical University of Munich (TUM)**, to reduce the cost of repeated evacuation simulations. The system connects crowd:it simulation data to neural surrogate models and predicts total evacuation time for previously unseen building configurations.
 
-I completed this master's thesis project in collaboration with **accu:rate GmbH** and the **Technical University of Munich**. The project explored whether neural surrogate models could predict macroscopic crowd properties, especially evacuation time, while reducing reliance on computationally expensive crowd simulations.
-
-My work covered the complete experimental workflow: generating simulation configurations, processing crowd:it outputs, training SWIM-based surrogate models, comparing sampling strategies, evaluating generalization, and visualizing the results.
-
-## The engineering problem
-
-Crowd simulations are valuable for evacuation analysis, but running enough simulations to explore a large parameter space can be costly. The central question was therefore:
-
-> How accurately can evacuation outcomes be approximated from a limited number of simulations, and which sampling strategy provides the most useful training data?
-
-The project combined simulation engineering, machine learning, experiment design, and scientific evaluation in one reproducible Python workflow.
-
-## What I built
-
-- An automated pipeline connecting crowd:it simulation results with SWIM neural surrogate models
-- Data preparation and validation workflows for structured simulation outputs
-- Reproducible training, validation, and test procedures
-- Hyperparameter experiments for SWIM models and conventional neural network baselines
-- A comparison of quasi-Monte Carlo, randomized quasi-Monte Carlo, entropy-based, sparse-grid, and KMeans sampling
-- Generalization tests across two evacuation scenarios with different levels of complexity
-- Evaluation and visualization tools for prediction quality, sampling efficiency, and runtime behavior
-
-## Experimental scenarios
-
-### Scenario 1: Synthetic room evacuation
-
-The first scenario was a compact setup with three origin rooms and a shared target area. I used it primarily to validate the end-to-end workflow and establish an initial modeling baseline. The strongest models reached an R² of approximately **0.89**.
-
-### Scenario 2: Multi-story vertical evacuation
-
-The main part of the project focused on a considerably larger vertical evacuation scenario derived from the Gd99 guideline. The input space described the number of floors, stair width, and people per floor, allowing the experiments to represent buildings with different layouts and crowd sizes.
-
-I trained and evaluated the models using a dataset of **17,410 crowd simulations**. This scenario was the basis for the detailed architecture search, baseline comparison, sampling experiments, and final generalization evaluation. With the full dataset, the surrogate models achieved an R² above **0.99**.
-
-<div class="row justify-content-center">
-  <div class="col-md-9 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/master-thesis/prediction-results.png" title="SWIM model predictions on the held-out test set" class="img-fluid rounded z-depth-1" %}
+<div class="row text-center my-4">
+  <div class="col-sm-4 mb-3">
+    <h3>17,410</h3>
+    <p class="mb-0">simulation runs in the full Gd99-derived dataset</p>
+  </div>
+  <div class="col-sm-4 mb-3">
+    <h3>R² = 0.993</h3>
+    <p class="mb-0">test accuracy on the multi-story scenario</p>
+  </div>
+  <div class="col-sm-4 mb-3">
+    <h3>9 runs</h3>
+    <p class="mb-0">needed to reach R² = 0.95 on unseen configurations</p>
   </div>
 </div>
-<div class="caption">
-  Predictions for the multi-story evacuation scenario on the held-out test set closely follow the ideal regression line, reaching R² = 0.993.
-</div>
 
-## Main result
+## The engineering challenge
 
-Randomized quasi-Monte Carlo sampling produced the best balance between prediction quality and simulation cost. In the second scenario, it reached an R² of approximately **0.95 to 0.97 using only 9 to 14 simulations**, reducing the required simulation count by more than an order of magnitude compared with a dense experimental design.
+Microscopic crowd simulations provide detailed and reliable evacuation results, but a single building design can require many runs because layout and population parameters vary and each configuration contains stochastic behavior. This becomes expensive during parameter studies or iterative design work.
 
-These results show that carefully selected simulation samples can make surrogate modeling practical even when generating training data is expensive.
+I approached the problem as a system optimization task rather than only a model-training exercise:
+
+1. Build a reproducible pipeline from simulation output to model evaluation.
+2. Train a fast surrogate model that reproduces the simulator's macroscopic output.
+3. Identify which simulations are actually worth running when the data-generation budget is limited.
+4. Validate performance on configurations that were not used for training or model selection.
+
+## What I delivered
+
+- A modular Python pipeline for ingesting and normalizing crowd:it results
+- Configuration-driven experiments across model depth, width, activation, and regularization
+- Consistent train, validation, and test workflows for SWIM and conventional neural network baselines
+- Automated evaluation using R², MSE, training time, and generalization performance
+- Sampling experiments covering QMC, randomized QMC, entropy-based selection, sparse grids, and KMeans
+- Visual analysis for prediction quality, parameter coverage, runtime, and failure cases
+
+## Main use case: Gd99-based multi-story evacuation
+
+I first validated the workflow on a small synthetic three-room scenario. That baseline helped me test simulation ingestion, feature handling, and model evaluation, but it was not the main engineering use case.
+
+The core work used a vertical evacuation dataset derived from the Gd99 expert study and implemented in crowd:it. It represents multi-story buildings in which occupants from several floors enter shared corridors and stairwells. As the building becomes taller or the number of people increases, congestion can form at stairwell entrances and propagate across floors.
 
 <div class="row justify-content-center">
   <div class="col-md-10 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/master-thesis/sampling-coverage.png" title="Sampling coverage in the evacuation parameter space" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/projects/master-thesis/gd99-multistory-evacuation.jpg" title="Gd99 multi-story evacuation scenario showing crowd movement across three levels" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
-  Nine selected simulations distributed across the full parameter space of floors, stair widths, and people per floor. This experiment illustrates how randomized quasi-Monte Carlo sampling preserved strong predictive performance under a strict simulation budget.
+  The Gd99 source study illustrates the initial distribution, corridor congestion after 15 seconds, and movement across three building levels after 30 seconds. My dataset extended this setup into a parameterized family of multi-story configurations. Source: Kneidl and Könnecke (2020), BAuA.
 </div>
+
+Each configuration is defined by three inputs:
+
+- **E - floors:** 3 to 8 floors above the ground-level exit
+- **T - stair width:** 90 to 240 cm
+- **P - people per floor:** 20 to 100 occupants
+
+The simulations were repeated to capture stochastic variation. I retained the configuration, replicate identifier, and total evacuation time, producing **17,410 simulation runs** for modeling and evaluation.
+
+## From simulation output to a tested prediction service
+
+I implemented the workflow that turns raw simulation results into repeatable model experiments:
+
+1. Parse and normalize crowd:it output files.
+2. Build consistent feature and target datasets.
+3. Create fixed 80/10/10 train, validation, and test splits.
+4. Run architecture and hyperparameter experiments for SWIM-based models.
+5. Benchmark against conventional PyTorch neural networks.
+6. Evaluate the selected configuration on held-out and previously unseen parameter combinations.
+
+The best SWIM configuration used a single wide hidden layer with 512 units and achieved **R² = 0.997 on validation data and R² = 0.993 on the held-out test set**. In the runtime benchmark, SWIM trained approximately **50 times faster** than the conventional neural network baseline while reaching comparable accuracy.
+
+<div class="row justify-content-center">
+  <div class="col-md-9 mt-3">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/master-thesis/prediction-results.png" title="SWIM predictions for unseen multi-story evacuation configurations" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Predicted and simulated evacuation times on the held-out test set. The close alignment with the ideal regression line indicates that the surrogate generalized beyond its training data.
+</div>
+
+## Sampling became the main performance lever
+
+A highly accurate surrogate is only useful if producing its training data does not require the entire simulation space. I therefore shifted the main optimization target from model architecture to **training-set selection**.
+
+I compared five families of sampling strategies under strict simulation budgets:
+
+- Quasi-Monte Carlo using Sobol sequences
+- Randomized Quasi-Monte Carlo using Owen scrambling
+- Entropy-based informative sampling
+- Sparse-grid sampling
+- KMeans-based representative sampling
+
+Randomized QMC provided the strongest low-budget generalization. Its samples covered the three-dimensional building parameter space without clustering heavily in already dense regions.
+
+<div class="row justify-content-center">
+  <div class="col-md-10 mt-3">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/master-thesis/sampling-coverage.png" title="Randomized QMC coverage across floors, stair width, and people per floor" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Nine RQMC-selected simulations shown against the full Gd99-derived parameter space. The sample set spans different floor counts, stair widths, and occupant loads instead of concentrating on the most common configurations.
+</div>
+
+| Training design | Simulation runs | Test R² | Generalization R² |
+|---|---:|---:|---:|
+| RQMC-9 | 9 | 0.994 | 0.950 |
+| RQMC-14 | 14 | 0.998 | 0.970 |
+
+With only **9 simulations**, the model reached **R² = 0.95** on the remaining unseen configurations. Fourteen simulations increased this to **R² = 0.97**. The 9-run training set represents roughly **0.05% of the full 17,410-run dataset**.
+
+## Engineering decisions that mattered
+
+- **Reproducibility:** I kept data splits and evaluation rules consistent across architecture and sampling experiments.
+- **Generalization-first evaluation:** Sampled models were tested on the complement of the selected training set, not only on a small random test split.
+- **Baseline comparison:** SWIM results were compared with conventional neural networks instead of being assessed in isolation.
+- **Pipeline ownership:** I handled data preparation, experiment orchestration, model training, evaluation, visualization, and technical documentation end to end.
+- **Cost-aware optimization:** I treated the number of required crowd simulations as a primary system metric alongside predictive accuracy.
+
+## Outcome
+
+The final result was more than a fitted regression model. It was a repeatable workflow for deciding **which simulations to run, how to train a surrogate from them, and how to verify that the model remains reliable on unseen building configurations**.
+
+This showed that a carefully selected simulation set can replace exhaustive data generation for rapid design exploration while preserving strong predictive performance. A logical next step would be to integrate the workflow into crowd:it so that a small set of simulations can be generated, cached, and reused for near-instant predictions during iterative planning.
 
 ## Technical stack
 
 `Python` · `PyTorch` · `SWIMNetworks` · `scikit-learn` · `SciPy` · `pandas` · `NumPy` · `Matplotlib` · `Seaborn` · `crowd:it`
 
-## My contribution
+## Project context and documentation
 
-I independently designed and implemented the experimental pipeline, conducted the model and sampling experiments, analyzed the results, and documented the methodology as my master's thesis. The collaboration connected an applied engineering problem from accu:rate GmbH with machine learning research at TUM and was intended to support future simulation-efficient evacuation analysis workflows.
+The project was completed at **accu:rate GmbH** in collaboration with **TUM** and also served as my master's thesis in Informatics. The project page focuses on the engineering work; the academic page contains the research framing and formal thesis details.
 
 <div class="mt-4">
   <a class="btn btn-sm btn-primary" href="{{ '/academic-work/master-thesis/' | relative_url }}">Academic overview</a>
