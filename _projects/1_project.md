@@ -22,15 +22,6 @@ Crowd simulations are valuable for evacuation analysis, but running enough simul
 
 The project combined simulation engineering, machine learning, experiment design, and scientific evaluation in one reproducible Python workflow.
 
-<div class="row justify-content-center">
-  <div class="col-md-10 mt-3">
-    {% include figure.liquid loading="eager" path="assets/img/projects/master-thesis/scenario-geometry.png" title="Synthetic evacuation scenario used to generate training data" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-<div class="caption">
-  Synthetic evacuation scenario with three origin rooms and a shared target area. The geometry and population parameters were varied automatically to generate simulation data.
-</div>
-
 ## What I built
 
 - An automated pipeline connecting crowd:it simulation results with SWIM neural surrogate models
@@ -45,11 +36,13 @@ The project combined simulation engineering, machine learning, experiment design
 
 ### Scenario 1: Synthetic room evacuation
 
-The first scenario provided a controlled setting for studying how geometric and population-related parameters influence evacuation time. The strongest models reached an R² of approximately **0.89**.
+The first scenario was a compact setup with three origin rooms and a shared target area. I used it primarily to validate the end-to-end workflow and establish an initial modeling baseline. The strongest models reached an R² of approximately **0.89**.
 
-### Scenario 2: Regulation-derived vertical evacuation
+### Scenario 2: Multi-story vertical evacuation
 
-The second scenario was based on the Gd99 framework and represented a more complex vertical evacuation setting. With the full dataset, the surrogate models achieved an R² above **0.99**.
+The main part of the project focused on a considerably larger vertical evacuation scenario derived from the Gd99 guideline. The input space described the number of floors, stair width, and people per floor, allowing the experiments to represent buildings with different layouts and crowd sizes.
+
+I trained and evaluated the models using a dataset of **17,410 crowd simulations**. This scenario was the basis for the detailed architecture search, baseline comparison, sampling experiments, and final generalization evaluation. With the full dataset, the surrogate models achieved an R² above **0.99**.
 
 <div class="row justify-content-center">
   <div class="col-md-9 mt-3">
@@ -57,7 +50,7 @@ The second scenario was based on the Gd99 framework and represented a more compl
   </div>
 </div>
 <div class="caption">
-  Predictions on the held-out test set closely follow the ideal regression line, reaching R² = 0.993.
+  Predictions for the multi-story evacuation scenario on the held-out test set closely follow the ideal regression line, reaching R² = 0.993.
 </div>
 
 ## Main result
@@ -72,7 +65,7 @@ These results show that carefully selected simulation samples can make surrogate
   </div>
 </div>
 <div class="caption">
-  Nine selected simulations distributed across the full parameter space. This experiment illustrates how randomized quasi-Monte Carlo sampling preserved strong predictive performance under a strict simulation budget.
+  Nine selected simulations distributed across the full parameter space of floors, stair widths, and people per floor. This experiment illustrates how randomized quasi-Monte Carlo sampling preserved strong predictive performance under a strict simulation budget.
 </div>
 
 ## Technical stack
