@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Selected software engineering, machine learning, and scientific computing projects.
 nav: true
 nav_order: 5
-display_categories: [work, fun]
+display_categories: [professional]
 horizontal: false
 ---
 
