@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-academic-work",
+  },{id: "nav-projects",
+          title: "projects",
+          description: "Selected software engineering, machine learning, and scientific computing projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-academic-work",
           title: "academic work",
           description: "Research and academic work completed at the Technical University of Munich.",
           section: "Navigation",
@@ -29,13 +36,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
-          },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "Selected software engineering, machine learning, and scientific computing projects.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
           },
         },{id: "post-a-post-with-plotly-js",
         
@@ -417,11 +417,11 @@ ninja.data = [{
           section: "News",},{id: "news-celebrated-my-graduation-from-the-technical-university-of-munich-at-the-graduation-ceremony",
           title: 'Celebrated my graduation from the Technical University of Munich at the graduation ceremony....',
           description: "",
-          section: "News",},{id: "projects-industrial-master-39-s-thesis-evacuation-prediction-with-swim",
-          title: 'Industrial Master&amp;#39;s Thesis - Evacuation Prediction with SWIM',
-          description: "A simulation-efficient machine learning pipeline developed at accu:rate GmbH for predicting evacuation times.",
+          section: "News",},{id: "projects-evacuation-prediction-with-neural-surrogate-models",
+          title: 'Evacuation Prediction with Neural Surrogate Models',
+          description: "A master&#39;s thesis project developed with accu:rate GmbH and TUM to reduce the simulation cost of evacuation analysis.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/industrial-master-thesis/";
+              window.location.href = "/projects/evacuation-prediction/";
             },},{
         id: 'social-email',
         title: 'email',
