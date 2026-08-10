@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Java Performance Anti-Pattern Analyzer</title>
+  <desc id="desc">Pipeline from Java source code through Eclipse JDT AST and call graph analysis, dynamic snapshot validation, structured findings, and an IntelliJ plugin.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.5" stop-color="#111b35"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6ee7b7"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6L0 12Z" fill="#7dd3fc"/>
+    </marker>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#e2e8f0" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="900" rx="34" fill="url(#bg)"/>
+  <rect width="1600" height="900" rx="34" fill="url(#grid)"/>
+
+  <g transform="translate(78 66)">
+    <rect width="355" height="42" rx="21" fill="#1d4ed8" fill-opacity="0.5" stroke="#60a5fa" stroke-opacity="0.5"/>
+    <text x="22" y="28" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="2" fill="#dbeafe">ITESTRA GMBH / DEVELOPER TOOLING</text>
+    <text x="0" y="105" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="750" fill="#f8fafc">Java Performance Anti-Pattern Analyzer</text>
+    <text x="0" y="151" font-family="Inter, Arial, sans-serif" font-size="23" fill="#bfdbfe">Static structure, runtime evidence, and in-IDE delivery</text>
+  </g>
+
+  <g transform="translate(78 270)">
+    <g filter="url(#shadow)">
+      <rect width="205" height="236" rx="24" fill="#f8fafc"/>
+      <rect x="28" y="28" width="149" height="82" rx="13" fill="#0f172a"/>
+      <text x="48" y="60" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="15" fill="#93c5fd">for (item)</text>
+      <text x="48" y="87" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="15" fill="#fca5a5">repo.save()</text>
+      <text x="28" y="153" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="750" fill="#0f172a">Java source</text>
+      <text x="28" y="184" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">Project files +</text>
+      <text x="28" y="207" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">analysis config</text>
+    </g>
+
+    <g transform="translate(260)" filter="url(#shadow)">
+      <rect width="230" height="236" rx="24" fill="#f8fafc"/>
+      <circle cx="52" cy="51" r="25" fill="#dbeafe"/>
+      <path d="M39 60l13-27 13 27M44 51h16" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="28" y="112" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="750" fill="#0f172a">Eclipse JDT</text>
+      <text x="28" y="143" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">Parse compilation units</text>
+      <text x="28" y="169" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">Collect methods</text>
+      <text x="28" y="195" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">Extract invocations</text>
+    </g>
+
+    <g transform="translate(545)" filter="url(#shadow)">
+      <rect width="255" height="236" rx="24" fill="#f8fafc"/>
+      <circle cx="58" cy="51" r="11" fill="#0ea5e9"/>
+      <circle cx="112" cy="37" r="11" fill="#0ea5e9"/>
+      <circle cx="136" cy="79" r="11" fill="#8b5cf6"/>
+      <path d="M68 48l33-8M67 57l58 18M117 47l14 22" stroke="#475569" stroke-width="4"/>
+      <text x="28" y="112" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="750" fill="#0f172a">Call graph</text>
+      <text x="28" y="143" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">Trace indirect paths</text>
+      <text x="28" y="169" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">Locate loop boundaries</text>
+      <text x="28" y="195" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">Find repository calls</text>
+    </g>
+
+    <g transform="translate(855)" filter="url(#shadow)">
+      <rect width="255" height="236" rx="24" fill="#f8fafc"/>
+      <path d="M31 74h40l14-32 22 61 18-40h38" fill="none" stroke="#10b981" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="28" y="112" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="750" fill="#0f172a">Runtime evidence</text>
+      <text x="28" y="143" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">Read snapshot CSV</text>
+      <text x="28" y="169" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">Compare thresholds</text>
+      <text x="28" y="195" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">Adjust severity</text>
+    </g>
+
+    <g transform="translate(1165)" filter="url(#shadow)">
+      <rect width="280" height="236" rx="24" fill="#f8fafc"/>
+      <rect x="28" y="28" width="224" height="70" rx="12" fill="#111827"/>
+      <circle cx="54" cy="63" r="11" fill="#f59e0b"/>
+      <text x="78" y="58" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13" fill="#f8fafc">severity: HIGH</text>
+      <text x="78" y="78" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13" fill="#93c5fd">line: 74</text>
+      <text x="28" y="139" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="750" fill="#0f172a">IntelliJ workflow</text>
+      <text x="28" y="170" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">Run locally from IDE</text>
+      <text x="28" y="196" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">Review structured findings</text>
+    </g>
+
+    <path d="M205 118H246" stroke="#7dd3fc" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M490 118H531" stroke="#7dd3fc" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M800 118H841" stroke="#7dd3fc" stroke-width="5" marker-end="url(#arrow)"/>
+    <path d="M1110 118H1151" stroke="#7dd3fc" stroke-width="5" marker-end="url(#arrow)"/>
+  </g>
+
+  <g transform="translate(78 575)">
+    <rect width="1445" height="220" rx="26" fill="#07101e" fill-opacity="0.78" stroke="#60a5fa" stroke-opacity="0.28"/>
+    <text x="32" y="48" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="750" letter-spacing="1.5" fill="#bfdbfe">COMBINED ANALYSIS</text>
+
+    <g transform="translate(32 78)">
+      <rect width="410" height="102" rx="18" fill="#172554" stroke="#3b82f6"/>
+      <circle cx="50" cy="51" r="24" fill="url(#blue)"/>
+      <text x="50" y="59" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#fff">S</text>
+      <text x="88" y="42" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="750" fill="#dbeafe">Static signal</text>
+      <text x="88" y="70" font-family="Inter, Arial, sans-serif" font-size="16" fill="#bfdbfe">loop reaches a configured DB method</text>
+    </g>
+
+    <text x="478" y="142" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#93c5fd">+</text>
+
+    <g transform="translate(520 78)">
+      <rect width="410" height="102" rx="18" fill="#312e81" stroke="#8b5cf6"/>
+      <circle cx="50" cy="51" r="24" fill="url(#purple)"/>
+      <text x="50" y="59" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#fff">D</text>
+      <text x="88" y="42" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="750" fill="#ede9fe">Dynamic signal</text>
+      <text x="88" y="70" font-family="Inter, Arial, sans-serif" font-size="16" fill="#ddd6fe">measured execution crosses threshold</text>
+    </g>
+
+    <path d="M960 129h70" stroke="#7dd3fc" stroke-width="5" marker-end="url(#arrow)"/>
+
+    <g transform="translate(1050 78)">
+      <rect width="360" height="102" rx="18" fill="#064e3b" stroke="#34d399"/>
+      <circle cx="50" cy="51" r="24" fill="url(#green)"/>
+      <path d="M38 51l9 9 17-20" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="88" y="42" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="750" fill="#d1fae5">Actionable finding</text>
+      <text x="88" y="70" font-family="Inter, Arial, sans-serif" font-size="16" fill="#a7f3d0">path, source location, and severity</text>
+    </g>
+  </g>
+</svg>

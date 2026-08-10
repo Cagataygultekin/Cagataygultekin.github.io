@@ -440,6 +440,16 @@ ninja.data = [{
           description: "An end-to-end machine learning pipeline for predicting multi-story evacuation times with far fewer crowd simulations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/evacuation-prediction/";
+            },},{id: "projects-historical-company-registry-data-platform",
+          title: 'Historical Company Registry Data Platform',
+          description: "A FastAPI backend for retrieving, normalizing, storing, and searching current and historical data from the Danish Business Register.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/company-registry-data-platform/";
+            },},{id: "projects-java-performance-anti-pattern-analyzer",
+          title: 'Java Performance Anti-Pattern Analyzer',
+          description: "A static and dynamic analysis tool that traces repository calls through Java call chains and delivers severity-ranked findings inside IntelliJ IDEA.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/java-performance-antipattern-analyzer/";
             },},{
         id: 'social-email',
         title: 'email',

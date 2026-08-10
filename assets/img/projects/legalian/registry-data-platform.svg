@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Historical Company Registry Data Platform</title>
+  <desc id="desc">Architecture diagram showing the Danish CVR API, FastAPI integration, data normalization, historical MySQL storage, Elasticsearch search, and compliance workflows.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071b2c"/>
+      <stop offset="0.55" stop-color="#0b2b42"/>
+      <stop offset="1" stop-color="#12394e"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a7f3d0"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0 L12 6 L0 12 Z" fill="#7dd3fc"/>
+    </marker>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#cbd5e1" stroke-opacity="0.035"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" rx="34" fill="url(#bg)"/>
+  <rect width="1600" height="900" rx="34" fill="url(#grid)"/>
+
+  <g transform="translate(80 70)">
+    <rect x="0" y="0" width="365" height="42" rx="21" fill="#0e7490" fill-opacity="0.55" stroke="#67e8f9" stroke-opacity="0.45"/>
+    <text x="24" y="28" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="2" fill="#cffafe">LEGALIAN GMBH / BACKEND ENGINEERING</text>
+    <text x="0" y="104" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="750" fill="#f8fafc">Historical Company Registry</text>
+    <text x="0" y="162" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="750" fill="#f8fafc">Data Platform</text>
+    <text x="0" y="207" font-family="Inter, Arial, sans-serif" font-size="23" fill="#bae6fd">Current and historical CVR data, normalized for compliance workflows</text>
+  </g>
+
+  <g transform="translate(80 340)" filter="url(#shadow)">
+    <rect width="245" height="230" rx="24" fill="#f8fafc"/>
+    <circle cx="54" cy="54" r="24" fill="#dbeafe"/>
+    <path d="M42 47h24M42 55h24M42 63h16" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+    <text x="30" y="108" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="750" fill="#0f172a">Danish CVR</text>
+    <text x="30" y="140" font-family="Inter, Arial, sans-serif" font-size="17" fill="#475569">System-to-system API</text>
+    <text x="30" y="169" font-family="Inter, Arial, sans-serif" font-size="17" fill="#475569">Current + historical JSON</text>
+    <text x="30" y="198" font-family="Inter, Arial, sans-serif" font-size="17" fill="#475569">Company documents</text>
+  </g>
+
+  <g transform="translate(400 340)" filter="url(#shadow)">
+    <rect width="255" height="230" rx="24" fill="#f8fafc"/>
+    <circle cx="54" cy="54" r="24" fill="#cffafe"/>
+    <path d="M42 55h24M54 43v24" stroke="#0891b2" stroke-width="4" stroke-linecap="round"/>
+    <text x="30" y="108" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="750" fill="#0f172a">FastAPI layer</text>
+    <text x="30" y="140" font-family="Inter, Arial, sans-serif" font-size="17" fill="#475569">Authenticated endpoints</text>
+    <text x="30" y="169" font-family="Inter, Arial, sans-serif" font-size="17" fill="#475569">Request orchestration</text>
+    <text x="30" y="198" font-family="Inter, Arial, sans-serif" font-size="17" fill="#475569">Retry + error handling</text>
+  </g>
+
+  <g transform="translate(730 340)" filter="url(#shadow)">
+    <rect width="285" height="230" rx="24" fill="#f8fafc"/>
+    <circle cx="54" cy="54" r="24" fill="#d1fae5"/>
+    <path d="M43 46l11 8 13-13M43 64l11 8 13-13" fill="none" stroke="#059669" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="30" y="108" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="750" fill="#0f172a">Data pipeline</text>
+    <text x="30" y="140" font-family="Inter, Arial, sans-serif" font-size="17" fill="#475569">Nested JSON parsing</text>
+    <text x="30" y="169" font-family="Inter, Arial, sans-serif" font-size="17" fill="#475569">Normalization + validation</text>
+    <text x="30" y="198" font-family="Inter, Arial, sans-serif" font-size="17" fill="#475569">Historical state preservation</text>
+  </g>
+
+  <g transform="translate(1090 310)" filter="url(#shadow)">
+    <rect width="430" height="290" rx="24" fill="#f8fafc"/>
+    <text x="32" y="48" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="750" fill="#64748b">QUERYABLE DATA LAYER</text>
+    <g transform="translate(32 80)">
+      <rect width="174" height="164" rx="18" fill="#eff6ff" stroke="#93c5fd"/>
+      <ellipse cx="87" cy="35" rx="48" ry="17" fill="#bfdbfe" stroke="#2563eb" stroke-width="3"/>
+      <path d="M39 35v54c0 9 21 17 48 17s48-8 48-17V35" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+      <path d="M39 62c0 9 21 17 48 17s48-8 48-17" fill="none" stroke="#2563eb" stroke-width="3"/>
+      <text x="87" y="133" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="750" fill="#1e3a8a">MySQL</text>
+      <text x="87" y="154" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#475569">ownership history</text>
+    </g>
+    <g transform="translate(224 80)">
+      <rect width="174" height="164" rx="18" fill="#ecfeff" stroke="#67e8f9"/>
+      <path d="M42 43h90M42 67h72M42 91h83" stroke="#0891b2" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="132" cy="91" r="17" fill="none" stroke="#0891b2" stroke-width="5"/>
+      <path d="M145 104l18 18" stroke="#0891b2" stroke-width="5" stroke-linecap="round"/>
+      <text x="87" y="133" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="750" fill="#164e63">Elasticsearch</text>
+      <text x="87" y="154" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#475569">flexible lookup</text>
+    </g>
+  </g>
+
+  <path d="M325 455H385" stroke="#7dd3fc" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M655 455H715" stroke="#7dd3fc" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M1015 455H1075" stroke="#7dd3fc" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <g transform="translate(80 650)">
+    <rect width="1440" height="165" rx="24" fill="#07131f" fill-opacity="0.72" stroke="#67e8f9" stroke-opacity="0.3"/>
+    <text x="30" y="42" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="750" letter-spacing="1.5" fill="#a5f3fc">OWNERSHIP TIMELINE</text>
+    <line x1="245" y1="94" x2="1370" y2="94" stroke="#64748b" stroke-width="4"/>
+    <circle cx="330" cy="94" r="10" fill="#34d399"/>
+    <circle cx="705" cy="94" r="10" fill="#34d399"/>
+    <circle cx="1070" cy="94" r="10" fill="#f59e0b"/>
+    <circle cx="1335" cy="94" r="10" fill="#67e8f9"/>
+    <text x="30" y="101" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#f8fafc">Company record</text>
+    <text x="285" y="135" font-family="Inter, Arial, sans-serif" font-size="16" fill="#d1fae5">legal owner starts</text>
+    <text x="643" y="72" font-family="Inter, Arial, sans-serif" font-size="16" fill="#d1fae5">beneficial owner added</text>
+    <text x="1012" y="135" font-family="Inter, Arial, sans-serif" font-size="16" fill="#fde68a">ownership ends</text>
+    <text x="1258" y="72" font-family="Inter, Arial, sans-serif" font-size="16" fill="#cffafe">latest registry state</text>
+  </g>
+</svg>
