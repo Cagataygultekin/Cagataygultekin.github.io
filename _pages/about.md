@@ -11,6 +11,7 @@ profile:
   more_info: >
     <p>Munich, Germany</p>
 
+selected_projects: true
 selected_papers: true
 social: true
 

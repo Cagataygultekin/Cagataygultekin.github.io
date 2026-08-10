@@ -4,7 +4,7 @@ permalink: /academic-work/
 title: academic work
 description: Research and academic work completed at the Technical University of Munich.
 nav: true
-nav_order: 2
+nav_order: 3
 ---
 
 ## Master's thesis
