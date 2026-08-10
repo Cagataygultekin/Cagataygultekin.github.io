@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="820" viewBox="0 0 1600 820" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
   <title id="title">Historical ownership data model</title>
-  <desc id="desc">Diagram showing relational company, production unit, and ownership records combined with an ownership timeline.</desc>
+  <desc id="desc">A company record connects to production-unit and ownership records, followed by a timeline that retains terminated relationships.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#f8fafc"/>
@@ -9,75 +9,72 @@
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="0" dy="9" stdDeviation="13" flood-color="#0f172a" flood-opacity="0.13"/>
     </filter>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
-      <path d="M0 0L10 5L0 10Z" fill="#0e7490"/>
+    <marker id="arrow" markerWidth="11" markerHeight="11" refX="9" refY="5.5" orient="auto">
+      <path d="M0 0L11 5.5L0 11Z" fill="#0e7490"/>
     </marker>
   </defs>
-  <rect width="1600" height="820" rx="32" fill="url(#bg)"/>
 
-  <text x="78" y="78" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="750" fill="#0f172a">From nested registry responses to a historical data model</text>
-  <text x="78" y="118" font-family="Inter, Arial, sans-serif" font-size="20" fill="#475569">Separate relational records preserve both the latest state and the history behind it.</text>
+  <rect width="1600" height="900" rx="32" fill="url(#bg)"/>
+  <text x="78" y="72" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="750" fill="#0f172a">From nested registry responses to a historical data model</text>
+  <text x="78" y="112" font-family="Inter, Arial, sans-serif" font-size="20" fill="#475569">Child records reference one durable company identity through company_id.</text>
 
-  <g transform="translate(78 180)" filter="url(#shadow)">
-    <rect width="420" height="250" rx="22" fill="#fff" stroke="#bae6fd"/>
-    <rect width="420" height="58" rx="22" fill="#0e7490"/>
-    <rect y="36" width="420" height="22" fill="#0e7490"/>
-    <text x="26" y="38" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="750" fill="#fff">COMPANY</text>
-    <text x="28" y="94" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#0f172a">cvr_number           PK</text>
-    <text x="28" y="129" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#334155">company_name</text>
-    <text x="28" y="164" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#334155">address / status</text>
-    <text x="28" y="199" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#334155">start_date / business_type</text>
-    <text x="28" y="232" font-family="Inter, Arial, sans-serif" font-size="15" fill="#64748b">one durable identity per registered company</text>
+  <g transform="translate(520 150)" filter="url(#shadow)">
+    <rect width="560" height="175" rx="22" fill="#fff" stroke="#bae6fd"/>
+    <rect width="560" height="56" rx="22" fill="#0e7490"/>
+    <rect y="34" width="560" height="22" fill="#0e7490"/>
+    <text x="28" y="38" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="750" fill="#fff">COMPANY</text>
+    <text x="28" y="92" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#0f172a">cvr_number PK</text>
+    <text x="28" y="126" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#334155">company_name / address / status / start_date</text>
+    <text x="28" y="157" font-family="Inter, Arial, sans-serif" font-size="15" fill="#64748b">one durable identity per registered company</text>
   </g>
 
-  <g transform="translate(590 180)" filter="url(#shadow)">
-    <rect width="420" height="250" rx="22" fill="#fff" stroke="#bae6fd"/>
-    <rect width="420" height="58" rx="22" fill="#0369a1"/>
-    <rect y="36" width="420" height="22" fill="#0369a1"/>
-    <text x="26" y="38" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="750" fill="#fff">PRODUCTION UNIT</text>
-    <text x="28" y="94" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#0f172a">company_id           FK</text>
-    <text x="28" y="129" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#334155">unit_name</text>
-    <text x="28" y="164" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#334155">industry_classification</text>
-    <text x="28" y="199" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#334155">employee_count</text>
-    <text x="28" y="232" font-family="Inter, Arial, sans-serif" font-size="15" fill="#64748b">multiple operating units per company</text>
+  <path d="M800 325V372H380V412" fill="none" stroke="#0e7490" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M800 372H1220V412" fill="none" stroke="#0e7490" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="690" y="348" width="220" height="44" rx="22" fill="#cffafe" stroke="#67e8f9"/>
+  <text x="800" y="376" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="750" fill="#0e7490">company_id relationship</text>
+
+  <g transform="translate(80 430)" filter="url(#shadow)">
+    <rect width="600" height="205" rx="22" fill="#fff" stroke="#bae6fd"/>
+    <rect width="600" height="56" rx="22" fill="#0369a1"/>
+    <rect y="34" width="600" height="22" fill="#0369a1"/>
+    <text x="28" y="38" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="750" fill="#fff">PRODUCTION UNIT</text>
+    <text x="28" y="92" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#0f172a">company_id FK</text>
+    <text x="28" y="127" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#334155">unit_name / industry_classification</text>
+    <text x="28" y="162" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#334155">employee_count</text>
+    <text x="28" y="190" font-family="Inter, Arial, sans-serif" font-size="15" fill="#64748b">multiple operating units can belong to one company</text>
   </g>
 
-  <g transform="translate(1102 180)" filter="url(#shadow)">
-    <rect width="420" height="250" rx="22" fill="#fff" stroke="#a7f3d0"/>
-    <rect width="420" height="58" rx="22" fill="#047857"/>
-    <rect y="36" width="420" height="22" fill="#047857"/>
-    <text x="26" y="38" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="750" fill="#fff">OWNERSHIP RECORD</text>
-    <text x="28" y="94" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#0f172a">company_id           FK</text>
-    <text x="28" y="129" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#334155">owner / ownership_type</text>
-    <text x="28" y="164" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#334155">ownership / voting_pct</text>
-    <text x="28" y="199" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#334155">start_date / end_date</text>
-    <text x="28" y="232" font-family="Inter, Arial, sans-serif" font-size="15" fill="#64748b">active and terminated relationships</text>
+  <g transform="translate(920 430)" filter="url(#shadow)">
+    <rect width="600" height="205" rx="22" fill="#fff" stroke="#a7f3d0"/>
+    <rect width="600" height="56" rx="22" fill="#047857"/>
+    <rect y="34" width="600" height="22" fill="#047857"/>
+    <text x="28" y="38" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="750" fill="#fff">OWNERSHIP RECORD</text>
+    <text x="28" y="92" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#0f172a">company_id FK</text>
+    <text x="28" y="127" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#334155">owner / ownership_type / ownership_pct</text>
+    <text x="28" y="162" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="18" fill="#334155">voting_pct / start_date / end_date</text>
+    <text x="28" y="190" font-family="Inter, Arial, sans-serif" font-size="15" fill="#64748b">active and terminated relationships remain queryable</text>
   </g>
 
-  <path d="M498 305H574" stroke="#0e7490" stroke-width="4" marker-end="url(#arrow)"/>
-  <path d="M498 350V465H1086V350" fill="none" stroke="#0e7490" stroke-width="4" marker-end="url(#arrow)"/>
-  <text x="792" y="486" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#0e7490">company_id relationship</text>
+  <g transform="translate(80 690)">
+    <rect width="1440" height="150" rx="24" fill="#0f172a"/>
+    <text x="30" y="43" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="750" letter-spacing="1.5" fill="#a5f3fc">OWNERSHIP HISTORY</text>
+    <line x1="270" y1="96" x2="1365" y2="96" stroke="#64748b" stroke-width="4"/>
+    <text x="30" y="103" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#f8fafc">Relationship timeline</text>
 
-  <g transform="translate(78 505)">
-    <rect width="1444" height="230" rx="24" fill="#0f172a"/>
-    <text x="30" y="46" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="750" letter-spacing="1.5" fill="#a5f3fc">QUERY: RECONSTRUCT OWNERSHIP AT ANY POINT IN TIME</text>
-    <line x1="250" y1="130" x2="1360" y2="130" stroke="#64748b" stroke-width="4"/>
-    <text x="30" y="138" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#f8fafc">Ownership history</text>
+    <rect x="300" y="62" width="350" height="68" rx="16" fill="#065f46"/>
+    <text x="322" y="90" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#d1fae5">Legal owner A</text>
+    <text x="322" y="115" font-family="Inter, Arial, sans-serif" font-size="15" fill="#a7f3d0">active from 2019 to 2022</text>
 
-    <rect x="285" y="91" width="350" height="78" rx="16" fill="#065f46"/>
-    <text x="305" y="122" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#d1fae5">Legal owner A</text>
-    <text x="305" y="149" font-family="Inter, Arial, sans-serif" font-size="15" fill="#a7f3d0">active from 2019 to 2022</text>
+    <rect x="670" y="62" width="430" height="68" rx="16" fill="#92400e"/>
+    <text x="692" y="90" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#fef3c7">Terminated relationship retained</text>
+    <text x="692" y="115" font-family="Inter, Arial, sans-serif" font-size="15" fill="#fde68a">end date remains queryable</text>
 
-    <rect x="655" y="91" width="410" height="78" rx="16" fill="#92400e"/>
-    <text x="675" y="122" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#fef3c7">Terminated relationship retained</text>
-    <text x="675" y="149" font-family="Inter, Arial, sans-serif" font-size="15" fill="#fde68a">end date remains queryable</text>
+    <rect x="1120" y="62" width="215" height="68" rx="16" fill="#0e7490"/>
+    <text x="1142" y="90" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#cffafe">Owner B</text>
+    <text x="1142" y="115" font-family="Inter, Arial, sans-serif" font-size="15" fill="#a5f3fc">current state</text>
 
-    <rect x="1085" y="91" width="245" height="78" rx="16" fill="#0e7490"/>
-    <text x="1105" y="122" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#cffafe">Owner B</text>
-    <text x="1105" y="149" font-family="Inter, Arial, sans-serif" font-size="15" fill="#a5f3fc">current state</text>
-
-    <circle cx="285" cy="130" r="8" fill="#34d399"/>
-    <circle cx="635" cy="130" r="8" fill="#f59e0b"/>
-    <circle cx="1065" cy="130" r="8" fill="#22d3ee"/>
+    <circle cx="300" cy="96" r="8" fill="#34d399"/>
+    <circle cx="650" cy="96" r="8" fill="#f59e0b"/>
+    <circle cx="1100" cy="96" r="8" fill="#22d3ee"/>
   </g>
 </svg>

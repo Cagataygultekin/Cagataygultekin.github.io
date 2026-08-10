@@ -1,8 +1,9 @@
 ---
 layout: page
+published: true
 title: Historical Company Registry Data Platform
 description: A FastAPI backend for retrieving, normalizing, storing, and searching current and historical data from the Danish Business Register.
-img: assets/img/projects/legalian/registry-data-platform.svg
+img: assets/img/projects/legalian/registry-data-platform.png
 importance: 2
 category: professional
 permalink: /projects/company-registry-data-platform/
@@ -52,7 +53,7 @@ The system therefore needed to do more than proxy an external API. It had to:
 
 <div class="row justify-content-center">
   <div class="col-md-12 mt-3">
-    {% include figure.liquid loading="eager" path="assets/img/projects/legalian/registry-data-platform.svg" title="Architecture of the historical company registry data platform" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/projects/legalian/registry-data-platform.png" title="Architecture of the historical company registry data platform" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
@@ -71,7 +72,7 @@ Both active and terminated ownership records are retained. The platform does not
 
 <div class="row justify-content-center">
   <div class="col-md-12 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/legalian/ownership-history-model.svg" title="Relational data model and historical ownership timeline" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="lazy" path="assets/img/projects/legalian/ownership-history-model.png" title="Relational data model and historical ownership timeline" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">

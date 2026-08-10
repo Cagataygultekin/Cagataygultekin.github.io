@@ -1,8 +1,9 @@
 ---
 layout: page
+published: true
 title: Java Performance Anti-Pattern Analyzer
 description: A static and dynamic analysis tool that traces repository calls through Java call chains and delivers severity-ranked findings inside IntelliJ IDEA.
-img: assets/img/projects/itestra/anti-pattern-analysis-pipeline.svg
+img: assets/img/projects/itestra/anti-pattern-analysis-pipeline.png
 importance: 3
 category: professional
 permalink: /projects/java-performance-antipattern-analyzer/
@@ -54,7 +55,7 @@ The tool therefore needed to answer several questions together:
 
 <div class="row justify-content-center">
   <div class="col-md-12 mt-3">
-    {% include figure.liquid loading="eager" path="assets/img/projects/itestra/anti-pattern-analysis-pipeline.svg" title="Static and dynamic analysis pipeline with IntelliJ delivery" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/projects/itestra/anti-pattern-analysis-pipeline.png" title="Static and dynamic analysis pipeline with IntelliJ delivery" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
@@ -73,7 +74,7 @@ even when the database call is not written directly in the method that contains 
 
 <div class="row justify-content-center">
   <div class="col-md-12 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/itestra/call-chain-detection.svg" title="Multi-level call-chain tracing from a loop to a repository method" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="lazy" path="assets/img/projects/itestra/call-chain-detection.png" title="Multi-level call-chain tracing from a loop to a repository method" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
