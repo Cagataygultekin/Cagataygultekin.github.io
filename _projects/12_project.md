@@ -1,11 +1,12 @@
 ---
 layout: page
 published: true
-title: Java/Spring E-commerce Service and Desktop Client
-description: A Java/Spring web service with a GUI desktop client for browsing and managing computer and phone products.
+title: E-commerce Web Service and Desktop Client
+description: A Spring Boot and MySQL product platform with a separate desktop client for computer and phone catalogue workflows.
 importance: 12
 category: earlier
-technologies: [Java, Spring, Spring Web, Spring Data JPA, Lombok, MySQL]
+technologies: [Java, Spring Boot, REST API, Spring Data JPA, MySQL]
+github: https://github.com/457Proje-CSS/team6-cng457--webservice
 visual: ecommerce-service
 visual_icon: fa-solid fa-cart-shopping
 visual_kicker: Service-oriented application
@@ -13,30 +14,35 @@ visual_label: Web Service and GUI Client
 permalink: /projects/java-spring-ecommerce-service/
 ---
 
-This project implemented an e-commerce system for selling computers and phones through two connected application layers: a Java/Spring web service and a GUI desktop client that consumed the service.
+This project implemented an e-commerce product platform as two connected applications: a Spring Boot web service and a separate GUI desktop client that consumed the service. The system represented computers and phones together with reviews and configurable extra features.
 
-## Service and client separation
+<div class="mb-4">
+  <a class="btn btn-primary mr-2 mb-2" href="https://github.com/457Proje-CSS/team6-cng457--webservice" target="_blank" rel="noopener">
+    <i class="fa-brands fa-github"></i>&nbsp; Backend repository
+  </a>
+  <a class="btn btn-outline-primary mb-2" href="https://github.com/457Proje-CSS/team-6--cng457-desktopapp" target="_blank" rel="noopener">
+    <i class="fa-brands fa-github"></i>&nbsp; Desktop client repository
+  </a>
+</div>
 
-The architecture separated product and persistence operations from the user-facing application. The web service exposed machine-to-machine functionality over the network, while the desktop client used that service to support the e-commerce workflow.
+## Service-oriented architecture
 
-This separation kept the interface independent from direct database access and provided a clear boundary between presentation, application logic, and persistence.
+The architecture kept presentation concerns out of the persistence layer. The backend exposed product operations over HTTP, while the desktop application acted as an independent consumer. This provided a clear boundary between user interaction, application logic, and database access.
 
-## Backend and persistence
+The backend followed a layered Spring structure:
 
-The implementation used:
+- controllers exposed operations for computers, phones, reviews, and extra features,
+- services contained the application logic,
+- Spring Data repositories handled persistence,
+- JPA entities represented the product domain,
+- MySQL provided relational storage.
 
-- **Java and Spring** for the application structure,
-- **Spring Web** for the network-facing service layer,
-- **Spring Data JPA** for persistence operations,
-- **MySQL** as the relational database,
-- **Lombok** to reduce repetitive Java model code.
+## Product model and testing
 
-The project gave me early practical experience with service-oriented design, object-relational persistence, dependency-based Java development, and the interaction between a backend service and a separate client application.
+Computers and phones were modeled as product types with supporting review and feature data. Controller and service tests covered the main computer and phone workflows, giving the project an early quality-assurance layer in addition to its application functionality.
+
+The desktop client consumed the backend instead of connecting directly to the database. This separation made the system easier to reason about and provided practical experience with client-server integration, HTTP-based application boundaries, and persistence-backed Java development.
 
 ## Core stack
 
-`Java` / `Spring` / `Spring Web` / `Spring Data JPA` / `Lombok` / `MySQL` / `Desktop client integration`
-
-## Project context
-
-This application was completed during my Computer Engineering studies at **Middle East Technical University Northern Cyprus Campus**. The source code is not currently public.
+`Java` / `Spring Boot` / `Spring Web` / `Spring Data JPA` / `MySQL` / `Lombok` / `Desktop client integration`

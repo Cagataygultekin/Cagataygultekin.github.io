@@ -1,74 +1,80 @@
 ---
 layout: page
 published: true
-title: Issue-Tracking Analytics for Software Teams
-description: A bachelor's thesis that extracted issue-tracking data, engineered process metrics, and used unsupervised clustering to discover team usage profiles.
+title: GitHub Issue-Tracking Research Tool
+description: A Python desktop application that turns GitHub issue activity into process metrics, visual analyses, and exportable research data.
 img: assets/img/projects/bachelors-thesis/issue-tracking-analytics.png
 importance: 9
 category: professional
-technologies: [Python, Data Mining, Unsupervised Learning, Clustering, Software Analytics]
+technologies: [Python, GitHub API, Repository Analytics, Tkinter, CSV Export]
+github: https://github.com/DIP-Group/GithubTracker
 permalink: /projects/issue-tracking-team-analytics/
 ---
 
-For my bachelor's thesis in Computer Engineering at **Middle East Technical University Northern Cyprus Campus**, I investigated how software development teams use issue-tracking systems during collaborative work. The project, originally titled **Discovering Issue-Tracking Profiles of Software Development Teams**, combined software engineering data with unsupervised machine learning.
+This project delivered a desktop research tool for examining how software teams use GitHub issue tracking. Instead of treating issues as isolated task records, the application converts repository activity into measurable signals about assignment, communication, labels, milestones, response times, and issue completion.
 
-The central idea was that an issue tracker contains more than task records. Assignment changes, issue states, resolution behavior, activity patterns, and other process signals can be transformed into metrics that describe how a team organizes and executes its work.
+The system was developed as part of my bachelor's thesis in Computer Engineering at **Middle East Technical University Northern Cyprus Campus**. This page presents it as a software product. The corresponding [Academic Work page]({{ '/academic-work/bachelors-thesis/' | relative_url }}) discusses the research problem and analytical framework in more detail.
+
+<div class="mb-4">
+  <a class="btn btn-primary mr-2 mb-2" href="https://github.com/DIP-Group/GithubTracker" target="_blank" rel="noopener">
+    <i class="fa-brands fa-github"></i>&nbsp; View source code
+  </a>
+  <a class="btn btn-outline-primary mb-2" href="{{ '/assets/pdf/Cagatay_Gultekin_Bachelors_Thesis_DIP_User_Manual.pdf' | relative_url }}" target="_blank" rel="noopener">
+    <i class="fa-solid fa-file-pdf"></i>&nbsp; Download project document
+  </a>
+</div>
+
+## Product workflow
+
+The application supports a complete repository-analysis workflow:
+
+1. retrieve a public GitHub repository through its URL,
+2. store the retrieved repository data for later analysis,
+3. select metrics and process questions through a desktop interface,
+4. calculate results from issue, contributor, label, comment, assignee, and milestone data,
+5. present the results as charts, summary values, or structured answers,
+6. export the selected outputs to CSV for further analysis.
 
 <div class="row my-4">
   <div class="col-md-4 mb-3">
     <div class="border rounded h-100 p-3">
-      <h3 class="h5">Data extraction</h3>
-      <p class="mb-0">Collected issue-related records from a software development platform and prepared them for analysis.</p>
+      <h3 class="h5">Repository ingestion</h3>
+      <p class="mb-0">Uses the GitHub API to retrieve repository and issue-tracking data and preserves a local representation for repeatable analysis.</p>
     </div>
   </div>
   <div class="col-md-4 mb-3">
     <div class="border rounded h-100 p-3">
-      <h3 class="h5">Metric engineering</h3>
-      <p class="mb-0">Converted raw activity into structured measures that describe issue-tracking behavior.</p>
+      <h3 class="h5">Metric engine</h3>
+      <p class="mb-0">Calculates indicators covering issue state, responsibility distribution, labels, comments, milestones, assignees, and response behavior.</p>
     </div>
   </div>
   <div class="col-md-4 mb-3">
     <div class="border rounded h-100 p-3">
-      <h3 class="h5">Team profiles</h3>
-      <p class="mb-0">Applied clustering to identify recurring patterns across collaborative development teams.</p>
+      <h3 class="h5">Research output</h3>
+      <p class="mb-0">Makes findings inspectable through charts and tables, then exports metric values and answers for downstream evaluation.</p>
     </div>
   </div>
 </div>
 
-## From issue records to interpretable profiles
+## Engineering scope
 
-The analysis followed a complete data workflow:
+The implementation is a Python desktop application built with Tkinter. It uses PyGithub for repository access, Matplotlib for visual analysis, and CSV output for portable results. The code separates repository retrieval, metric calculation, question evaluation, visualization, and export operations within one user-facing workflow.
 
-1. extract issue-related data from a software development platform,
-2. clean and structure the records,
-3. derive metrics representing team behavior,
-4. apply unsupervised clustering methods,
-5. interpret the resulting groups as issue-tracking profiles,
-6. translate the findings into guidance for teams adopting or improving issue-tracking practices.
+The tool evaluates both quantitative measures and practical process questions. Examples include the distribution of issues across contributors, label adoption, comment consistency, milestone usage, average issue response and completion times, and whether responsibilities are assigned consistently.
 
 <div class="row justify-content-center">
   <div class="col-md-12 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/bachelors-thesis/issue-tracking-analytics.png" title="Conceptual issue-tracking analytics pipeline" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="lazy" path="assets/img/projects/bachelors-thesis/issue-tracking-analytics.png" title="Issue-tracking research workflow" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
-  A portfolio reconstruction of the analytical workflow. It shows the progression from raw issue data through metric engineering and clustering to interpretable team profiles and recommendations.
+  The engineering workflow from GitHub issue data to calculated indicators, interpretable process findings, and reusable research output.
 </div>
 
-## Engineering and analytical scope
+## Why this project matters
 
-The project required both software and analytical thinking. The input data came from a real development workflow, but the research question could not be answered directly from raw issue records. I had to define a useful representation, convert activity into comparable features, and make the clustering results understandable in the context of team productivity and process quality.
+This was one of my earliest end-to-end software analytics projects. It connected API integration, desktop application development, domain-specific metric design, visualization, and exportable data processing in a single working tool. The same pattern appears throughout my later work: collect operational data, create a reproducible processing layer, and turn the result into information that supports engineering decisions.
 
-The intended outcome was practical as well as analytical. The resulting profiles could support learners, small companies, and teams that wanted to use issue-tracking systems more deliberately instead of treating them only as task lists.
+## Core stack
 
-## Why this project still matters
-
-This was one of my earliest large projects connecting software systems, structured data, and machine learning. It established a pattern that continued in my later work: begin with operational data, build a reproducible processing workflow, and turn the result into information that supports engineering decisions.
-
-## Core stack and methods
-
-`Python` · `Data preprocessing` · `Metric engineering` · `Unsupervised learning` · `Clustering` · `Software analytics` · `Issue-tracking systems`
-
-## Project context
-
-The work was completed as my bachelor's thesis at **Middle East Technical University Northern Cyprus Campus**. The original implementation and dataset are not published, so the visual on this page is a conceptual reconstruction of the workflow.
+`Python` / `PyGithub` / `GitHub API` / `Tkinter` / `Matplotlib` / `Repository analytics` / `CSV export`

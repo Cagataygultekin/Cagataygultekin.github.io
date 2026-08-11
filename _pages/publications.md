@@ -2,7 +2,7 @@
 layout: page
 permalink: /academic-work/
 title: academic work
-description: Research and academic work completed at the Technical University of Munich.
+description: Selected research and academic work in machine learning and software systems.
 nav: true
 nav_order: 3
 ---
@@ -38,5 +38,22 @@ The paper also reviews robustness guarantees based on local affine behavior, lim
   </a>
   <a class="btn btn-outline-primary" href="{{ '/assets/pdf/Cagatay_Gultekin_Seminar_Paper_ReLU_Linear_Regions.pdf' | relative_url }}" target="_blank" rel="noopener">
     <i class="fa-solid fa-file-pdf"></i>&nbsp; Download seminar paper PDF
+  </a>
+</div>
+
+## Bachelor's thesis
+
+### Discovering Issue-Tracking Profiles of Software Development Teams
+
+This thesis investigates how GitHub issue activity can be translated into measurable indicators of software-team practice. It covers responsibility distribution, label and milestone usage, communication patterns, response behavior, and issue completion, then organizes these observations into an analytical framework for evaluating issue-tracking practices.
+
+The work also produced a Python research tool that retrieves repository data through the GitHub API, calculates selected metrics, answers structured process questions, visualizes results, and exports them to CSV. The project therefore connects a software-engineering research question with an executable repository-analysis workflow.
+
+<div class="mt-3 mb-5">
+  <a class="btn btn-primary mr-2 mb-2" href="{{ '/academic-work/bachelors-thesis/' | relative_url }}">
+    Read detailed overview
+  </a>
+  <a class="btn btn-outline-primary mb-2" href="{{ '/assets/pdf/Cagatay_Gultekin_Bachelors_Thesis_DIP_User_Manual.pdf' | relative_url }}" target="_blank" rel="noopener">
+    <i class="fa-solid fa-file-pdf"></i>&nbsp; Download thesis document
   </a>
 </div>
