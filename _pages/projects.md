@@ -63,3 +63,12 @@ horizontal: false
   {% endif %}
 {% endif %}
 </div>
+
+{% assign earlier_projects = site.projects | where: "category", "earlier" %}
+{% if earlier_projects.size > 0 %}
+  <div class="earlier-projects-cta mt-4">
+    <a class="btn btn-outline-primary" href="{{ '/projects/earlier/' | relative_url }}">
+      Earlier projects <i class="fa-solid fa-arrow-right ml-2"></i>
+    </a>
+  </div>
+{% endif %}

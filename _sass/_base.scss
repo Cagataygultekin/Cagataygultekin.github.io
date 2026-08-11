@@ -680,7 +680,8 @@ footer.sticky-bottom {
 
 // Projects
 
-.projects {
+.projects,
+.home-selected-projects {
   a {
     text-decoration: none;
 
@@ -694,6 +695,85 @@ footer.sticky-bottom {
   .card {
     img {
       width: 100%;
+    }
+
+    .project-visual {
+      position: relative;
+      display: flex;
+      min-height: 190px;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding: 1.4rem;
+      overflow: hidden;
+      color: #fff;
+      background: linear-gradient(135deg, #17233d, #245c79);
+
+      &::after {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: -58px;
+        right: -38px;
+        border: 24px solid rgba(255, 255, 255, 0.11);
+        border-radius: 50%;
+        content: "";
+      }
+    }
+
+    .project-visual-icon {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      width: 3.2rem;
+      height: 3.2rem;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
+      border: 1px solid rgba(255, 255, 255, 0.34);
+      border-radius: 0.85rem;
+      background: rgba(255, 255, 255, 0.12);
+      font-size: 1.5rem;
+      backdrop-filter: blur(4px);
+    }
+
+    .project-visual-copy {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      max-width: 70%;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+
+      small {
+        margin-bottom: 0.3rem;
+        opacity: 0.72;
+        font-size: 0.62rem;
+        font-weight: 700;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+      }
+
+      strong {
+        font-size: 1.05rem;
+        line-height: 1.2;
+      }
+    }
+
+    .project-visual-fruit-vision {
+      background: linear-gradient(135deg, #173f35, #3e7c4f 62%, #d39033);
+    }
+
+    .project-visual-ecommerce-service {
+      background: linear-gradient(135deg, #202c52, #365aa5 58%, #4e91b4);
+    }
+
+    .project-visual-mips-assembler {
+      background: linear-gradient(135deg, #28223d, #593e79 58%, #b16b58);
+    }
+
+    .project-visual-coffee-network {
+      background: linear-gradient(135deg, #3d261d, #76513b 58%, #b77a47);
     }
 
     .project-card-footer {
@@ -738,7 +818,9 @@ footer.sticky-bottom {
       }
     }
   }
+}
 
+.projects {
   .col {
     padding-bottom: 1rem;
   }
@@ -762,6 +844,19 @@ footer.sticky-bottom {
 .home-selected-projects {
   > .col {
     padding-bottom: 1.5rem;
+  }
+}
+
+.earlier-projects-cta {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  .btn {
+    padding: 0.7rem 1.1rem;
+    border-radius: 0.55rem;
+    font-weight: 700;
   }
 }
 

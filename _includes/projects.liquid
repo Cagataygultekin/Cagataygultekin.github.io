@@ -10,6 +10,14 @@
           alt="project thumbnail"
           class="card-img-top"
         %}
+      {% elsif project.visual %}
+        <div class="project-visual project-visual-{{ project.visual }}" aria-hidden="true">
+          <span class="project-visual-icon"><i class="{{ project.visual_icon }}"></i></span>
+          <span class="project-visual-copy">
+            <small>{{ project.visual_kicker }}</small>
+            <strong>{{ project.visual_label }}</strong>
+          </span>
+        </div>
       {% endif %}
       <div class="card-body d-flex flex-column">
         <h2 class="card-title">{{ project.title }}</h2>
@@ -17,7 +25,7 @@
         <div class="project-card-footer mt-auto">
           {% if project.technologies %}
             <div class="project-tech-stack" aria-label="Key technologies">
-              <span class="project-tech-label">Core stack &amp; strengths</span>
+              <span class="project-tech-label">Technology profile</span>
               {% for technology in project.technologies %}
                 <span class="project-tech">{{ technology }}</span>
               {% endfor %}
