@@ -438,11 +438,31 @@ ninja.data = [{
           section: "News",},{id: "news-attended-the-graduation-ceremony-of-the-technical-university-of-munich-tum",
           title: 'Attended the graduation ceremony of the Technical University of Munich (TUM).',
           description: "",
-          section: "News",},{id: "projects-career-diaries-university-community-platform",
-          title: 'Career Diaries University Community Platform',
-          description: "A relational platform connecting students, alumni, faculty, courses, publications, and career questions through a multi-role identity model.",
+          section: "News",},{id: "projects-career-diaries-multi-role-career-community",
+          title: 'Career Diaries Multi-Role Career Community',
+          description: "A Python/Tkinter and MySQL application connecting students, alumni, academics, workplaces, and career reviews through a multi-role relational model.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/career-diaries-community-platform/";
+            },},{id: "projects-fruit-tree-recognition-system",
+          title: 'Fruit Tree Recognition System',
+          description: "A classical computer vision pipeline using shape, moment, and color features with k-fold validation for image recognition.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/fruit-tree-recognition/";
+            },},{id: "projects-java-spring-e-commerce-service-and-desktop-client",
+          title: 'Java/Spring E-commerce Service and Desktop Client',
+          description: "A Java/Spring web service with a GUI desktop client for browsing and managing computer and phone products.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/java-spring-ecommerce-service/";
+            },},{id: "projects-mips-assembler-in-python",
+          title: 'MIPS Assembler in Python',
+          description: "A Python assembler that translates core MIPS instructions and selected pseudo-instructions into hexadecimal machine code.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/python-mips-assembler/";
+            },},{id: "projects-multi-client-coffee-shop-system",
+          title: 'Multi-Client Coffee Shop System',
+          description: "A Python TCP client-server application for recording coffee-shop sales and producing operational statistics.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/python-coffee-shop-client-server/";
             },},{id: "projects-simulation-efficient-evacuation-prediction",
           title: 'Simulation-Efficient Evacuation Prediction',
           description: "An end-to-end machine learning pipeline for predicting multi-story evacuation times with far fewer crowd simulations.",
