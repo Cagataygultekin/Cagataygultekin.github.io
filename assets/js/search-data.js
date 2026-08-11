@@ -411,6 +411,9 @@ ninja.data = [{
           section: "News",},{id: "news-joined-yapı-kredi-teknoloji-a-ş-as-a-software-engineer-intern-i-built-a-full-stack-sprint-newsletter-application-with-java-spring-boot-react-and-angular-including-integration-with-the-atlassian-jira-api",
           title: 'Joined Yapı Kredi Teknoloji A.Ş. as a Software Engineer Intern. I built a...',
           description: "",
+          section: "News",},{id: "news-joined-the-technical-university-of-munich-tum-as-an-m-sc-informatics-student-and-began-graduate-studies-focused-on-software-engineering-machine-learning-and-scientific-computing",
+          title: 'Joined the Technical University of Munich (TUM) as an M.Sc. Informatics student and...',
+          description: "",
           section: "News",},{id: "news-joined-a-joint-research-project-at-helmholtz-zentrum-münchen-deutsches-forschungszentrum-für-gesundheit-und-umwelt-gmbh-and-technical-university-of-munich-tum-as-a-graduate-student-research-assistant-i-supported-python-pytorch-workflows-for-drug-response-prediction-and-graph-based-molecular-representations",
           title: 'Joined a joint research project at Helmholtz Zentrum München - Deutsches Forschungszentrum für...',
           description: "",
@@ -435,7 +438,12 @@ ninja.data = [{
           section: "News",},{id: "news-attended-the-graduation-ceremony-of-the-technical-university-of-munich-tum",
           title: 'Attended the graduation ceremony of the Technical University of Munich (TUM).',
           description: "",
-          section: "News",},{id: "projects-simulation-efficient-evacuation-prediction",
+          section: "News",},{id: "projects-career-diaries-university-community-platform",
+          title: 'Career Diaries University Community Platform',
+          description: "A relational platform connecting students, alumni, faculty, courses, publications, and career questions through a multi-role identity model.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/career-diaries-community-platform/";
+            },},{id: "projects-simulation-efficient-evacuation-prediction",
           title: 'Simulation-Efficient Evacuation Prediction',
           description: "An end-to-end machine learning pipeline for predicting multi-story evacuation times with far fewer crowd simulations.",
           section: "Projects",handler: () => {
@@ -475,6 +483,11 @@ ninja.data = [{
           description: "A React/TypeScript and Flask platform for document upload, OCR, ML-assisted classification, annotation workflows, and secure access to protected legal-data services.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/legal-ai-data-labelling-platform/";
+            },},{id: "projects-issue-tracking-analytics-for-software-teams",
+          title: 'Issue-Tracking Analytics for Software Teams',
+          description: "A bachelor&#39;s thesis that extracted issue-tracking data, engineered process metrics, and used unsupervised clustering to discover team usage profiles.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/issue-tracking-team-analytics/";
             },},{
         id: 'social-email',
         title: 'email',
