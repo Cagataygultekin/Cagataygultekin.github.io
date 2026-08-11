@@ -465,6 +465,16 @@ ninja.data = [{
           description: "A C#/.NET desktop application that moved spreadsheet-based material records into a clearer interface with controlled SQL updates and database operations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/material-database-operations-app/";
+            },},{id: "projects-parallel-hdf5-output-for-cfd-simulations",
+          title: 'Parallel HDF5 Output for CFD Simulations',
+          description: "A C++/MPI extension to NS-EOF that added structured HDF5 output and XDMF metadata for faster, smaller, ParaView-ready simulation data.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/parallel-hdf5-cfd-output/";
+            },},{id: "projects-legal-ai-data-labelling-platform",
+          title: 'Legal AI Data Labelling Platform',
+          description: "A React/TypeScript and Flask platform for document upload, OCR, ML-assisted classification, annotation workflows, and secure access to protected legal-data services.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/legal-ai-data-labelling-platform/";
             },},{
         id: 'social-email',
         title: 'email',
