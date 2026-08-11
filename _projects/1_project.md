@@ -6,6 +6,7 @@ img: assets/img/projects/master-thesis/prediction-results.png
 importance: 1
 category: professional
 permalink: /projects/evacuation-prediction/
+github: https://github.com/Cagataygultekin/Predicting-Macroscopic-Crowd-Properties-Using-the-SWIM-Algorithm
 ---
 
 I built a machine learning workflow at **accu:rate GmbH**, in collaboration with the **Technical University of Munich (TUM)**, to reduce the cost of repeated evacuation simulations. The system connects crowd:it simulation data to neural surrogate models and predicts total evacuation time for previously unseen building configurations.
@@ -145,4 +146,5 @@ The project was completed at **accu:rate GmbH** in collaboration with **TUM** an
 <div class="mt-4">
   <a class="btn btn-sm btn-primary" href="{{ '/academic-work/master-thesis/' | relative_url }}">Academic overview</a>
   <a class="btn btn-sm btn-outline-primary" href="{{ '/assets/pdf/Cagatay_Gultekin_Master_Thesis.pdf' | relative_url }}" target="_blank" rel="noopener">Read the thesis (PDF)</a>
+  <a class="btn btn-sm btn-outline-primary" href="https://github.com/Cagataygultekin/Predicting-Macroscopic-Crowd-Properties-Using-the-SWIM-Algorithm" target="_blank" rel="noopener">View source code on GitHub</a>
 </div>

@@ -7,6 +7,7 @@ img: assets/img/projects/legalian/registry-data-platform.png
 importance: 2
 category: professional
 permalink: /projects/company-registry-data-platform/
+github: https://github.com/Cagataygultekin/danish-business-register
 ---
 
 I built a backend platform at **Legalian GmbH** that turns complex data from the Danish Business Register into structured, queryable information for compliance workflows. The system retrieves current and historical company data through system-to-system access, normalizes inconsistent nested responses, and preserves ownership relationships over time.
@@ -109,3 +110,7 @@ The platform established a practical foundation for compliance workflows that ne
 ## Project context
 
 I delivered this system at **Legalian GmbH** as part of an interdisciplinary software engineering project focused on compliance automation under the German Money Laundering Act.
+
+<div class="mt-4">
+  <a class="btn btn-sm btn-primary" href="https://github.com/Cagataygultekin/danish-business-register" target="_blank" rel="noopener">View source code on GitHub</a>
+</div>
