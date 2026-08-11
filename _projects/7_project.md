@@ -4,12 +4,15 @@ published: true
 title: Parallel HDF5 Output for CFD Simulations
 description: A C++/MPI extension to NS-EOF that added structured HDF5 output and XDMF metadata for faster, smaller, ParaView-ready simulation data.
 img: assets/img/projects/hpc/hdf5-data-layout.png
-importance: 7
+importance: 4
 category: professional
+technologies: ["C++", MPI, HDF5, ParaView]
 permalink: /projects/parallel-hdf5-cfd-output/
 ---
 
-In the **Turbulent Flow Simulation on HPC-Systems** course at the **Technical University of Munich (TUM)**, I worked on NS-EOF, a distributed-memory C++ framework for incompressible Navier-Stokes simulations. The work combined individual solver and profiling tasks with a team final project focused on redesigning the simulation output pipeline.
+At the **Technical University of Munich (TUM)**, I joined an additional high-performance computing project built around NS-EOF, a distributed-memory C++ framework for incompressible Navier-Stokes simulations. I worked as a project contributor, combining individual solver and profiling tasks with a team effort to redesign the simulation output pipeline.
+
+My more recent engineering work had focused mainly on Python and Java, so this project also gave me a practical route back into C/C++ and systems-oriented development. It involved MPI process coordination, parallel I/O, memory-conscious data structures, build configuration, profiling, and direct work with scientific file formats.
 
 The final system added parallel HDF5 output through the HDF5 C API and generated XDMF metadata for ParaView. It preserved VTK output as a runtime option while providing a more scalable binary path for larger 2D, 3D, and parallel simulations.
 
@@ -116,4 +119,4 @@ The project delivered a configurable, ParaView-compatible HDF5 output pipeline f
 
 ## Project context
 
-I completed this course work at the **TUM Chair of Scientific Computing**. My contribution included individual solver-side improvements and profiling, followed by the team-based HDF5 integration and benchmarking project described here.
+I worked with the **TUM Chair of Scientific Computing** as an additional project contributor. The engagement sat outside the standard requirements of my degree and was one of several extra technical projects through which I completed 26 additional ECTS credits. My contribution included individual solver-side improvements and profiling, followed by the team-based HDF5 integration and benchmarking work described here.

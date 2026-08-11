@@ -695,6 +695,29 @@ footer.sticky-bottom {
     img {
       width: 100%;
     }
+
+    .project-card-footer {
+      padding-top: 1rem;
+    }
+
+    .project-tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+
+    .project-tech {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.55rem;
+      color: var(--global-text-color-light);
+      background-color: var(--global-bg-color);
+      border: 1px solid var(--global-divider-color);
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
   }
 
   .col {

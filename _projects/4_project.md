@@ -4,8 +4,9 @@ published: true
 title: Reproducible ML Workflows for chemCPA
 description: Research engineering for a Python/PyTorch system that predicts single-cell responses to unseen drug perturbations, with a focus on issue diagnosis, data workflows, and reproducible experiments.
 img: assets/img/projects/helmholtz/chemcpa-architecture.png
-importance: 4
+importance: 6
 category: professional
+technologies: [Python, PyTorch, chemCPA, GitHub]
 permalink: /projects/chemcpa-research-engineering/
 github: https://github.com/theislab/chemcpa
 ---

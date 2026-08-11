@@ -4,8 +4,9 @@ published: true
 title: Material and Database Operations Desktop App
 description: A C#/.NET desktop application that moved spreadsheet-based material records into a clearer interface with controlled SQL updates and database operations.
 img: assets/img/projects/zorluteks/material-operations-workflow.png
-importance: 6
+importance: 8
 category: professional
+technologies: ["C#", ".NET", "SQL Server", Excel]
 permalink: /projects/material-database-operations-app/
 ---
 

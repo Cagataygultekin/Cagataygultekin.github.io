@@ -3,9 +3,10 @@ layout: page
 published: true
 title: Legal AI Data Labelling Platform
 description: A React/TypeScript and Flask platform for document upload, OCR, ML-assisted classification, annotation workflows, and secure access to protected legal-data services.
-img: assets/img/projects/legal-ai/figma-overview.png
-importance: 8
+img: assets/img/projects/legal-ai/legal-ai-dashboard-v2.png
+importance: 5
 category: professional
+technologies: [React, TypeScript, Flask, JWT]
 permalink: /projects/legal-ai-data-labelling-platform/
 ---
 
@@ -51,15 +52,12 @@ The platform was designed to support the full flow:
 The first implementation used Expo and React Native to test navigation, document display, category selection, and basic labelling interactions. Figma designs helped the team discuss workflows before committing to the final architecture.
 
 <div class="row">
-  <div class="col-md-6 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/legal-ai/figma-overview.png" title="Early Figma overview of datasets and annotation screens" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-md-6 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/legal-ai/figma-upload.png" title="Early drag-and-drop upload workflow" class="img-fluid rounded z-depth-1" %}
+  <div class="col-md-12 mt-3">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/legal-ai/legal-ai-dashboard-v2.png" title="Reconstructed Legal AI dataset and processing dashboard" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
-  Early Figma prototypes used to validate navigation, dataset selection, preprocessing, and upload flows. These are design artifacts rather than screenshots of the final application.
+  A polished portfolio reconstruction based on the early Figma workflow. It explains dataset navigation, upload, processing status, and review queues without reproducing the original company interface or personal document data.
 </div>
 
 This phase emphasized speed of learning. It helped identify what a document labelling workflow should feel like before the system was expanded into a more maintainable web architecture.
@@ -82,15 +80,12 @@ The web interface included routes and components for:
 TypeScript provided stronger contracts for complex annotation data and API responses. The UI followed the Figma workflows while moving from exploratory screens toward reusable components.
 
 <div class="row">
-  <div class="col-md-6 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/legal-ai/figma-dataset.png" title="Figma dataset and document-listing view" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-md-6 mt-3">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/legal-ai/figma-settings.png" title="Figma service-account configuration view" class="img-fluid rounded z-depth-1" %}
+  <div class="col-md-12 mt-3">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/legal-ai/legal-ai-annotation-workspace-v2.png" title="Reconstructed document annotation and validation workspace" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
-  The dataset concept provides a simple route from an uploaded file to document review. A separate settings view keeps service-account configuration outside the annotation workspace.
+  The reconstructed review workspace keeps the source document, extracted fields, confidence values, validation state, and page navigation visible together. All document content is synthetic and anonymous.
 </div>
 
 ### Flask gateway and protected ML services
@@ -125,4 +120,4 @@ The most valuable engineering lesson was knowing when to stop extending a protot
 
 ## Project context
 
-I worked on the platform from March to June 2024 as part of an interdisciplinary project with **Legalian GmbH**. It preceded my later Danish Business Register work at the company. The source code and final application are internal, so this page uses early Figma designs to explain the workflow without exposing proprietary implementation details or legal data.
+I worked on the platform from March to June 2024 as part of an interdisciplinary project with **Legalian GmbH**. It preceded my later Danish Business Register work at the company. The source code and final application are internal, so this page uses portfolio reconstructions based on the early design flow to explain the product without exposing proprietary implementation details or legal data.

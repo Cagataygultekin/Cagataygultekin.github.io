@@ -4,8 +4,9 @@ published: true
 title: Sprint Reporting and Productivity Workflow
 description: A full-stack internal workflow that improved sprint-data quality and turned team inputs into consistent newsletters and monthly productivity reporting.
 img: assets/img/projects/ykt/sprint-reporting-workflow.png
-importance: 5
+importance: 7
 category: professional
+technologies: [Java, "Spring Boot", React, Confluence]
 permalink: /projects/sprint-reporting-productivity-workflow/
 ---
 

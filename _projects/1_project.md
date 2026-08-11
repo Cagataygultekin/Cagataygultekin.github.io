@@ -5,6 +5,7 @@ description: An end-to-end machine learning pipeline for predicting multi-story 
 img: assets/img/projects/master-thesis/prediction-results.png
 importance: 1
 category: professional
+technologies: [Python, PyTorch, SWIM, "crowd:it"]
 permalink: /projects/evacuation-prediction/
 github: https://github.com/Cagataygultekin/Predicting-Macroscopic-Crowd-Properties-Using-the-SWIM-Algorithm
 ---
