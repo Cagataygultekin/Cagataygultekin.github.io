@@ -455,6 +455,16 @@ ninja.data = [{
           description: "Research engineering for a Python/PyTorch system that predicts single-cell responses to unseen drug perturbations, with a focus on issue diagnosis, data workflows, and reproducible experiments.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/chemcpa-research-engineering/";
+            },},{id: "projects-sprint-reporting-and-productivity-workflow",
+          title: 'Sprint Reporting and Productivity Workflow',
+          description: "A full-stack internal workflow that improved sprint-data quality and turned team inputs into consistent newsletters and monthly productivity reporting.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/sprint-reporting-productivity-workflow/";
+            },},{id: "projects-material-and-database-operations-desktop-app",
+          title: 'Material and Database Operations Desktop App',
+          description: "A C#/.NET desktop application that moved spreadsheet-based material records into a clearer interface with controlled SQL updates and database operations.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/material-database-operations-app/";
             },},{
         id: 'social-email',
         title: 'email',
