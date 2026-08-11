@@ -450,6 +450,11 @@ ninja.data = [{
           description: "A static and dynamic analysis tool that traces repository calls through Java call chains and delivers severity-ranked findings inside IntelliJ IDEA.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/java-performance-antipattern-analyzer/";
+            },},{id: "projects-reproducible-ml-workflows-for-chemcpa",
+          title: 'Reproducible ML Workflows for chemCPA',
+          description: "Research engineering for a Python/PyTorch system that predicts single-cell responses to unseen drug perturbations, with a focus on issue diagnosis, data workflows, and reproducible experiments.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/chemcpa-research-engineering/";
             },},{
         id: 'social-email',
         title: 'email',
