@@ -1,82 +1,128 @@
 ---
 layout: page
-published: false
-title: project 8
-description: an other project with a background image and giscus comments
-img: assets/img/9.jpg
-importance: 2
-category: work
-giscus_comments: true
+published: true
+title: Legal AI Data Labelling Platform
+description: A React/TypeScript and Flask platform for document upload, OCR, ML-assisted classification, annotation workflows, and secure access to protected legal-data services.
+img: assets/img/projects/legal-ai/figma-overview.png
+importance: 8
+category: professional
+permalink: /projects/legal-ai-data-labelling-platform/
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+At **Legalian GmbH**, I worked on an internal platform for extracting, classifying, reviewing, and labelling information from legal documents. The project addressed a recurring legal-tech problem: large document collections contain valuable structured data, but manual extraction and categorization are slow, inconsistent, and difficult to scale.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+The solution evolved from an early Expo-based UI prototype into a React/TypeScript web application with a Flask backend. That transition allowed us to validate the annotation workflow quickly and then rebuild it around clearer frontend, backend, security, and deployment boundaries.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row my-4">
+  <div class="col-md-4 mb-3">
+    <div class="border rounded h-100 p-3">
+      <h3 class="h5">Two architecture phases</h3>
+      <p class="mb-0">Moved from rapid Expo prototyping to a structured React/TypeScript and Flask web platform.</p>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
   </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-md-4 mb-3">
+    <div class="border rounded h-100 p-3">
+      <h3 class="h5">Secure service access</h3>
+      <p class="mb-0">Used signed JWT requests and a Flask gateway to reach protected OCR and ML services.</p>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="border rounded h-100 p-3">
+      <h3 class="h5">Single and batch workflows</h3>
+      <p class="mb-0">Supported document review, drag-and-drop upload, ZIP preprocessing, classification, and annotation.</p>
+    </div>
   </div>
 </div>
-```
 
-{% endraw %}
+## The product problem
+
+Legal professionals need to identify people, companies, ownership relationships, dates, addresses, and other structured entities inside documents whose layouts vary substantially. A useful labelling tool therefore needs to combine automated extraction with a review interface that keeps the original document and the structured result visible together.
+
+The platform was designed to support the full flow:
+
+1. upload individual documents or ZIP batches,
+2. preprocess files and run OCR,
+3. classify documents and extracted entities,
+4. review and correct labels through an annotation interface,
+5. store structured results and document metadata securely.
+
+## Phase 1: validating the interaction model
+
+The first implementation used Expo and React Native to test navigation, document display, category selection, and basic labelling interactions. Figma designs helped the team discuss workflows before committing to the final architecture.
+
+<div class="row">
+  <div class="col-md-6 mt-3">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/legal-ai/figma-overview.png" title="Early Figma overview of datasets and annotation screens" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-md-6 mt-3">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/legal-ai/figma-upload.png" title="Early drag-and-drop upload workflow" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Early Figma prototypes used to validate navigation, dataset selection, preprocessing, and upload flows. These are design artifacts rather than screenshots of the final application.
+</div>
+
+This phase emphasized speed of learning. It helped identify what a document labelling workflow should feel like before the system was expanded into a more maintainable web architecture.
+
+## Phase 2: structured full-stack architecture
+
+The platform was rebuilt with a clearer separation of responsibilities.
+
+### React and TypeScript frontend
+
+The web interface included routes and components for:
+
+- drag-and-drop document and ZIP upload,
+- dataset and document listing,
+- OCR-result visualization,
+- bulk classification,
+- document-level annotation,
+- label validation and user feedback.
+
+TypeScript provided stronger contracts for complex annotation data and API responses. The UI followed the Figma workflows while moving from exploratory screens toward reusable components.
+
+<div class="row">
+  <div class="col-md-6 mt-3">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/legal-ai/figma-dataset.png" title="Figma dataset and document-listing view" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-md-6 mt-3">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/legal-ai/figma-settings.png" title="Figma service-account configuration view" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  The dataset concept provides a simple route from an uploaded file to document review. A separate settings view keeps service-account configuration outside the annotation workspace.
+</div>
+
+### Flask gateway and protected ML services
+
+The Flask backend acted as a secure orchestration layer between the frontend and protected OCR and machine-learning services. It generated signed JWT tokens from service-account credentials, called secured gateway endpoints, handled OCR and ZIP-preprocessing requests, and returned structured responses to the frontend.
+
+Keeping the ML services behind a dedicated gateway improved credential isolation and prevented the frontend from depending directly on protected infrastructure. It also centralized authentication, authorization, error handling, and API behavior.
+
+### Data management
+
+The system was designed around a structured MySQL data model for user inputs, document metadata, extracted entities, and classification results. Raw and processed information were separated so that the original document context could be retained while normalized results remained queryable.
+
+## Security, testing, and deployment
+
+Legal data requires controlled access and predictable processing. The engineering work therefore included:
+
+- JWT-based authentication and authorization,
+- input validation and structured error handling,
+- unit and integration testing for processing and API flows,
+- Docker and Docker Compose for reproducible frontend and backend environments,
+- preparation for CI/CD-based testing and deployment.
+
+## Outcome
+
+The project produced an end-to-end workflow for document upload, OCR, ML-assisted classification, annotation, and secure service integration. My contribution spanned both architectural phases, from rapid UI validation to the React/TypeScript frontend, Flask gateway, frontend-backend contracts, Docker setup, and secure API integration.
+
+The most valuable engineering lesson was knowing when to stop extending a prototype and introduce stronger separation of concerns. The rebuild made the system easier to reason about and provided a clearer foundation for annotation-heavy legal workflows.
+
+## Technical stack
+
+`React` · `TypeScript` · `Expo` · `React Native` · `Flask` · `REST APIs` · `JWT` · `Google service accounts` · `OCR` · `ML-assisted classification` · `MySQL` · `Figma` · `Docker Compose` · `CI/CD`
+
+## Project context
+
+I worked on the platform from March to June 2024 as part of an interdisciplinary project with **Legalian GmbH**. It preceded my later Danish Business Register work at the company. The source code and final application are internal, so this page uses early Figma designs to explain the workflow without exposing proprietary implementation details or legal data.
