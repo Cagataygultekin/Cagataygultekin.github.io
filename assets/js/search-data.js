@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-academic-work",
           title: "academic work",
-          description: "Research and academic work completed at the Technical University of Munich.",
+          description: "Selected research and academic work in machine learning and software systems.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/academic-work/";
@@ -448,9 +448,9 @@ ninja.data = [{
           description: "A classical computer vision pipeline using shape, moment, and color features with k-fold validation for image recognition.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/fruit-tree-recognition/";
-            },},{id: "projects-java-spring-e-commerce-service-and-desktop-client",
-          title: 'Java/Spring E-commerce Service and Desktop Client',
-          description: "A Java/Spring web service with a GUI desktop client for browsing and managing computer and phone products.",
+            },},{id: "projects-e-commerce-web-service-and-desktop-client",
+          title: 'E-commerce Web Service and Desktop Client',
+          description: "A Spring Boot and MySQL product platform with a separate desktop client for computer and phone catalogue workflows.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/java-spring-ecommerce-service/";
             },},{id: "projects-mips-assembler-in-python",
@@ -503,9 +503,9 @@ ninja.data = [{
           description: "A React/TypeScript and Flask platform for document upload, OCR, ML-assisted classification, annotation workflows, and secure access to protected legal-data services.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/legal-ai-data-labelling-platform/";
-            },},{id: "projects-issue-tracking-analytics-for-software-teams",
-          title: 'Issue-Tracking Analytics for Software Teams',
-          description: "A bachelor&#39;s thesis that extracted issue-tracking data, engineered process metrics, and used unsupervised clustering to discover team usage profiles.",
+            },},{id: "projects-github-issue-tracking-research-tool",
+          title: 'GitHub Issue-Tracking Research Tool',
+          description: "A Python desktop application that turns GitHub issue activity into process metrics, visual analyses, and exportable research data.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/issue-tracking-team-analytics/";
             },},{
