@@ -703,20 +703,39 @@ footer.sticky-bottom {
     .project-tech-stack {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.35rem;
+      gap: 0.45rem;
+      padding-top: 0.85rem;
+      border-top: 1px solid var(--global-divider-color);
+    }
+
+    .project-tech-label {
+      flex-basis: 100%;
+      margin-bottom: 0.1rem;
+      color: var(--global-text-color-light);
+      font-size: 0.66rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
 
     .project-tech {
       display: inline-flex;
       align-items: center;
-      padding: 0.25rem 0.55rem;
-      color: var(--global-text-color-light);
-      background-color: var(--global-bg-color);
+      padding: 0.34rem 0.64rem;
+      color: var(--global-theme-color);
+      background-color: var(--global-code-bg-color);
       border: 1px solid var(--global-divider-color);
-      border-radius: 999px;
-      font-size: 0.72rem;
-      font-weight: 600;
+      border-radius: 0.5rem;
+      box-shadow: inset 3px 0 0 var(--global-theme-color);
+      font-size: 0.7rem;
+      font-weight: 700;
       line-height: 1.2;
+
+      &::before {
+        content: "#";
+        margin-right: 0.28rem;
+        opacity: 0.75;
+      }
     }
   }
 

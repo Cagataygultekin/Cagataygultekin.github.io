@@ -17,6 +17,7 @@
         <div class="project-card-footer mt-auto">
           {% if project.technologies %}
             <div class="project-tech-stack" aria-label="Key technologies">
+              <span class="project-tech-label">Core stack &amp; strengths</span>
               {% for technology in project.technologies %}
                 <span class="project-tech">{{ technology }}</span>
               {% endfor %}

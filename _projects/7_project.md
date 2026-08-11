@@ -6,7 +6,7 @@ description: A C++/MPI extension to NS-EOF that added structured HDF5 output and
 img: assets/img/projects/hpc/hdf5-data-layout.png
 importance: 4
 category: professional
-technologies: ["C++", MPI, HDF5, ParaView]
+technologies: [C++, MPI, Parallel I/O, HDF5, Performance Profiling]
 permalink: /projects/parallel-hdf5-cfd-output/
 ---
 

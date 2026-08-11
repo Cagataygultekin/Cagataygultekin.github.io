@@ -6,7 +6,7 @@ description: A static and dynamic analysis tool that traces repository calls thr
 img: assets/img/projects/itestra/anti-pattern-analysis-pipeline.png
 importance: 3
 category: professional
-technologies: [Java, "Eclipse JDT", Kotlin, "IntelliJ IDEA"]
+technologies: [Java, Static Analysis, Eclipse JDT, Call Graphs, IntelliJ Plugin]
 permalink: /projects/java-performance-antipattern-analyzer/
 github: https://github.com/DigitalProductInnovationAndDevelopment/Anti-Pattern-Analysis
 ---

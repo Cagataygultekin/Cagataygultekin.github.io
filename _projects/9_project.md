@@ -1,81 +1,74 @@
 ---
 layout: page
-published: false
-title: project 9
-description: another project with an image 🎉
-img: assets/img/6.jpg
-importance: 4
-category: fun
+published: true
+title: Issue-Tracking Analytics for Software Teams
+description: A bachelor's thesis that extracted issue-tracking data, engineered process metrics, and used unsupervised clustering to discover team usage profiles.
+img: assets/img/projects/bachelors-thesis/issue-tracking-analytics.png
+importance: 9
+category: professional
+technologies: [Python, Data Mining, Unsupervised Learning, Clustering, Software Analytics]
+permalink: /projects/issue-tracking-team-analytics/
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+For my bachelor's thesis in Computer Engineering at **Middle East Technical University Northern Cyprus Campus**, I investigated how software development teams use issue-tracking systems during collaborative work. The project, originally titled **Discovering Issue-Tracking Profiles of Software Development Teams**, combined software engineering data with unsupervised machine learning.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+The central idea was that an issue tracker contains more than task records. Assignment changes, issue states, resolution behavior, activity patterns, and other process signals can be transformed into metrics that describe how a team organizes and executes its work.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row my-4">
+  <div class="col-md-4 mb-3">
+    <div class="border rounded h-100 p-3">
+      <h3 class="h5">Data extraction</h3>
+      <p class="mb-0">Collected issue-related records from a software development platform and prepared them for analysis.</p>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
   </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-md-4 mb-3">
+    <div class="border rounded h-100 p-3">
+      <h3 class="h5">Metric engineering</h3>
+      <p class="mb-0">Converted raw activity into structured measures that describe issue-tracking behavior.</p>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="border rounded h-100 p-3">
+      <h3 class="h5">Team profiles</h3>
+      <p class="mb-0">Applied clustering to identify recurring patterns across collaborative development teams.</p>
+    </div>
   </div>
 </div>
-```
 
-{% endraw %}
+## From issue records to interpretable profiles
+
+The analysis followed a complete data workflow:
+
+1. extract issue-related data from a software development platform,
+2. clean and structure the records,
+3. derive metrics representing team behavior,
+4. apply unsupervised clustering methods,
+5. interpret the resulting groups as issue-tracking profiles,
+6. translate the findings into guidance for teams adopting or improving issue-tracking practices.
+
+<div class="row justify-content-center">
+  <div class="col-md-12 mt-3">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/bachelors-thesis/issue-tracking-analytics.png" title="Conceptual issue-tracking analytics pipeline" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  A portfolio reconstruction of the analytical workflow. It shows the progression from raw issue data through metric engineering and clustering to interpretable team profiles and recommendations.
+</div>
+
+## Engineering and analytical scope
+
+The project required both software and analytical thinking. The input data came from a real development workflow, but the research question could not be answered directly from raw issue records. I had to define a useful representation, convert activity into comparable features, and make the clustering results understandable in the context of team productivity and process quality.
+
+The intended outcome was practical as well as analytical. The resulting profiles could support learners, small companies, and teams that wanted to use issue-tracking systems more deliberately instead of treating them only as task lists.
+
+## Why this project still matters
+
+This was one of my earliest large projects connecting software systems, structured data, and machine learning. It established a pattern that continued in my later work: begin with operational data, build a reproducible processing workflow, and turn the result into information that supports engineering decisions.
+
+## Core stack and methods
+
+`Python` · `Data preprocessing` · `Metric engineering` · `Unsupervised learning` · `Clustering` · `Software analytics` · `Issue-tracking systems`
+
+## Project context
+
+The work was completed as my bachelor's thesis at **Middle East Technical University Northern Cyprus Campus**. The original implementation and dataset are not published, so the visual on this page is a conceptual reconstruction of the workflow.

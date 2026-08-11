@@ -6,7 +6,7 @@ description: A FastAPI backend for retrieving, normalizing, storing, and searchi
 img: assets/img/projects/legalian/registry-data-platform.png
 importance: 2
 category: professional
-technologies: [FastAPI, MySQL, Elasticsearch, Docker]
+technologies: [Python, FastAPI, Secure API Integration, Data Engineering, MySQL + Elasticsearch]
 permalink: /projects/company-registry-data-platform/
 github: https://github.com/Cagataygultekin/danish-business-register
 ---

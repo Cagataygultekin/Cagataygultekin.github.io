@@ -6,7 +6,7 @@ description: A full-stack internal workflow that improved sprint-data quality an
 img: assets/img/projects/ykt/sprint-reporting-workflow.png
 importance: 7
 category: professional
-technologies: [Java, "Spring Boot", React, Confluence]
+technologies: [Java + Spring Boot, React, Jira API, Workflow Automation, Reporting]
 permalink: /projects/sprint-reporting-productivity-workflow/
 ---
 

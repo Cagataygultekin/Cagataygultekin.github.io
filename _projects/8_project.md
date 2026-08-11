@@ -6,7 +6,7 @@ description: A React/TypeScript and Flask platform for document upload, OCR, ML-
 img: assets/img/projects/legal-ai/legal-ai-dashboard-v2.png
 importance: 5
 category: professional
-technologies: [React, TypeScript, Flask, JWT]
+technologies: [React + TypeScript, Flask, OCR Workflows, JWT Security, Docker]
 permalink: /projects/legal-ai-data-labelling-platform/
 ---
 

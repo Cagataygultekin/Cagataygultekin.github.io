@@ -6,7 +6,7 @@ description: A C#/.NET desktop application that moved spreadsheet-based material
 img: assets/img/projects/zorluteks/material-operations-workflow.png
 importance: 8
 category: professional
-technologies: ["C#", ".NET", "SQL Server", Excel]
+technologies: [C# + .NET, SQL Server, Desktop Applications, Data Migration, Operations Automation]
 permalink: /projects/material-database-operations-app/
 ---
 

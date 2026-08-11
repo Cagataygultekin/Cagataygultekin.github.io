@@ -6,7 +6,7 @@ description: Research engineering for a Python/PyTorch system that predicts sing
 img: assets/img/projects/helmholtz/chemcpa-architecture.png
 importance: 6
 category: professional
-technologies: [Python, PyTorch, chemCPA, GitHub]
+technologies: [Python, PyTorch, Scientific ML, Reproducible Research, Issue Diagnosis]
 permalink: /projects/chemcpa-research-engineering/
 github: https://github.com/theislab/chemcpa
 ---
