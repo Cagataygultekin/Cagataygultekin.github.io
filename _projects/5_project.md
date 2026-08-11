@@ -1,81 +1,82 @@
 ---
 layout: page
-published: false
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
+published: true
+title: Sprint Reporting and Productivity Workflow
+description: A full-stack internal workflow that improved sprint-data quality and turned team inputs into consistent newsletters and monthly productivity reporting.
+img: assets/img/projects/ykt/sprint-reporting-workflow.png
+importance: 5
+category: professional
+permalink: /projects/sprint-reporting-productivity-workflow/
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+At **Yapı Kredi Teknoloji A.Ş.**, I worked on an internal full-stack application for agile teams. The system connected team-maintained sprint information with project-management data and turned it into structured sprint newsletters and monthly productivity views.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+The central problem was data quality. Employees documented details such as tags, expected duration, and whether a task had received an extension. When these fields were missing or entered inconsistently, the resulting reports were incomplete and comparisons between teams or periods became less reliable.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row my-4">
+  <div class="col-md-4 mb-3">
+    <div class="border rounded h-100 p-3">
+      <h3 class="h5">Consistent inputs</h3>
+      <p class="mb-0">Made incomplete or inconsistent sprint metadata easier to identify before it affected downstream reporting.</p>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
   </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-md-4 mb-3">
+    <div class="border rounded h-100 p-3">
+      <h3 class="h5">Automated newsletters</h3>
+      <p class="mb-0">Combined structured team inputs with Jira data to reduce the manual work behind sprint summaries.</p>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="border rounded h-100 p-3">
+      <h3 class="h5">Monthly visibility</h3>
+      <p class="mb-0">Organized results into recurring views that made productivity patterns and reporting gaps easier to review.</p>
+    </div>
   </div>
 </div>
-```
 
-{% endraw %}
+## The operational problem
+
+Sprint reporting depended on information entered by many people. The individual fields looked simple, but the quality of the final newsletter depended on every contributor using the same tags, recording realistic durations, and updating extension information correctly.
+
+The application provided a more controlled path from those distributed inputs to a reusable report. The aim was not only to produce a newsletter, but also to improve the reliability of the source data and make recurring monthly results more useful.
+
+<div class="row justify-content-center">
+  <div class="col-md-12 mt-3">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/ykt/sprint-reporting-workflow.png" title="Conceptual sprint reporting and productivity workflow" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Conceptual reconstruction of the workflow, not an original company interface. Team-entered sprint metadata passes through data-quality checks, is combined with project-management information, and becomes a newsletter and monthly productivity view.
+</div>
+
+## From team input to monthly reporting
+
+The workflow brought several steps into one application:
+
+1. Employees maintained sprint details in Confluence, including categorization tags, planned duration, and extension information.
+2. The Java/Spring Boot backend integrated with the Atlassian Jira API to retrieve relevant sprint and work-item data.
+3. The application organized the combined information into a consistent structure and made missing or incompatible values visible.
+4. Front-end views supported the review of sprint content before it was used in communication.
+5. The prepared data was turned into sprint newsletters and aggregated into monthly productivity results.
+
+This separation mattered because it kept collection, validation, presentation, and reporting as distinct responsibilities. A reporting problem could be traced back to its input instead of being corrected manually in the final newsletter.
+
+## Full-stack implementation
+
+I worked across the Java/Spring Boot backend and React and Angular front-end components. The backend handled integration and report-oriented data preparation, while the user-facing layers presented sprint details in a form that teams could review and use.
+
+The project gave me practical experience with an internal application whose value depended on adoption and data discipline, not only on technical correctness. The interface had to make the expected inputs understandable, and the backend had to preserve enough structure for recurring reports.
+
+Alongside the main application, I also contributed to PL/SQL automation tools used in related internal workflows.
+
+## Outcome
+
+The resulting workflow reduced the distance between day-to-day sprint administration and management reporting. It helped teams identify data-quality issues earlier, automated repeated newsletter preparation steps, and provided a clearer basis for reviewing monthly productivity results.
+
+## Technical stack
+
+`Java` · `Spring Boot` · `React` · `Angular` · `Atlassian Jira API` · `Confluence` · `REST` · `PL/SQL` · `Full-stack development`
+
+## Project context
+
+I completed this work during my Software Engineer Internship at **Yapı Kredi Teknoloji A.Ş.** from July to September 2021. The project was an internal company system, so its source code and original interface are not public. The illustration on this page was created to explain the workflow without reproducing proprietary material.
