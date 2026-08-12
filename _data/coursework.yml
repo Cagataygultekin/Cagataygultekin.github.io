@@ -253,8 +253,28 @@ metu:
         ects: 6
 
   - name: Foreign languages
-    summary: Academic English and elective language study in French and Spanish.
+    summary: Elective language study through A2 in both French and Spanish, supported by an English-medium degree and academic communication courses.
     courses:
+      - code: FRN201
+        title: Beginning French I
+        ects: 4
+        tag: A1 completed
+        focus: Foundational French vocabulary, grammar, listening, speaking, reading, and writing through CEFR level A1.
+      - code: FRN202
+        title: Beginning French II
+        ects: 4
+        tag: A2 completed
+        focus: Continued French study through CEFR level A2, expanding practical communication, grammar, and comprehension.
+      - code: SPN201
+        title: Beginning Spanish I
+        ects: 4
+        tag: A1 completed
+        focus: Foundational Spanish vocabulary, grammar, listening, speaking, reading, and writing through CEFR level A1.
+      - code: SPN202
+        title: Beginning Spanish II
+        ects: 4
+        tag: A2 completed
+        focus: Continued Spanish study through CEFR level A2, expanding practical communication, grammar, and comprehension.
       - code: ENGL101
         title: Development of Reading and Writing Skills I
         ects: 6
@@ -266,18 +286,6 @@ metu:
         ects: 4
       - code: ENGL311
         title: Advanced Communication Skills
-        ects: 4
-      - code: FRN201
-        title: Beginning French I
-        ects: 4
-      - code: FRN202
-        title: Beginning French II
-        ects: 4
-      - code: SPN201
-        title: Beginning Spanish I
-        ects: 4
-      - code: SPN202
-        title: Beginning Spanish II
         ects: 4
 
   - name: University studies and professional foundations

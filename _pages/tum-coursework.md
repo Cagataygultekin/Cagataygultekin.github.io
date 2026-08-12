@@ -12,8 +12,8 @@ nav: false
   <p class="coursework-lead">A focused view of the taught modules behind my work in machine learning, software systems, and scientific computing. Grades are intentionally omitted; the emphasis here is on technical scope and the areas I studied.</p>
   <div class="coursework-facts">
     <div><strong>146</strong><span>completed ECTS</span></div>
-    <div><strong>120</strong><span>degree requirement</span></div>
-    <div><strong>B2.1</strong><span>TUM German progression</span></div>
+    <div><strong>3 years</strong><span>full-time study</span></div>
+    <div><strong>A1.2-B2.2</strong><span>German progression</span></div>
   </div>
   <p class="coursework-record-note">The M.Sc. requires 120 ECTS. I completed 26 ECTS beyond that requirement, bringing my recorded study load to 146 ECTS. Thesis, seminar, and project work remain documented on the Academic Work and Projects pages.</p>
 </div>
