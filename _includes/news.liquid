@@ -3,7 +3,7 @@
     {% assign news_size = site.news | size %}
     <div
       class="table-responsive"
-      {% if include.limit and page.announcements.scrollable and news_size > 3 %}
+      {% if include.compact and page.announcements.scrollable and news_size > 3 %}
         style="max-height: 60vw"
       {% endif %}
     >
@@ -19,7 +19,7 @@
             <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
             <td>
               {% if item.inline %}
-                {% if include.limit and item.summary %}
+                {% if include.compact and item.summary %}
                   {{ item.summary | markdownify | remove: '<p>' | remove: '</p>' | emojify }}
                 {% else %}
                   {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}

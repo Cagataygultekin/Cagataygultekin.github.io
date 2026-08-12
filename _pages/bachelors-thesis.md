@@ -19,7 +19,7 @@ nav: false
 
 Issue trackers are central to collaborative software development, but their effective use depends on more than recording tasks. Teams make different choices about assignment, labels, milestones, comments, response behavior, and issue completion. When these practices are inconsistent, the tracker becomes less useful as both an operational system and a source of research data.
 
-My bachelor's thesis, completed with Ilbey Evcil, Burak Kaan Kahraman, and Muhammed Didin at **Middle East Technical University Northern Cyprus Campus**, investigated how these practices could be represented through measurable repository indicators. The work was supervised by Dr. Sukru Eraslan.
+My bachelor's thesis, completed in June 2021 with Ilbey Evcil, Burak Kaan Kahraman, and Muhammed Didin at **Middle East Technical University Northern Cyprus Campus**, investigated how these practices could be represented through measurable repository indicators. The work was supervised by Dr. Sukru Eraslan.
 
 ## Research objective
 
@@ -62,4 +62,3 @@ The thesis also produced a working desktop application rather than only a concep
 ## Main takeaway
 
 Issue-tracking quality is visible in the structure and timing of repository activity. By translating that activity into a consistent analytical framework, teams and researchers can evaluate practices that would otherwise remain informal and difficult to compare.
-

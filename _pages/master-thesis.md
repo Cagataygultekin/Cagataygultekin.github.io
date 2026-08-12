@@ -16,7 +16,7 @@ nav: false
 
 Microscopic crowd simulators provide detailed insight into evacuation behavior, but their computational cost makes large parameter studies and iterative building design expensive. This thesis investigates whether neural surrogate models can predict total evacuation times accurately while requiring far fewer crowd simulations.
 
-The work was completed as a Master's Thesis in Informatics at the Technical University of Munich in collaboration with accu:rate GmbH. It was examined by Prof. Dr. Felix Dietrich, supervised by Ana Cukarska, and submitted on 22 September 2025.
+The work was completed as a Master's Thesis in Informatics at the Technical University of Munich in collaboration with accu:rate GmbH. Prof. Dr. Felix Dietrich was the thesis supervisor, and Ana Cukarska was the advisor. At accu:rate GmbH, I worked with Dr. Angelika Kneidl and Johannes Hölscher. The thesis was submitted on 1 October 2025.
 
 ## Research questions
 
@@ -52,13 +52,13 @@ Each sampled subset was used to train a SWIM surrogate, followed by validation, 
 
 ## Key results
 
-| Result | Outcome |
-|---|---|
-| Synthetic room scenario | Predictive accuracy up to R² = 0.89 |
-| Regulation-based scenario | Predictive accuracy above R² = 0.99 with the full dataset |
-| Best low-budget method | Randomized Quasi-Monte Carlo sampling |
-| Low-budget performance | R² between 0.95 and 0.97 with only 9 to 14 simulations |
-| Practical impact | More than an order-of-magnitude reduction in required simulations |
+| Result                    | Outcome                                                           |
+| ------------------------- | ----------------------------------------------------------------- |
+| Synthetic room scenario   | Predictive accuracy up to R² = 0.89                               |
+| Regulation-based scenario | Predictive accuracy above R² = 0.99 with the full dataset         |
+| Best low-budget method    | Randomized Quasi-Monte Carlo sampling                             |
+| Low-budget performance    | R² between 0.95 and 0.97 with only 9 to 14 simulations            |
+| Practical impact          | More than an order-of-magnitude reduction in required simulations |
 
 Randomized Quasi-Monte Carlo sampling provided the most reliable accuracy-cost trade-off. It generalized strongly with very small training sets, while entropy-based and sparse-grid methods required more simulations for comparable performance. KMeans sampling was less stable in the evaluated configurations.
 
@@ -73,4 +73,3 @@ Randomized Quasi-Monte Carlo sampling provided the most reliable accuracy-cost t
 ## Future work
 
 The thesis proposes extending the approach to unseen building types, richer behavioral variables, and adaptive sampling methods. A practical next step would be direct integration into crowd:it, where a small number of simulations could train and cache a surrogate model for rapid predictions during iterative design.
-

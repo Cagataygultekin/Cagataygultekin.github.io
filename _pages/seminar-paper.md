@@ -16,7 +16,7 @@ nav: false
 
 ReLU networks are piecewise linear functions. Their input space is divided into regions in which the network behaves like an affine function, with changes in activation patterns defining the boundaries between regions. This seminar paper reviews how that geometric structure helps explain several aspects of neural network behavior.
 
-The paper was written and presented as part of the Selected Topics in Machine Learning Research master's seminar at the Technical University of Munich under Prof. Dr. Stephan Günnemann.
+The paper was written and presented on 17 July 2023 as part of the Selected Topics in Machine Learning Research master's seminar at the Technical University of Munich under Prof. Dr. Stephan Günnemann.
 
 ## Main questions
 
@@ -70,4 +70,3 @@ The paper identifies several directions for future research:
 - Specialized regularization based on activation geometry
 - Stronger links between linear regions and interpretability
 - Empirical validation on larger datasets and architectures
-

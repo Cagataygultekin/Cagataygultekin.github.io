@@ -11,6 +11,13 @@ nav_order: 3
 
 ### Predicting Macroscopic Crowd Properties Using the SWIM Algorithm
 
+<p class="mb-3">
+  <strong>Submitted:</strong> 1 October 2025<br>
+  <strong>Supervisor:</strong> Prof. Dr. Felix Dietrich<br>
+  <strong>Advisor:</strong> Ana Cukarska<br>
+  <strong>accu:rate GmbH collaborators:</strong> Dr. Angelika Kneidl and Johannes Hölscher
+</p>
+
 This thesis investigates how neural surrogate models can accelerate evacuation analysis. Microscopic crowd simulations provide detailed results, but they are expensive to run repeatedly during large parameter studies or iterative building design. The work combines crowd:it simulation data, the SWIM neural network training algorithm, and several sampling strategies to predict total evacuation times with substantially fewer simulations.
 
 The evaluation covers a controlled room-based scenario and a regulation-derived vertical evacuation scenario. With the full dataset, the surrogate models achieved predictive accuracy above R² = 0.99. Under strict simulation budgets, Randomized Quasi-Monte Carlo sampling reached R² values between 0.95 and 0.97 using only 9 to 14 simulations.
@@ -31,6 +38,8 @@ The evaluation covers a controlled room-based scenario and a regulation-derived 
 
 ### Understanding Linear Regions of ReLU Networks
 
+**Presented:** 17 July 2023
+
 This seminar paper examines how ReLU neural networks partition their input space into linear regions and how this geometric structure relates to expressivity, robustness, trainability, and over-parameterization. It distinguishes the large theoretical capacity of deep networks from the smaller number of activation patterns that are often reached in practice.
 
 The paper also reviews robustness guarantees based on local affine behavior, limitations of transferring results from shallow univariate networks to deeper architectures, and the role of mild over-parameterization in the optimization landscape.
@@ -50,6 +59,8 @@ The paper also reviews robustness guarantees based on local affine behavior, lim
 ## Bachelor's thesis
 
 ### Discovering Issue-Tracking Profiles of Software Development Teams
+
+**Completed:** June 2021
 
 This thesis investigates how GitHub issue activity can be translated into measurable indicators of software-team practice. It covers responsibility distribution, label and milestone usage, communication patterns, response behavior, and issue completion, then organizes these observations into an analytical framework for evaluating issue-tracking practices.
 
