@@ -16,7 +16,7 @@ nav: false
 
 Microscopic crowd simulators provide detailed insight into evacuation behavior, but their computational cost makes large parameter studies and iterative building design expensive. This thesis investigates whether neural surrogate models can predict total evacuation times accurately while requiring far fewer crowd simulations.
 
-The work was completed as a Master's Thesis in Informatics at the Technical University of Munich in collaboration with accu:rate GmbH. Prof. Dr. Felix Dietrich was the thesis supervisor, and Ana Cukarska was the advisor. At accu:rate GmbH, I worked with Dr. Angelika Kneidl and Johannes Hölscher. The thesis was submitted on 1 October 2025.
+The work was completed as a Master's Thesis in Informatics at the Technical University of Munich in collaboration with accu:rate GmbH. Prof. Dr. Felix Dietrich was the thesis supervisor, and Ana Cukarska was the advisor. At accu:rate GmbH, I worked with Dr. Angelika Kneidl and Johannes Hölscher. I presented the completed work at the accu:rate office on 1 October 2025.
 
 ## Research questions
 

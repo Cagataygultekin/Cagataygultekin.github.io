@@ -12,7 +12,7 @@ nav_order: 3
 ### Predicting Macroscopic Crowd Properties Using the SWIM Algorithm
 
 <p class="mb-3">
-  <strong>Submitted:</strong> 1 October 2025<br>
+  <strong>Presented:</strong> 1 October 2025 at accu:rate GmbH<br>
   <strong>Supervisor:</strong> Prof. Dr. Felix Dietrich<br>
   <strong>Advisor:</strong> Ana Cukarska<br>
   <strong>accu:rate GmbH collaborators:</strong> Dr. Angelika Kneidl and Johannes Hölscher
@@ -59,8 +59,6 @@ The paper also reviews robustness guarantees based on local affine behavior, lim
 ## Bachelor's thesis
 
 ### Discovering Issue-Tracking Profiles of Software Development Teams
-
-**Completed:** June 2021
 
 This thesis investigates how GitHub issue activity can be translated into measurable indicators of software-team practice. It covers responsibility distribution, label and milestone usage, communication patterns, response behavior, and issue completion, then organizes these observations into an analytical framework for evaluating issue-tracking practices.
 
