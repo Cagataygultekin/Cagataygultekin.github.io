@@ -25,7 +25,12 @@
             {% endif %}
           {% endunless %}
 
-          <article class="course-card">
+          <article
+            class="course-card"
+            {% if course.code %}
+              id="{{ course.code | downcase }}"
+            {% endif %}
+          >
             <details class="course-card-disclosure">
               <summary>
                 <span class="course-card-meta">

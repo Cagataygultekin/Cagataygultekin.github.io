@@ -10,7 +10,7 @@ technologies: [Python, Tkinter, MySQL, EER Modeling, Database Normalization, SQL
 permalink: /projects/career-diaries-community-platform/
 ---
 
-**Career Diaries** was a career community application for connecting undergraduate students with alumni, graduate students, academics, and professionals. In a two-person team, I co-designed and implemented the system from requirements analysis and EER modeling through SQL development and a working Python desktop interface.
+**Career Diaries** was a career community application for connecting undergraduate students with alumni, graduate students, academics, and professionals. In a two-person team, I co-designed and implemented the system from requirements analysis and EER modeling through SQL development and a working Python desktop interface. It was developed as the course project for **CNG352 Database Management Systems**.
 
 The project went beyond a conventional alumni directory. Its data model recognized that professional and academic identities overlap. An alumnus could be a graduate student and an industry professional at the same time. The system preserved one shared identity while storing the relationships and attributes specific to each role.
 
@@ -93,4 +93,10 @@ The multi-role model was the central design challenge. It kept shared user data 
 
 ## Project context
 
-Career Diaries was completed during my Computer Engineering studies at **Middle East Technical University Northern Cyprus Campus**. The original application and database are not public, so the visual on this page reconstructs the product concept without reproducing the original interface or data.
+Career Diaries was completed for **CNG352 Database Management Systems** during my Computer Engineering studies at **Middle East Technical University Northern Cyprus Campus**. The original application and database are not public, so the visual on this page reconstructs the product concept without reproducing the original interface or data.
+
+<div class="mt-3">
+  <a class="btn btn-sm btn-outline-primary" href="{{ '/academic-work/metu-coursework/#cng352' | relative_url }}">
+    View CNG352 in METU coursework
+  </a>
+</div>

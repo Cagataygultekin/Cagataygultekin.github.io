@@ -194,8 +194,10 @@ metu:
       - code: CNG352
         title: Database Management Systems
         ects: 6
+        tag: Course project
         focus: Relational modelling, normalization, query processing, transactions, concurrency, recovery, security, and web data.
-        details: Develops relational algebra and query optimization alongside entity-relationship modelling, normalization, physical design, and tuning. Systems topics include transactions, concurrency control, recovery, client-server architecture, authorization, XML, XQuery, web-data management, and web services.
+        details: Develops relational algebra and query optimization alongside entity-relationship modelling, normalization, physical design, and tuning. Systems topics include transactions, concurrency control, recovery, client-server architecture, authorization, XML, XQuery, web-data management, and web services. The associated Career Diaries project applied these concepts to a normalized, multi-role relational platform for students, alumni, academics, and professionals.
+        link: /projects/career-diaries-community-platform/
       - code: CNG334
         title: Introduction to Operating Systems
         ects: 5.5
