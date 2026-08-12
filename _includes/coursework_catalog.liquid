@@ -1,0 +1,38 @@
+<div class="coursework-catalog">
+  {% for section in include.sections %}
+    <section class="coursework-section">
+      <div class="coursework-section-heading">
+        <p class="coursework-section-kicker">Area 0{{ forloop.index }}</p>
+        <h2>{{ section.name }}</h2>
+        <p>{{ section.summary }}</p>
+      </div>
+
+      <div class="coursework-grid">
+        {% for course in section.courses %}
+          <article class="course-card{% unless course.focus %} course-card-compact{% endunless %}">
+            <div class="course-card-meta">
+              {% if course.code -%}
+                <span class="course-code">{{ course.code }}</span>
+              {%- endif %}
+              <span class="course-credit">{{ course.ects }} ECTS</span>
+            </div>
+            <h3>{{ course.title }}</h3>
+            {% if course.focus %}
+              <p>{{ course.focus }}</p>
+            {% endif %}
+            {% if course.tag or course.link %}
+              <div class="course-card-footer">
+                {% if course.tag -%}
+                  <span class="course-tag">{{ course.tag }}</span>
+                {%- endif %}
+                {% if course.link %}
+                  <a href="{{ course.link | relative_url }}">View related work <i class="fa-solid fa-arrow-right"></i></a>
+                {% endif %}
+              </div>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</div>

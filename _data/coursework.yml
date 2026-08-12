@@ -1,0 +1,286 @@
+tum:
+  - name: Machine learning and data analysis
+    summary: Statistical learning, neural networks, practical data analysis, and medical applications of AI.
+    courses:
+      - code: IN2064
+        title: Machine Learning
+        ects: 8
+        focus: Probabilistic learning, supervised and unsupervised methods, dimensionality reduction, mixture models, and model evaluation.
+      - code: IN2346
+        title: Introduction to Deep Learning
+        ects: 6
+        focus: Neural networks, backpropagation, optimization, regularization, convolutional architectures, sequence models, and transformers.
+      - code: IN2339
+        title: Data Analysis and Visualization in R
+        ects: 6
+        focus: Data preparation, reproducible analysis, visualization, statistical testing, unsupervised learning, and predictive modelling in R.
+      - code: IN2403
+        title: Artificial Intelligence in Medicine
+        ects: 5
+        focus: Machine learning methods and evaluation considerations for medical data and clinical applications.
+
+  - name: Software quality and dependable AI
+    summary: Software testing, requirements, and the engineering of safe, resilient learning-enabled systems.
+    courses:
+      - code: CIT423002
+        title: AI Testing
+        ects: 5
+        focus: Testing strategies and evaluation methods for AI-based software, including the challenges introduced by learned behaviour.
+      - code: CIT4230005
+        title: Engineering Resilient Cognitive Systems
+        ects: 3
+        focus: Safety assurance, resilience, SOTIF, and adaptive architectures for cognitive cyber-physical systems operating under uncertainty.
+      - code: IN2084
+        title: Advanced Topics of Software Testing
+        ects: 5
+        tag: Additional credit
+        focus: Advanced verification and testing topics, with emphasis on systematic quality assessment for complex software systems.
+      - title: Requirements Engineering
+        ects: 3
+        tag: Additional credit
+        focus: Eliciting, structuring, analysing, validating, and managing functional and quality requirements across a system lifecycle.
+
+  - name: Scientific computing
+    summary: Quantum-computing foundations and systems-oriented scientific simulation work.
+    courses:
+      - code: IN2381
+        title: Introduction to Quantum Computing
+        ects: 5
+        focus: Quantum states, gates, circuits, measurement, and the computational ideas behind quantum algorithms.
+      - code: IN2311
+        title: Turbulent Flow Simulation on HPC-Systems
+        ects: 5
+        tag: Documented as a project
+        focus: Distributed C++ simulation, MPI coordination, scientific data formats, parallel I/O, and performance evaluation.
+        link: /projects/parallel-hdf5-cfd-output/
+
+  - name: German language progression
+    summary: Completed German-language modules from A1.2 through B1.2 alongside the technical curriculum.
+    courses:
+      - title: German as a Foreign Language A1.2
+        ects: 4
+        tag: Additional credit
+      - code: SZ0303
+        title: German as a Foreign Language A2.1
+        ects: 6
+        tag: Degree module
+      - title: German as a Foreign Language A2.2
+        ects: 6
+        tag: Additional credit
+      - title: German as a Foreign Language B1.1
+        ects: 4
+        tag: Additional credit
+      - title: German as a Foreign Language B1.2
+        ects: 4
+        tag: Additional credit
+
+metu:
+  - name: Programming, algorithms, and theory
+    summary: The programming and theoretical core of the Computer Engineering degree.
+    courses:
+      - code: CNG111
+        title: Introduction to Computer Engineering Concepts
+        ects: 4
+        focus: Computational problem solving, programming foundations, and core computer-engineering concepts.
+      - code: CNG140
+        title: C Programming
+        ects: 4
+        focus: Structured programming, memory-aware problem solving, and implementation in C.
+      - code: CNG213
+        title: Data Structures
+        ects: 6
+        focus: Linear and nonlinear data structures, implementation choices, and complexity-aware problem solving.
+      - code: CNG223
+        title: Discrete Computational Structures
+        ects: 6
+        focus: Logic, sets, relations, combinatorics, graphs, and discrete structures used in computing.
+      - code: CNG242
+        title: Programming Language Concepts
+        ects: 7
+        focus: Language paradigms, type systems, scope, runtime models, and abstraction mechanisms.
+      - code: CNG280
+        title: Formal Languages and Abstract Machines
+        ects: 6
+        focus: Automata, formal grammars, computability, and the mathematical foundations of language recognition.
+      - code: CNG315
+        title: Algorithms
+        ects: 6
+        focus: Algorithm design and analysis, graph algorithms, dynamic programming, complexity, and NP-completeness.
+      - code: CNG443
+        title: Introduction to Object-Oriented Programming Languages and Systems
+        ects: 6
+        focus: Object-oriented language design, runtime systems, reusable abstractions, and implementation trade-offs.
+      - code: CNG445
+        title: Software Development with Scripting Languages
+        ects: 6
+        focus: Rapid development, automation, data processing, and software integration with scripting languages.
+      - code: CNG457
+        title: Software Construction
+        ects: 6
+        focus: Practical construction techniques for maintainable software, including implementation, integration, and engineering workflow concerns.
+
+  - name: Software and data systems
+    summary: Software lifecycles, persistent data, operating systems, and networked computing.
+    courses:
+      - code: CNG350
+        title: Software Engineering
+        ects: 5.5
+        focus: Requirements, architecture, development processes, testing, maintenance, and collaborative software delivery.
+      - code: CNG351
+        title: Data Management and File Structures
+        ects: 6
+        focus: File organization, indexing, storage structures, and the foundations of efficient data access.
+      - code: CNG352
+        title: Database Management Systems
+        ects: 6
+        focus: Relational modelling, normalization, query processing, transactions, concurrency, recovery, security, and web data.
+      - code: CNG334
+        title: Introduction to Operating Systems
+        ects: 5.5
+        focus: Processes, scheduling, synchronization, memory, storage, and the abstractions that connect software to hardware.
+      - code: CNG435
+        title: Data Communications and Computer Networking
+        ects: 6
+        focus: Network architectures, protocols, routing, transport, reliability, and end-to-end data communication.
+
+  - name: Computer architecture and embedded systems
+    summary: Hardware-software interaction from digital logic to embedded development.
+    courses:
+      - code: CNG232
+        title: Logic Design
+        ects: 7
+        focus: Boolean logic, combinational and sequential circuits, and digital-system design.
+      - code: EEE281
+        title: Electrical Circuits
+        ects: 6
+        focus: Circuit analysis and the electrical foundations needed for computer hardware.
+      - code: CNG331
+        title: Computer Organization
+        ects: 6
+        focus: Processor organization, instruction execution, memory hierarchy, and I/O architecture.
+      - code: CNG336
+        title: Introduction to Embedded Systems Development
+        ects: 5.5
+        focus: Microcontroller-oriented development, hardware interfaces, timing, and resource-constrained software.
+      - code: CNG384
+        title: Signals and Systems for Computer Engineers
+        ects: 5
+        focus: Continuous and discrete signals, system representations, transforms, and frequency-domain analysis.
+
+  - name: Machine learning and computational applications
+    summary: Statistical foundations and applied computing across machine learning, bioinformatics, and image processing.
+    courses:
+      - code: CNG409
+        title: Introduction to Machine Learning
+        ects: 6
+        focus: Supervised and unsupervised learning, feature representation, training, validation, and model assessment.
+      - code: CNG465
+        title: Introduction to Bioinformatics
+        ects: 6
+        focus: Sequence analysis, phylogenetics, biological-data mining, motif discovery, and computational models of molecular data.
+      - code: CNG466
+        title: Fundamental Image Processing Techniques
+        ects: 6
+        focus: Image formation, enhancement, filtering, segmentation, feature extraction, and digital-image analysis.
+      - code: STAS221
+        title: Statistics for Engineers I
+        ects: 5
+        focus: Probability, statistical inference, estimation, hypothesis testing, and engineering-data analysis.
+
+  - name: Engineering design and professional practice
+    summary: Team-based design work and two supervised industry placements.
+    courses:
+      - code: CNG491
+        title: Computer Engineering Design I
+        ects: 7
+        focus: Problem definition, requirements, design decisions, planning, and the first stage of the bachelor capstone.
+      - code: CNG492
+        title: Computer Engineering Design II
+        ects: 7
+        focus: Implementation, validation, documentation, and presentation of the bachelor capstone system.
+        link: /projects/issue-tracking-team-analytics/
+      - code: CNG300
+        title: Summer Practice I
+        ects: 2
+        focus: Supervised professional experience in an engineering workplace.
+      - code: CNG400
+        title: Summer Practice II
+        ects: 2
+        focus: A second supervised placement focused on applying computer-engineering skills in practice.
+
+  - name: Mathematics and natural sciences
+    summary: The quantitative and scientific foundation supporting the engineering curriculum.
+    courses:
+      - code: MAT119
+        title: Calculus with Analytic Geometry
+        ects: 7.5
+      - code: MAT120
+        title: Calculus for Functions of Several Variables
+        ects: 7.5
+      - code: MAT260
+        title: Basic Linear Algebra
+        ects: 5
+      - code: MAT219
+        title: Introduction to Differential Equations
+        ects: 7
+      - code: PHY105
+        title: General Physics I
+        ects: 6.5
+      - code: PHY106
+        title: General Physics II
+        ects: 6.5
+      - code: CHM107
+        title: General Chemistry
+        ects: 6
+
+  - name: Communication, languages, and university studies
+    summary: Academic communication, multilingual study, orientation, history, and workplace safety.
+    courses:
+      - code: CNG100
+        title: Introduction to Information Technologies and Applications
+        ects: 1
+      - code: CNG101
+        title: Computer Engineering Orientation
+        ects: 1
+      - code: ENGL101
+        title: Development of Reading and Writing Skills I
+        ects: 6
+      - code: ENGL102
+        title: Development of Reading and Writing Skills II
+        ects: 6
+      - code: ENGL211
+        title: Academic Oral Presentation Skills
+        ects: 4
+      - code: ENGL311
+        title: Advanced Communication Skills
+        ects: 4
+      - code: FRN201
+        title: Beginning French I
+        ects: 4
+      - code: FRN202
+        title: Beginning French II
+        ects: 4
+      - code: SPN201
+        title: Beginning Spanish I
+        ects: 4
+      - code: SPN202
+        title: Beginning Spanish II
+        ects: 4
+      - code: TUR101
+        title: Turkish I
+        ects: 2
+      - code: TUR102
+        title: Turkish II
+        ects: 2
+      - code: HST201
+        title: Principles of Kemal Ataturk I
+        ects: 2
+      - code: HST202
+        title: Principles of Kemal Ataturk II
+        ects: 2
+      - code: OCHS101
+        title: Occupational Health and Safety I
+        ects: 2
+      - code: OCHS301
+        title: Occupational Health and Safety II
+        ects: 2

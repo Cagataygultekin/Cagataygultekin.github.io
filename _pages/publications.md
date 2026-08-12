@@ -16,11 +16,14 @@ This thesis investigates how neural surrogate models can accelerate evacuation a
 The evaluation covers a controlled room-based scenario and a regulation-derived vertical evacuation scenario. With the full dataset, the surrogate models achieved predictive accuracy above R² = 0.99. Under strict simulation budgets, Randomized Quasi-Monte Carlo sampling reached R² values between 0.95 and 0.97 using only 9 to 14 simulations.
 
 <div class="mt-3 mb-5">
-  <a class="btn btn-primary mr-2" href="{{ '/academic-work/master-thesis/' | relative_url }}">
+  <a class="btn btn-primary mr-2 mb-2" href="{{ '/academic-work/master-thesis/' | relative_url }}">
     Read detailed overview
   </a>
-  <a class="btn btn-outline-primary" href="{{ '/assets/pdf/Cagatay_Gultekin_Master_Thesis.pdf' | relative_url }}" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary mr-2 mb-2" href="{{ '/assets/pdf/Cagatay_Gultekin_Master_Thesis.pdf' | relative_url }}" target="_blank" rel="noopener">
     <i class="fa-solid fa-file-pdf"></i>&nbsp; Download thesis PDF
+  </a>
+  <a class="btn btn-outline-primary mb-2" href="{{ '/academic-work/tum-coursework/' | relative_url }}">
+    View TUM coursework
   </a>
 </div>
 
@@ -33,11 +36,14 @@ This seminar paper examines how ReLU neural networks partition their input space
 The paper also reviews robustness guarantees based on local affine behavior, limitations of transferring results from shallow univariate networks to deeper architectures, and the role of mild over-parameterization in the optimization landscape.
 
 <div class="mt-3 mb-5">
-  <a class="btn btn-primary mr-2" href="{{ '/academic-work/seminar-paper/' | relative_url }}">
+  <a class="btn btn-primary mr-2 mb-2" href="{{ '/academic-work/seminar-paper/' | relative_url }}">
     Read detailed overview
   </a>
-  <a class="btn btn-outline-primary" href="{{ '/assets/pdf/Cagatay_Gultekin_Seminar_Paper_ReLU_Linear_Regions.pdf' | relative_url }}" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary mr-2 mb-2" href="{{ '/assets/pdf/Cagatay_Gultekin_Seminar_Paper_ReLU_Linear_Regions.pdf' | relative_url }}" target="_blank" rel="noopener">
     <i class="fa-solid fa-file-pdf"></i>&nbsp; Download seminar paper PDF
+  </a>
+  <a class="btn btn-outline-primary mb-2" href="{{ '/academic-work/tum-coursework/' | relative_url }}">
+    View TUM coursework
   </a>
 </div>
 
@@ -53,7 +59,10 @@ The work also produced a Python research tool that retrieves repository data thr
   <a class="btn btn-primary mr-2 mb-2" href="{{ '/academic-work/bachelors-thesis/' | relative_url }}">
     Read detailed overview
   </a>
-  <a class="btn btn-outline-primary mb-2" href="{{ '/assets/pdf/Cagatay_Gultekin_Bachelors_Thesis_DIP_User_Manual.pdf' | relative_url }}" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary mr-2 mb-2" href="{{ '/assets/pdf/Cagatay_Gultekin_Bachelors_Thesis_DIP_User_Manual.pdf' | relative_url }}" target="_blank" rel="noopener">
     <i class="fa-solid fa-file-pdf"></i>&nbsp; Download thesis document
+  </a>
+  <a class="btn btn-outline-primary mb-2" href="{{ '/academic-work/metu-coursework/' | relative_url }}">
+    View METU coursework
   </a>
 </div>
