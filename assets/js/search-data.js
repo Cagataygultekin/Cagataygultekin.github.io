@@ -405,7 +405,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-joined-zorluteks-tekstil-ticaret-ve-sanayi-a-ş-as-an-information-technology-intern-i-developed-a-c-net-desktop-application-for-material-and-database-operations-and-migrated-spreadsheet-data-into-company-databases",
+            },},{id: "news-began-the-b-sc-computer-engineering-program-at-middle-east-technical-university-northern-cyprus-campus-starting-an-undergraduate-path-that-combined-software-engineering-computer-systems-data-and-applied-project-work",
+          title: 'Began the B.Sc. Computer Engineering program at Middle East Technical University Northern Cyprus...',
+          description: "",
+          section: "News",},{id: "news-joined-zorluteks-tekstil-ticaret-ve-sanayi-a-ş-as-an-information-technology-intern-i-developed-a-c-net-desktop-application-for-material-and-database-operations-and-migrated-spreadsheet-data-into-company-databases",
           title: 'Joined Zorluteks Tekstil Ticaret ve Sanayi A.Ş. as an Information Technology Intern. I...',
           description: "",
           section: "News",},{id: "news-joined-yapı-kredi-teknoloji-a-ş-as-a-software-engineer-intern-i-built-a-full-stack-sprint-newsletter-application-with-java-spring-boot-react-and-angular-including-integration-with-the-atlassian-jira-api",
@@ -426,7 +429,7 @@ ninja.data = [{
           section: "News",},{id: "news-joined-accu-rate-gmbh-as-a-machine-learning-research-engineer-for-a-company-collaborative-master-s-thesis-project-i-built-an-end-to-end-pipeline-connecting-crowd-it-simulations-with-neural-surrogate-models-and-sampling-strategies",
           title: 'Joined accu:rate GmbH as a Machine Learning Research Engineer for a company-collaborative master’s...',
           description: "",
-          section: "News",},{id: "news-completed-predicting-macroscopic-crowd-properties-using-the-swim-algorithm-at-the-technical-university-of-munich-tum-in-collaboration-with-accu-rate-gmbh",
+          section: "News",},{id: "news-completed-predicting-macroscopic-crowd-properties-using-the-swim-algorithm-at-the-technical-university-of-munich-tum-in-collaboration-with-accu-rate-gmbh-the-thesis-was-supervised-by-prof-dr-felix-dietrich-and-advised-by-ana-cukarska-at-accu-rate-gmbh-i-worked-with-dr-angelika-kneidl-and-johannes-hölscher",
           title: 'Completed “Predicting Macroscopic Crowd Properties Using the SWIM Algorithm” at the Technical University...',
           description: "",
           section: "News",},{id: "news-completed-the-m-sc-informatics-program-at-the-technical-university-of-munich-tum",
