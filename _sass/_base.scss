@@ -1177,15 +1177,24 @@ footer.sticky-bottom {
   gap: 0.7rem;
   margin-top: auto;
   padding-top: 0.85rem;
+}
 
-  > a {
+.course-link-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-left: auto;
+
+  a {
     color: var(--global-theme-color);
     font-size: 0.68rem;
     font-weight: 750;
     text-decoration: none;
 
     i {
-      margin-left: 0.2rem;
+      margin: 0 0.15rem;
       font-size: 0.58rem;
     }
   }
@@ -1322,6 +1331,12 @@ footer.sticky-bottom {
 
   .course-card-footer {
     margin-top: 0.85rem;
+  }
+
+  .course-link-list {
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 0;
   }
 }
 

@@ -11,14 +11,12 @@ nav: false
   <h1>M.Sc. Informatics coursework</h1>
   <p class="coursework-lead">A focused view of the taught modules behind my work in machine learning, software systems, and scientific computing. Grades are intentionally omitted; the emphasis here is on technical scope and the areas I studied.</p>
   <div class="coursework-facts">
-    <div><strong>9</strong><span>degree modules</span></div>
-    <div><strong>26</strong><span>additional ECTS</span></div>
-    <div><strong>A1.2-B1.2</strong><span>German progression</span></div>
+    <div><strong>146</strong><span>completed ECTS</span></div>
+    <div><strong>120</strong><span>degree requirement</span></div>
+    <div><strong>B2.1</strong><span>TUM German progression</span></div>
   </div>
-  <p class="coursework-record-note">The 26 additional ECTS are recorded separately from the 120 ECTS master's degree. Thesis, seminar, and project work remain documented on the Academic Work and Projects pages.</p>
+  <p class="coursework-record-note">The M.Sc. requires 120 ECTS. I completed 26 ECTS beyond that requirement, bringing my recorded study load to 146 ECTS. Thesis, seminar, and project work remain documented on the Academic Work and Projects pages.</p>
 </div>
-
-{% include coursework_catalog.liquid sections=site.data.coursework.tum %}
 
 <section class="applied-coursework-callout">
   <div>
@@ -37,6 +35,8 @@ nav: false
     <span>Python</span><span>PyTorch</span><span>Pandas</span><span>scikit-learn</span><span>Cross-validation</span><span>Crowd modelling</span>
   </div>
 </section>
+
+{% include coursework_catalog.liquid sections=site.data.coursework.tum %}
 
 <div class="coursework-sources">
   <h2>Official course references</h2>

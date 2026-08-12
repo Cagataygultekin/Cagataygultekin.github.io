@@ -33,11 +33,9 @@ tum:
       - code: IN2084
         title: Advanced Topics of Software Testing
         ects: 5
-        tag: Additional credit
         focus: Advanced verification and testing topics, with emphasis on systematic quality assessment for complex software systems.
       - title: Requirements Engineering
         ects: 3
-        tag: Additional credit
         focus: Eliciting, structuring, analysing, validating, and managing functional and quality requirements across a system lifecycle.
 
   - name: Scientific computing
@@ -55,24 +53,28 @@ tum:
         link: /projects/parallel-hdf5-cfd-output/
 
   - name: German language progression
-    summary: Completed German-language modules from A1.2 through B1.2 alongside the technical curriculum.
+    summary: Completed German-language modules from A1.2 through B1.2, continued at TUM through B2.1, and pursued further individual tuition outside the university.
     courses:
       - title: German as a Foreign Language A1.2
         ects: 4
-        tag: Additional credit
       - code: SZ0303
         title: German as a Foreign Language A2.1
         ects: 6
-        tag: Degree module
       - title: German as a Foreign Language A2.2
         ects: 6
-        tag: Additional credit
       - title: German as a Foreign Language B1.1
         ects: 4
-        tag: Additional credit
       - title: German as a Foreign Language B1.2
         ects: 4
-        tag: Additional credit
+      - title: German as a Foreign Language B2.1
+        status: Attended at TUM
+        focus: Attended the teaching period and performed well in the midterm. The final examination was not taken, so this course is shown as attended rather than completed.
+      - title: German B2.2 Individual Tuition
+        status: External course
+        focus: Continued one-to-one German study outside TUM while still enrolled in the master's programme.
+      - title: German General Revision
+        status: External course
+        focus: Complementary individual tuition focused on consolidating grammar, vocabulary, speaking, and practical communication.
 
 metu:
   - name: Programming, algorithms, and theory
@@ -113,11 +115,22 @@ metu:
       - code: CNG445
         title: Software Development with Scripting Languages
         ects: 6
-        focus: Rapid development, automation, data processing, and software integration with scripting languages.
+        tag: Course project
+        focus: Systems programming, concurrent scripting, program integration, and web application development. A multi-client Python TCP coffee-shop system applied these ideas through networked sales processing and operational statistics.
+        link: /projects/python-coffee-shop-client-server/
       - code: CNG457
         title: Software Construction
         ects: 6
-        focus: Practical construction techniques for maintainable software, including implementation, integration, and engineering workflow concerns.
+        tag: Three-part implementation
+        focus: Reference architectures, design patterns, services and APIs, GUI development, reuse, and multi-level testing. The course project combined a Spring Boot service, MySQL persistence, and a separate desktop client.
+        link: /projects/java-spring-ecommerce-service/
+        links:
+          - label: Web service
+            url: https://github.com/457Proje-CSS/team6-cng457--webservice
+          - label: Desktop client
+            url: https://github.com/457Proje-CSS/team-6--cng457-desktopapp
+          - label: Project repository
+            url: https://github.com/457Proje-CSS/457_Proje_Cagatay-Serhat-Soykan
 
   - name: Software and data systems
     summary: Software lifecycles, persistent data, operating systems, and networked computing.
@@ -149,7 +162,7 @@ metu:
       - code: CNG232
         title: Logic Design
         ects: 7
-        focus: Boolean logic, combinational and sequential circuits, and digital-system design.
+        focus: Boolean logic, combinational and sequential circuits, registers, counters, memory, bus transfers, instruction execution, and hardwired control.
       - code: EEE281
         title: Electrical Circuits
         ects: 6
@@ -157,11 +170,14 @@ metu:
       - code: CNG331
         title: Computer Organization
         ects: 6
-        focus: Processor organization, instruction execution, memory hierarchy, and I/O architecture.
+        tag: MIPS assembler project
+        focus: Microprogrammed control, RISC organization, memory hierarchy, I/O interfaces, fast arithmetic, and computer communication. A Python MIPS assembler applied instruction parsing, pseudo-instruction expansion, and machine-code generation.
+        link: /projects/python-mips-assembler/
       - code: CNG336
         title: Introduction to Embedded Systems Development
         ects: 5.5
-        focus: Microcontroller-oriented development, hardware interfaces, timing, and resource-constrained software.
+        tag: Controller-level assembly
+        focus: Assembly-language programming and controller architecture, A/D and D/A interfaces, serial and parallel ports, interrupts, timers, I/O buses, sensors, actuators, and real-time operating systems.
       - code: CNG384
         title: Signals and Systems for Computer Engineers
         ects: 5
@@ -173,7 +189,8 @@ metu:
       - code: CNG409
         title: Introduction to Machine Learning
         ects: 6
-        focus: Supervised and unsupervised learning, feature representation, training, validation, and model assessment.
+        tag: Graduate-level elective
+        focus: Opened to graduate students in the term I took it, but completed during my bachelor's degree. It covered supervised and unsupervised learning, feature representation, training, validation, and model assessment.
       - code: CNG465
         title: Introduction to Bioinformatics
         ects: 6
@@ -181,7 +198,9 @@ metu:
       - code: CNG466
         title: Fundamental Image Processing Techniques
         ects: 6
-        focus: Image formation, enhancement, filtering, segmentation, feature extraction, and digital-image analysis.
+        tag: Course project
+        focus: Image formation, enhancement, filtering, segmentation, feature extraction, and digital-image analysis. The applied project built a fruit-tree recognition pipeline using chain codes, statistical moments, color features, and k-fold validation.
+        link: /projects/fruit-tree-recognition/
       - code: STAS221
         title: Statistics for Engineers I
         ects: 5
@@ -233,15 +252,9 @@ metu:
         title: General Chemistry
         ects: 6
 
-  - name: Communication, languages, and university studies
-    summary: Academic communication, multilingual study, orientation, history, and workplace safety.
+  - name: Foreign languages
+    summary: Academic English and elective language study in French and Spanish.
     courses:
-      - code: CNG100
-        title: Introduction to Information Technologies and Applications
-        ects: 1
-      - code: CNG101
-        title: Computer Engineering Orientation
-        ects: 1
       - code: ENGL101
         title: Development of Reading and Writing Skills I
         ects: 6
@@ -266,6 +279,16 @@ metu:
       - code: SPN202
         title: Beginning Spanish II
         ects: 4
+
+  - name: University studies and professional foundations
+    summary: Programme orientation, Turkish language, modern Turkish history, and workplace safety.
+    courses:
+      - code: CNG100
+        title: Introduction to Information Technologies and Applications
+        ects: 1
+      - code: CNG101
+        title: Computer Engineering Orientation
+        ects: 1
       - code: TUR101
         title: Turkish I
         ects: 2

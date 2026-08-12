@@ -37,4 +37,4 @@ It provided an early foundation for later work on APIs, distributed services, an
 
 ## Project context
 
-This application was completed during my Computer Engineering studies at **Middle East Technical University Northern Cyprus Campus**. The original source code is not currently public.
+This application was completed for **CNG445 Software Development with Scripting Languages** during my Computer Engineering studies at **Middle East Technical University Northern Cyprus Campus**. The original source code is not currently public.

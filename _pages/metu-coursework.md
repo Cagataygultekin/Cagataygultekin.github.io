@@ -18,19 +18,20 @@ nav: false
   <p class="coursework-record-note">The official degree total includes a 3 ECTS precalculus exemption. The catalog below lists the 252.5 ECTS of courses and placements I completed.</p>
 </div>
 
-{% include coursework_catalog.liquid sections=site.data.coursework.metu %}
-
 <section class="coursework-project-bridge">
   <div>
-    <p class="coursework-section-kicker">From coursework to working systems</p>
-    <h2>Capstone and database work</h2>
-    <p>The two-semester engineering design sequence produced my bachelor's thesis and GitHub issue-tracking research tool. Database coursework also led to Career Diaries, a multi-role community platform with a normalized relational model for students, alumni, academics, and workplaces.</p>
+    <p class="coursework-section-kicker">Applied work first</p>
+    <h2>Coursework that became working systems</h2>
+    <p>The two-semester engineering design sequence produced my bachelor's thesis and GitHub issue-tracking research tool. Other courses led to Career Diaries, a multi-role relational platform, a Spring-based e-commerce system, a computer-vision pipeline, a MIPS assembler, and a networked Python application.</p>
   </div>
   <div class="coursework-bridge-actions">
     <a class="btn btn-primary mb-2" href="{{ '/projects/issue-tracking-team-analytics/' | relative_url }}">Bachelor's project</a>
     <a class="btn btn-outline-primary mb-2" href="{{ '/projects/career-diaries-community-platform/' | relative_url }}">Career Diaries</a>
+    <a class="btn btn-outline-primary mb-2" href="{{ '/projects/earlier/' | relative_url }}">Earlier projects</a>
   </div>
 </section>
+
+{% include coursework_catalog.liquid sections=site.data.coursework.metu %}
 
 <div class="coursework-sources">
   <h2>Official course references</h2>
@@ -40,6 +41,10 @@ nav: false
   <a href="https://catalog.metu.edu.tr/course.php?course_code=3550409" target="_blank" rel="noopener">Introduction to Machine Learning description</a>
   <a href="https://catalog.metu.edu.tr/course.php?course_code=3550315&amp;prog=355" target="_blank" rel="noopener">Algorithms course description</a>
   <a href="https://catalog.metu.edu.tr/course.php?course_code=3550352" target="_blank" rel="noopener">Database Management Systems description</a>
+  <a href="https://catalog.metu.edu.tr/course.php?course_code=3550331" target="_blank" rel="noopener">Computer Organization description</a>
+  <a href="https://catalog.metu.edu.tr/course.php?course_code=3550336&amp;prog=355" target="_blank" rel="noopener">Embedded Systems description</a>
+  <a href="https://catalog.metu.edu.tr/course.php?course_code=3550445" target="_blank" rel="noopener">Scripting Languages description</a>
+  <a href="https://catalog.metu.edu.tr/course.php?course_code=3550457&amp;prog=355" target="_blank" rel="noopener">Software Construction description</a>
 </div>
 
 <div class="coursework-back-link">

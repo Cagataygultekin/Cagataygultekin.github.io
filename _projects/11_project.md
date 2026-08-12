@@ -39,4 +39,4 @@ K-fold cross-validation separated evaluation from a single train-test split and 
 
 ## Project context
 
-This project was completed during my Computer Engineering studies at **Middle East Technical University Northern Cyprus Campus**. The original implementation and dataset are not public.
+This project was completed for **CNG466 Fundamental Image Processing Techniques** during my Computer Engineering studies at **Middle East Technical University Northern Cyprus Campus**. The original implementation and dataset are not public.

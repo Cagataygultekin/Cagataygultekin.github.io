@@ -20,8 +20,11 @@ This project implemented an e-commerce product platform as two connected applica
   <a class="btn btn-primary mr-2 mb-2" href="https://github.com/457Proje-CSS/team6-cng457--webservice" target="_blank" rel="noopener">
     <i class="fa-brands fa-github"></i>&nbsp; Backend repository
   </a>
-  <a class="btn btn-outline-primary mb-2" href="https://github.com/457Proje-CSS/team-6--cng457-desktopapp" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary mr-2 mb-2" href="https://github.com/457Proje-CSS/team-6--cng457-desktopapp" target="_blank" rel="noopener">
     <i class="fa-brands fa-github"></i>&nbsp; Desktop client repository
+  </a>
+  <a class="btn btn-outline-primary mb-2" href="https://github.com/457Proje-CSS/457_Proje_Cagatay-Serhat-Soykan" target="_blank" rel="noopener">
+    <i class="fa-brands fa-github"></i>&nbsp; Related project repository
   </a>
 </div>
 
@@ -46,3 +49,7 @@ The desktop client consumed the backend instead of connecting directly to the da
 ## Core stack
 
 `Java` / `Spring Boot` / `Spring Web` / `Spring Data JPA` / `MySQL` / `Lombok` / `Desktop client integration`
+
+## Project context
+
+This system was developed for **CNG457 Software Construction** at **Middle East Technical University Northern Cyprus Campus**.

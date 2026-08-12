@@ -14,19 +14,30 @@
               {% if course.code -%}
                 <span class="course-code">{{ course.code }}</span>
               {%- endif %}
-              <span class="course-credit">{{ course.ects }} ECTS</span>
+              {% if course.status %}
+                <span class="course-credit">{{ course.status }}</span>
+              {% else %}
+                <span class="course-credit">{{ course.ects }} ECTS</span>
+              {% endif %}
             </div>
             <h3>{{ course.title }}</h3>
             {% if course.focus %}
               <p>{{ course.focus }}</p>
             {% endif %}
-            {% if course.tag or course.link %}
+            {% if course.tag or course.link or course.links %}
               <div class="course-card-footer">
                 {% if course.tag -%}
                   <span class="course-tag">{{ course.tag }}</span>
                 {%- endif %}
-                {% if course.link %}
-                  <a href="{{ course.link | relative_url }}">View related work <i class="fa-solid fa-arrow-right"></i></a>
+                {% if course.link or course.links %}
+                  <div class="course-link-list">
+                    {% if course.link %}
+                      <a href="{{ course.link | relative_url }}">Project overview <i class="fa-solid fa-arrow-right"></i></a>
+                    {% endif %}
+                    {% for link in course.links %}
+                      <a href="{{ link.url }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> {{ link.label }}</a>
+                    {% endfor %}
+                  </div>
                 {% endif %}
               </div>
             {% endif %}

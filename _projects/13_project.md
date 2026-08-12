@@ -34,4 +34,4 @@ Supporting both modes required a reusable translation pipeline rather than logic
 
 ## Project context
 
-This assembler was completed during my Computer Engineering studies at **Middle East Technical University Northern Cyprus Campus**. The original source code is not currently public.
+This assembler was completed for **CNG331 Computer Organization** during my Computer Engineering studies at **Middle East Technical University Northern Cyprus Campus**. The original source code is not currently public.
