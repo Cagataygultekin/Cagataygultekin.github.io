@@ -9,21 +9,53 @@
 
       <div class="coursework-grid">
         {% for course in section.courses %}
-          <article class="course-card{% unless course.focus %} course-card-compact{% endunless %}">
-            <div class="course-card-meta">
-              {% if course.code -%}
-                <span class="course-code">{{ course.code }}</span>
-              {%- endif %}
-              {% if course.status %}
-                <span class="course-credit">{{ course.status }}</span>
-              {% else %}
-                <span class="course-credit">{{ course.ects }} ECTS</span>
+          {% assign official_url = course.official_url %}
+          {% unless official_url or course.external %}
+            {% if include.institution == 'tum' and course.code %}
+              {% assign code_prefix = course.code | slice: 0, 2 %}
+              {% if code_prefix == 'IN' or code_prefix == 'CI' %}
+                {% capture official_url %}https://academics.nat.tum.de/en/studies/org/mh/details/mod/{{ course.code }}{% endcapture %}
               {% endif %}
-            </div>
-            <h3>{{ course.title }}</h3>
-            {% if course.focus %}
-              <p>{{ course.focus }}</p>
+            {% elsif include.institution == 'metu' and course.code %}
+              {% assign code_prefix = course.code | slice: 0, 3 %}
+              {% if code_prefix == 'CNG' %}
+                {% assign code_number = course.code | remove: 'CNG' %}
+                {% capture official_url %}https://catalog.metu.edu.tr/course.php?course_code=3550{{ code_number }}&prog=355{% endcapture %}
+              {% endif %}
             {% endif %}
+          {% endunless %}
+
+          <article class="course-card">
+            <details class="course-card-disclosure">
+              <summary>
+                <span class="course-card-meta">
+                  {% if course.code -%}
+                    <span class="course-code">{{ course.code }}</span>
+                  {%- endif %}
+                  {% if course.status %}
+                    <span class="course-credit">{{ course.status }}</span>
+                  {% else %}
+                    <span class="course-credit">{{ course.ects }} ECTS</span>
+                  {% endif %}
+                </span>
+                <span class="course-title">{{ course.title }}</span>
+                <span class="course-expand-control">
+                  <span>Course content</span>
+                  <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                </span>
+              </summary>
+
+              <div class="course-card-details">
+                <p class="course-detail-label">Official course content, summarized</p>
+                <p>{{ course.details | default: course.focus }}</p>
+                {% unless course.external %}
+                  <a href="{{ official_url | default: include.catalog_url }}" target="_blank" rel="noopener">
+                    Official catalog source <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </a>
+                {% endunless %}
+              </div>
+            </details>
+
             {% if course.tag or course.link or course.links %}
               <div class="course-card-footer">
                 {% if course.tag -%}

@@ -36,7 +36,9 @@ nav: false
   </div>
 </section>
 
-{% include coursework_catalog.liquid sections=site.data.coursework.tum %}
+<p class="coursework-interaction-note"><i class="fa-regular fa-hand-pointer"></i> Select a course to open its content summary and official catalog source.</p>
+
+{% include coursework_catalog.liquid sections=site.data.coursework.tum institution="tum" catalog_url="https://www.cit.tum.de/en/cit/studies/degree-programs/master-informatics/" %}
 
 <div class="coursework-sources">
   <h2>Official course references</h2>

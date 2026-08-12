@@ -6,18 +6,26 @@ tum:
         title: Machine Learning
         ects: 8
         focus: Probabilistic learning, supervised and unsupervised methods, dimensionality reduction, mixture models, and model evaluation.
+        details: The module develops a probabilistic view of machine learning, moving from regression and classification to unsupervised methods. Its scope includes Bayesian decision theory, density estimation, mixture models, expectation maximization, dimensionality reduction, kernel methods, and principled evaluation of learned models.
+        official_url: https://support.moodle.tum.de/course/info.php?id=100567
       - code: IN2346
         title: Introduction to Deep Learning
         ects: 6
         focus: Neural networks, backpropagation, optimization, regularization, convolutional architectures, sequence models, and transformers.
+        details: The course starts with linear classifiers and maximum-likelihood learning before developing neural networks, stochastic gradient descent, backpropagation, activation functions, initialization, batch normalization, and hyperparameter optimization. It then covers convolutional architectures, regularization, recurrent networks, LSTMs, transformers, and practical image-classification problems.
+        official_url: https://academics.nat.tum.de/en/studies/org/mh/details/mod/IN2346
       - code: IN2339
         title: Data Analysis and Visualization in R
         ects: 6
         focus: Data preparation, reproducible analysis, visualization, statistical testing, unsupervised learning, and predictive modelling in R.
+        details: Organized around obtaining, exploring, and drawing conclusions from real-world data, the module covers R programming, reproducible reports, importing and tidying data, and visualization through the grammar of graphics. Later topics include clustering, principal-component analysis, resampling-based inference, statistical testing, supervised learning, and complete case-study workflows.
+        official_url: https://www.cs.cit.tum.de/en/cmm/training-and-teaching/winter-term-2020/data-analysis-and-visualization-in-r/
       - code: IN2403
         title: Artificial Intelligence in Medicine
         ects: 5
         focus: Machine learning methods and evaluation considerations for medical data and clinical applications.
+        details: This lecture series examines how machine-learning and neural-network methods are used across medical applications. The emphasis is not only on model construction, but also on the characteristics of clinical and imaging data, meaningful evaluation, reliability, and the practical constraints that distinguish medical AI from general benchmark problems.
+        official_url: https://kiinformatik.mri.tum.de/es/node/2826
 
   - name: Software quality and dependable AI
     summary: Software testing, requirements, and the engineering of safe, resilient learning-enabled systems.
@@ -26,17 +34,25 @@ tum:
         title: AI Testing
         ects: 5
         focus: Testing strategies and evaluation methods for AI-based software, including the challenges introduced by learned behaviour.
+        details: The module treats learned components as software whose behavior depends on data, training, and operating context. It studies how conventional testing concepts must be adapted for AI systems, including test-data design, behavioral properties, adequacy criteria, robustness assessment, and evaluation when a simple test oracle is unavailable.
+        official_url: https://www.moodle.tum.de/course/info.php?id=105602&lang=en
       - code: CIT4230005
         title: Engineering Resilient Cognitive Systems
         ects: 3
         focus: Safety assurance, resilience, SOTIF, and adaptive architectures for cognitive cyber-physical systems operating under uncertainty.
+        details: The lecture introduces resilience as maintaining safety while optimizing utility in uncertain environments. It covers safety and reliability foundations, Safety of the Intended Functionality, assurance challenges for AI-based systems, and self-adaptive safety architectures for autonomous vehicles, robotics, medical devices, and other cognitive cyber-physical systems.
+        official_url: https://www.cs.cit.tum.de/en/ercs/teaching/lecture-engineering-resilient-cognitive-systems/
       - code: IN2084
         title: Advanced Topics of Software Testing
         ects: 5
         focus: Advanced verification and testing topics, with emphasis on systematic quality assessment for complex software systems.
+        details: This advanced module studies systematic ways to reveal faults and assess software quality beyond basic unit testing. Its scope includes test design and selection, structural and behavioral coverage, automation, regression-oriented strategies, and research-driven approaches for testing complex and evolving software systems.
+        official_url: https://www.cs.cit.tum.de/en/sse/teaching/
       - title: Requirements Engineering
         ects: 3
         focus: Eliciting, structuring, analysing, validating, and managing functional and quality requirements across a system lifecycle.
+        details: The course follows requirements from stakeholder discovery to controlled evolution. It addresses elicitation, documentation, modelling, prioritization, validation, conflict resolution, traceability, and change management for both functional requirements and quality attributes.
+        official_url: https://www.cs.cit.tum.de/en/sse/teaching/
 
   - name: Scientific computing
     summary: Quantum-computing foundations and systems-oriented scientific simulation work.
@@ -45,11 +61,15 @@ tum:
         title: Introduction to Quantum Computing
         ects: 5
         focus: Quantum states, gates, circuits, measurement, and the computational ideas behind quantum algorithms.
+        details: The module introduces the mathematical representation of qubits and multi-qubit systems, unitary gates, quantum circuits, entanglement, and measurement. It then develops the computational ideas behind representative quantum algorithms and contrasts quantum information processing with classical computation.
+        official_url: https://www.cs.cit.tum.de/en/qc/teaching/
       - code: IN2311
         title: Turbulent Flow Simulation on HPC-Systems
         ects: 5
         tag: Documented as a project
         focus: Distributed C++ simulation, MPI coordination, scientific data formats, parallel I/O, and performance evaluation.
+        details: The module connects numerical flow simulation with high-performance implementation. It covers the structure of a distributed C++ solver, domain decomposition, MPI communication, parallel numerical kernels, scientific output formats, scalable I/O, visualization workflows, profiling, and performance evaluation on HPC systems.
+        official_url: https://www.cs.cit.tum.de/en/sccs/people/benjamin-rueth/
         link: /projects/parallel-hdf5-cfd-output/
 
   - name: German language progression
@@ -57,24 +77,40 @@ tum:
     courses:
       - title: German as a Foreign Language A1.2
         ects: 4
+        focus: Continued beginner-level German with everyday vocabulary, elementary grammar, listening, reading, spoken interaction, and short written communication.
+        official_url: https://www.sprachenzentrum.tum.de/en/sz/languages/german/
       - code: SZ0303
         title: German as a Foreign Language A2.1
         ects: 6
+        focus: Developed practical German for common personal, university, and everyday situations while expanding sentence structure, vocabulary, comprehension, and interaction.
+        official_url: https://www.sprachenzentrum.tum.de/en/sz/languages/german/
       - title: German as a Foreign Language A2.2
         ects: 6
+        focus: Completed the A2 progression with broader practical communication, more connected speech and writing, and improved comprehension of routine German-language situations.
+        official_url: https://www.sprachenzentrum.tum.de/en/sz/languages/german/
       - title: German as a Foreign Language B1.1
         ects: 4
+        focus: Began intermediate German with greater emphasis on independent communication, connected texts, explanation of experiences, and discussion of familiar professional and social topics.
+        official_url: https://www.sprachenzentrum.tum.de/en/sz/languages/german/
       - title: German as a Foreign Language B1.2
         ects: 4
+        focus: Consolidated the B1 level through more detailed reading and listening, structured writing, spontaneous interaction, and clearer expression of opinions and reasoning.
+        official_url: https://www.sprachenzentrum.tum.de/en/sz/languages/german/
       - title: German as a Foreign Language B2.1
         status: Attended at TUM
         focus: Attended the teaching period and performed well in the midterm. The final examination was not taken, so this course is shown as attended rather than completed.
+        details: The course introduced upper-intermediate work with more complex texts, extended discussion, precise written expression, and vocabulary for academic and professional contexts. I attended the teaching period and performed well in the midterm, but did not take the final examination.
+        official_url: https://www.sprachenzentrum.tum.de/en/sz/languages/german/
       - title: German B2.2 Individual Tuition
         status: External course
         focus: Continued one-to-one German study outside TUM while still enrolled in the master's programme.
+        details: Individual tuition continued the B2 progression with targeted speaking practice, advanced grammar, listening comprehension, vocabulary development, and correction based on my specific gaps and communication needs.
+        external: true
       - title: German General Revision
         status: External course
         focus: Complementary individual tuition focused on consolidating grammar, vocabulary, speaking, and practical communication.
+        details: A complementary revision course revisited structures across earlier levels and used guided conversation and exercises to consolidate accuracy, fluency, vocabulary recall, and practical day-to-day communication.
+        external: true
 
 metu:
   - name: Programming, algorithms, and theory
@@ -84,45 +120,55 @@ metu:
         title: Introduction to Computer Engineering Concepts
         ects: 4
         focus: Computational problem solving, programming foundations, and core computer-engineering concepts.
+        details: The course surveys computer organization, operating systems, language processors, and user interfaces before introducing algorithms and programming. Practical work uses functional programming to develop informal reasoning about program correctness and efficiency.
       - code: CNG140
         title: C Programming
         ects: 4
         focus: Structured programming, memory-aware problem solving, and implementation in C.
+        details: An introduction to algorithmic problem solving and structured programming in C. Topics include expressions, control flow, functions, arrays, pointers, character strings, structures, file processing, dynamic memory, and the relationship between program organization and efficient use of memory.
       - code: CNG213
         title: Data Structures
         ects: 6
         focus: Linear and nonlinear data structures, implementation choices, and complexity-aware problem solving.
+        details: Covers linked lists, stacks, queues, recursion, trees, binary-search trees, array-based and pointer-based representations, sorting, and searching. Space and time considerations are used to compare alternative data structures and implementations.
       - code: CNG223
         title: Discrete Computational Structures
         ects: 6
         focus: Logic, sets, relations, combinatorics, graphs, and discrete structures used in computing.
+        details: Builds the discrete-mathematics foundation for computing through propositional and predicate logic, sets, relations, functions, induction, graph theory, trees, introductory algebraic structures, and lattices.
       - code: CNG242
         title: Programming Language Concepts
         ects: 7
         focus: Language paradigms, type systems, scope, runtime models, and abstraction mechanisms.
+        details: Examines how programming languages are designed and implemented, including translation, virtual machines, runtime environments, names and binding, scope, values and types, storage, procedural abstraction, and generics. It also compares functional and object-oriented paradigms, including encapsulation, inheritance, polymorphism, and dynamic binding.
       - code: CNG280
         title: Formal Languages and Abstract Machines
         ects: 6
         focus: Automata, formal grammars, computability, and the mathematical foundations of language recognition.
+        details: Introduces regular languages and finite automata, context-free grammars and pushdown automata, Turing machines, decidability, and the relationships among language classes and abstract computational models.
       - code: CNG315
         title: Algorithms
         ects: 6
         focus: Algorithm design and analysis, graph algorithms, dynamic programming, complexity, and NP-completeness.
+        details: Develops methods for designing and analyzing algorithms, including asymptotic analysis, divide-and-conquer, greedy strategies, dynamic programming, graph traversal and optimization, and the limits of efficient computation through NP-completeness.
       - code: CNG443
         title: Introduction to Object-Oriented Programming Languages and Systems
         ects: 6
         focus: Object-oriented language design, runtime systems, reusable abstractions, and implementation trade-offs.
+        details: Moves from core and advanced object-oriented concepts to exceptions, streams, concurrency, graphical interfaces, security, network objects, database connectivity, serialization, remote method invocation, and enterprise components. The course emphasizes reusable abstractions and the runtime mechanisms supporting them.
       - code: CNG445
         title: Software Development with Scripting Languages
         ects: 6
         tag: Course project
         focus: Systems programming, concurrent scripting, program integration, and web application development. A multi-client Python TCP coffee-shop system applied these ideas through networked sales processing and operational statistics.
+        details: Studies the facilities of scripting languages for systems programming, integration with other programs, object-oriented design, concurrency, and web development on both server and browser sides. The associated project applied these ideas in a multi-client Python TCP application.
         link: /projects/python-coffee-shop-client-server/
       - code: CNG457
         title: Software Construction
         ects: 6
         tag: Three-part implementation
         focus: Reference architectures, design patterns, services and APIs, GUI development, reuse, and multi-level testing. The course project combined a Spring Boot service, MySQL persistence, and a separate desktop client.
+        details: Focuses on constructing a complete system from reference architectures and contemporary tools. Topics include architectural styles, concurrency, design patterns, frameworks, services and APIs, GUI implementation, reusable components, and testing at unit, component, and system levels.
         link: /projects/java-spring-ecommerce-service/
         links:
           - label: Web service
@@ -139,22 +185,27 @@ metu:
         title: Software Engineering
         ects: 5.5
         focus: Requirements, architecture, development processes, testing, maintenance, and collaborative software delivery.
+        details: Covers the engineering lifecycle from project planning and estimation through requirements analysis, software design, implementation, quality assurance, and testing. Metrics and management techniques connect technical work with scheduling and delivery decisions.
       - code: CNG351
         title: Data Management and File Structures
         ects: 6
         focus: File organization, indexing, storage structures, and the foundations of efficient data access.
+        details: Studies sequential and ordered files, external sorting, heap and replacement-selection sorting, large-memory sorting, B+ tree indexes, and classical and linear hashing. It then introduces relational databases, relational algebra and calculus, SQL, QBE, QUEL, joins, and entity-relationship modelling.
       - code: CNG352
         title: Database Management Systems
         ects: 6
         focus: Relational modelling, normalization, query processing, transactions, concurrency, recovery, security, and web data.
+        details: Develops relational algebra and query optimization alongside entity-relationship modelling, normalization, physical design, and tuning. Systems topics include transactions, concurrency control, recovery, client-server architecture, authorization, XML, XQuery, web-data management, and web services.
       - code: CNG334
         title: Introduction to Operating Systems
         ects: 5.5
         focus: Processes, scheduling, synchronization, memory, storage, and the abstractions that connect software to hardware.
+        details: Introduces process and processor management, concurrent processes, synchronization, deadlocks, memory management, I/O and device management, file systems, and contemporary operating-system technology. It also surveys distributed operating systems, distributed synchronization, and distributed file systems.
       - code: CNG435
         title: Data Communications and Computer Networking
         ects: 6
         focus: Network architectures, protocols, routing, transport, reliability, and end-to-end data communication.
+        details: Follows the OSI model from physical transmission and electrical interfaces through data-link and media-access control, LAN and MAN technologies, internetworking, bridging, routing, and transport. It concludes with an introduction to issues in the upper network layers.
 
   - name: Computer architecture and embedded systems
     summary: Hardware-software interaction from digital logic to embedded development.
@@ -163,25 +214,31 @@ metu:
         title: Logic Design
         ects: 7
         focus: Boolean logic, combinational and sequential circuits, registers, counters, memory, bus transfers, instruction execution, and hardwired control.
+        details: Covers number systems, Boolean algebra, gates, flip-flops, and the design of combinational and sequential circuits. Registers, counters, bus transfers, RAM and ROM, instruction execution, and hardwired control connect digital logic to elementary computer architecture.
       - code: EEE281
         title: Electrical Circuits
         ects: 6
         focus: Circuit analysis and the electrical foundations needed for computer hardware.
+        details: Establishes the foundations of electrical circuit analysis using voltage, current, power, circuit laws, network theorems, energy-storage elements, and transient and steady-state behavior. The module supports later work with digital hardware and embedded interfaces.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=356
       - code: CNG331
         title: Computer Organization
         ects: 6
         tag: MIPS assembler project
         focus: Microprogrammed control, RISC organization, memory hierarchy, I/O interfaces, fast arithmetic, and computer communication. A Python MIPS assembler applied instruction parsing, pseudo-instruction expansion, and machine-code generation.
+        details: Studies microprogrammed control, I/O devices and interfaces, memory hierarchy and management, fast multiplication and floating-point arithmetic, RISC organization, and computer communication. My MIPS assembler project connected these concepts to instruction parsing, encoding, and machine-code generation.
         link: /projects/python-mips-assembler/
       - code: CNG336
         title: Introduction to Embedded Systems Development
         ects: 5.5
         tag: Controller-level assembly
         focus: Assembly-language programming and controller architecture, A/D and D/A interfaces, serial and parallel ports, interrupts, timers, I/O buses, sensors, actuators, and real-time operating systems.
+        details: Combines assembly-language programming and controller architecture with practical hardware interfaces. The syllabus includes A/D and D/A conversion, serial and parallel ports, interrupts, timers and counters, I/O buses, sensors, actuators, embedded design and analysis, and real-time operating systems.
       - code: CNG384
         title: Signals and Systems for Computer Engineers
         ects: 5
         focus: Continuous and discrete signals, system representations, transforms, and frequency-domain analysis.
+        details: Introduces continuous- and discrete-time signals, linear time-invariant systems, convolution, differential and difference-equation representations, Fourier analysis, Laplace and z transforms, sampling, and frequency-domain reasoning for computer-engineering applications.
 
   - name: Machine learning and computational applications
     summary: Statistical foundations and applied computing across machine learning, bioinformatics, and image processing.
@@ -191,20 +248,25 @@ metu:
         ects: 6
         tag: Graduate-level elective
         focus: Opened to graduate students in the term I took it, but completed during my bachelor's degree. It covered supervised and unsupervised learning, feature representation, training, validation, and model assessment.
+        details: Covers the end-to-end machine-learning workflow, including data representation, supervised and unsupervised learning, regression, classification, clustering, feature selection and transformation, regularization, training, validation, and comparison of model performance. I completed the course during my bachelor's degree in a term when it was also opened to graduate students.
       - code: CNG465
         title: Introduction to Bioinformatics
         ects: 6
         focus: Sequence analysis, phylogenetics, biological-data mining, motif discovery, and computational models of molecular data.
+        details: Introduces computational methods for biological sequences and molecular data, including pairwise and multiple alignment, sequence-database searching, motif discovery, phylogenetic analysis, and data-mining approaches for biological interpretation.
       - code: CNG466
         title: Fundamental Image Processing Techniques
         ects: 6
         tag: Course project
         focus: Image formation, enhancement, filtering, segmentation, feature extraction, and digital-image analysis. The applied project built a fruit-tree recognition pipeline using chain codes, statistical moments, color features, and k-fold validation.
+        details: Develops core digital-image-processing methods, including image representation, enhancement, spatial and frequency filtering, segmentation, morphology, feature extraction, and recognition. The course project used chain codes, shape descriptors, statistical moments, color features, and k-fold validation for fruit-tree recognition.
         link: /projects/fruit-tree-recognition/
       - code: STAS221
         title: Statistics for Engineers I
         ects: 5
         focus: Probability, statistical inference, estimation, hypothesis testing, and engineering-data analysis.
+        details: Provides an engineering-focused introduction to probability models, random variables and distributions, sampling, descriptive statistics, point and interval estimation, hypothesis testing, and interpretation of statistical evidence.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=361
 
   - name: Engineering design and professional practice
     summary: Team-based design work and two supervised industry placements.
@@ -213,19 +275,25 @@ metu:
         title: Computer Engineering Design I
         ects: 7
         focus: Problem definition, requirements, design decisions, planning, and the first stage of the bachelor capstone.
+        details: The first capstone stage turns an engineering problem into a feasible system plan. Work includes literature and context review, stakeholder and system requirements, architecture and design alternatives, project planning, risk assessment, prototyping, technical documentation, and formal presentation.
       - code: CNG492
         title: Computer Engineering Design II
         ects: 7
         focus: Implementation, validation, documentation, and presentation of the bachelor capstone system.
+        details: The second capstone stage implements and evaluates the selected design. It emphasizes integration, verification and validation, analysis of results, iterative refinement, final technical reporting, and presentation of the completed engineering system.
         link: /projects/issue-tracking-team-analytics/
       - code: CNG300
         title: Summer Practice I
         ects: 2
         focus: Supervised professional experience in an engineering workplace.
+        details: A supervised placement for applying computer-engineering knowledge in a real workplace, observing professional processes, documenting technical work, and reflecting on engineering practice and organizational constraints.
+        official_url: https://www.ncc.metu.edu.tr/cng/summer-practice
       - code: CNG400
         title: Summer Practice II
         ects: 2
         focus: A second supervised placement focused on applying computer-engineering skills in practice.
+        details: A second supervised professional placement with increased emphasis on independent technical contribution, workplace communication, engineering responsibility, and systematic documentation of completed work.
+        official_url: https://www.ncc.metu.edu.tr/cng/summer-practice
 
   - name: Mathematics and natural sciences
     summary: The quantitative and scientific foundation supporting the engineering curriculum.
@@ -233,24 +301,45 @@ metu:
       - code: MAT119
         title: Calculus with Analytic Geometry
         ects: 7.5
+        focus: Functions, limits, continuity, differentiation, integration, and applications to geometry and engineering problems.
+        details: Covers functions, limits, continuity, derivatives and their applications, extreme values, the mean-value theorem, graphing, definite and indefinite integrals, area and volume, transcendental functions, L'Hopital's rule, integration techniques, and improper integrals.
+        official_url: https://catalog.metu.edu.tr/course.php?course_code=3570119&prog=0
       - code: MAT120
         title: Calculus for Functions of Several Variables
         ects: 7.5
+        focus: Multivariable calculus, partial derivatives, multiple integrals, vector fields, and applications.
+        details: Extends calculus to several variables through vector geometry, partial and directional derivatives, gradients, optimization, multiple integration, line and surface integrals, and the principal theorems of vector calculus.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=357
       - code: MAT260
         title: Basic Linear Algebra
         ects: 5
+        focus: Linear systems, matrices, vector spaces, linear transformations, eigenvalues, and diagonalization.
+        details: Introduces systems of linear equations, matrix operations, determinants, vector spaces and subspaces, basis and dimension, linear transformations, eigenvalues and eigenvectors, diagonalization, and geometric interpretations of linear structure.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=357
       - code: MAT219
         title: Introduction to Differential Equations
         ects: 7
+        focus: Ordinary differential equations, solution methods, systems, transforms, and modelling applications.
+        details: Develops analytical methods for first- and higher-order ordinary differential equations, linear systems, series solutions, Laplace transforms, qualitative behavior, and mathematical models of engineering and scientific processes.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=357
       - code: PHY105
         title: General Physics I
         ects: 6.5
+        focus: Calculus-based mechanics and experimental foundations for engineering students.
+        details: A calculus-based engineering physics module that builds conceptual and practical foundations in mechanics. It combines mathematical problem solving with experimental work and prepares students to analyze physical systems encountered in later engineering study.
+        official_url: https://catalog.metu.edu.tr/course.php?course_code=3580105&prog=367
       - code: PHY106
         title: General Physics II
         ects: 6.5
+        focus: Electricity, magnetism, circuits, electromagnetic phenomena, and laboratory-based problem solving.
+        details: Continues calculus-based physics through electric fields and potential, capacitance, current and circuits, magnetic fields, induction, and electromagnetic phenomena, supported by laboratory experiments and quantitative problem solving.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=358
       - code: CHM107
         title: General Chemistry
         ects: 6
+        focus: Atomic and molecular structure, bonding, stoichiometry, states of matter, solutions, and chemical reactions.
+        details: Introduces atomic structure, periodic trends, chemical bonding, molecular geometry, stoichiometry, gases, liquids and solids, solutions, thermochemistry, equilibrium, acids and bases, and quantitative laboratory practice for engineering students.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=360
 
   - name: Foreign languages
     summary: Elective language study through A2 in both French and Spanish, supported by an English-medium degree and academic communication courses.
@@ -260,33 +349,53 @@ metu:
         ects: 4
         tag: A1 completed
         focus: Foundational French vocabulary, grammar, listening, speaking, reading, and writing through CEFR level A1.
+        details: Introduces basic spoken and written French through everyday vocabulary, elementary grammar, listening and reading comprehension, short written production, and simple interaction. The completed sequence corresponds to the first stage of my A1 progression.
+        official_url: https://catalog.metu.edu.tr/course.php?course_code=3700201
       - code: FRN202
         title: Beginning French II
         ects: 4
         tag: A2 completed
         focus: Continued French study through CEFR level A2, expanding practical communication, grammar, and comprehension.
+        details: Builds on the introductory course with broader vocabulary, more developed grammar, connected spoken and written communication, and comprehension of routine situations. Together with the first course, it completed my progression through A2.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=370
       - code: SPN201
         title: Beginning Spanish I
         ects: 4
         tag: A1 completed
         focus: Foundational Spanish vocabulary, grammar, listening, speaking, reading, and writing through CEFR level A1.
+        details: Introduces basic spoken and written Spanish through everyday vocabulary, elementary grammar, listening and reading comprehension, short written production, and simple interaction. The completed sequence corresponds to the first stage of my A1 progression.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=371
       - code: SPN202
         title: Beginning Spanish II
         ects: 4
         tag: A2 completed
         focus: Continued Spanish study through CEFR level A2, expanding practical communication, grammar, and comprehension.
+        details: Builds on the introductory course with broader vocabulary, more developed grammar, connected spoken and written communication, and comprehension of routine situations. Together with the first course, it completed my progression through A2.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=371
       - code: ENGL101
         title: Development of Reading and Writing Skills I
         ects: 6
+        focus: Academic reading, paragraph development, source use, and structured written communication in English.
+        details: Develops academic reading strategies and the construction of clear paragraphs and short essays. Work focuses on organization, cohesion, vocabulary in context, interpretation of source texts, and accurate written communication for an English-medium degree.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=359
       - code: ENGL102
         title: Development of Reading and Writing Skills II
         ects: 6
+        focus: Extended academic reading and writing, argument development, synthesis, and evidence-based composition.
+        details: Extends academic literacy through longer readings, synthesis of multiple sources, argument construction, evidence use, revision, and structured essay writing. The course places greater emphasis on critical response and sustained written reasoning.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=359
       - code: ENGL211
         title: Academic Oral Presentation Skills
         ects: 4
+        focus: Research-based presentations, audience-aware organization, visual support, delivery, and academic discussion.
+        details: Develops the planning and delivery of academic presentations, including research, selection and organization of content, audience awareness, visual support, signposting, pronunciation, delivery, question handling, and participation in academic discussion.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=359
       - code: ENGL311
         title: Advanced Communication Skills
         ects: 4
+        focus: Advanced professional and academic communication across written, spoken, and collaborative settings.
+        details: Applies advanced English communication to professional and academic situations through analytical reading, formal writing, presentations, meetings, teamwork, and audience-specific messages. The focus is on clarity, persuasion, and confident communication in complex settings.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=359
 
   - name: University studies and professional foundations
     summary: Programme orientation, Turkish language, modern Turkish history, and workplace safety.
@@ -294,24 +403,46 @@ metu:
       - code: CNG100
         title: Introduction to Information Technologies and Applications
         ects: 1
+        focus: Practical orientation to computing tools, information technologies, and responsible use of university IT resources.
+        details: Provides practical familiarity with common information technologies, digital tools, university computing services, online collaboration, information access, and responsible use of IT systems at the beginning of the degree.
       - code: CNG101
         title: Computer Engineering Orientation
         ects: 1
+        focus: Introduction to the Computer Engineering programme, its technical areas, study practices, professional roles, and ethical responsibilities.
+        details: Introduces the structure and expectations of the Computer Engineering programme, the major technical areas within the discipline, effective study and teamwork practices, professional roles, engineering ethics, and possible academic and career directions.
       - code: TUR101
         title: Turkish I
         ects: 2
+        focus: Turkish language, written expression, and effective communication in academic and professional contexts.
+        details: Studies the structure and effective use of Turkish through reading, vocabulary, sentence and paragraph organization, written expression, and discussion of language as a medium for academic, social, and professional communication.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=365
       - code: TUR102
         title: Turkish II
         ects: 2
+        focus: Continued Turkish-language study with emphasis on clear written expression, comprehension, and structured communication.
+        details: Continues the development of Turkish comprehension and expression through extended texts, structured writing, interpretation, argument, and language accuracy, with emphasis on clear and purposeful communication.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=365
       - code: HST201
         title: Principles of Kemal Ataturk I
         ects: 2
+        focus: Historical foundations of modern Turkey, late Ottoman developments, the national struggle, and the formation of the Republic.
+        details: Examines the late Ottoman period, political and social transformation, the First World War, the Turkish national struggle, and the establishment of the Republic as the historical context for modern Turkey.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=366
       - code: HST202
         title: Principles of Kemal Ataturk II
         ects: 2
+        focus: Development of the Turkish Republic, reforms, political and social transformation, and the principles associated with Ataturk.
+        details: Studies the reforms and institutions of the Turkish Republic, political and social change, domestic and foreign developments, and the historical role of the principles associated with Ataturk.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=366
       - code: OCHS101
         title: Occupational Health and Safety I
         ects: 2
+        focus: Foundations of workplace hazards, risk awareness, prevention, safe working practices, and occupational responsibilities.
+        details: Introduces occupational health and safety concepts, workplace hazards, risk identification, prevention principles, incident awareness, personal and organizational responsibilities, and the foundations of safe engineering practice.
+        official_url: https://catalog.metu.edu.tr/program.php?fac_prog=355
       - code: OCHS301
         title: Occupational Health and Safety II
         ects: 2
+        focus: Continued study of occupational risk management, incident prevention, safety procedures, and engineering responsibilities in the workplace.
+        details: Extends workplace-safety knowledge through risk assessment, control measures, emergency and incident procedures, prevention culture, relevant responsibilities, and application of safety principles in engineering environments.
+        official_url: https://catalog.metu.edu.tr/program.php?fac_prog=355

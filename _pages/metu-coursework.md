@@ -31,7 +31,9 @@ nav: false
   </div>
 </section>
 
-{% include coursework_catalog.liquid sections=site.data.coursework.metu %}
+<p class="coursework-interaction-note"><i class="fa-regular fa-hand-pointer"></i> Select a course to open its content summary and official catalog source.</p>
+
+{% include coursework_catalog.liquid sections=site.data.coursework.metu institution="metu" catalog_url="https://catalog.metu.edu.tr/prog_courses.php?prog=355" %}
 
 <div class="coursework-sources">
   <h2>Official course references</h2>
