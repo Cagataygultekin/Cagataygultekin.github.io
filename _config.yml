@@ -13,7 +13,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
 footer_text:
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: cg-favicon.png # image used as the browser-tab favicon from /assets/img/
+icon: cg-favicon.svg # image used as the browser-tab favicon from /assets/img/
 
 url: "https://Cagataygultekin.github.io"
 baseurl: "" # important: must be empty for user sites
