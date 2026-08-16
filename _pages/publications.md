@@ -36,7 +36,7 @@ The evaluation covers a controlled room-based scenario and a regulation-derived 
 
 ## Seminar paper
 
-### Understanding Linear Regions of ReLU Networks
+### Understanding Linear Regions of the ReLU Networks
 
 **Presented:** 17 July 2023
 
@@ -58,18 +58,18 @@ The paper also reviews robustness guarantees based on local affine behavior, lim
 
 ## Bachelor's thesis
 
-### Discovering Issue-Tracking Profiles of Software Development Teams
+### Discovering Issue-tracking Profiles of Software Development Teams
 
-This thesis investigates how GitHub issue activity can be translated into measurable indicators of software-team practice. It covers responsibility distribution, label and milestone usage, communication patterns, response behavior, and issue completion, then organizes these observations into an analytical framework for evaluating issue-tracking practices.
+This thesis investigates how GitHub issue activity can be translated into measurable indicators of software-team practice. The final report covers the research framing, requirements, event-driven architecture, implementation, and validation of a working repository-analysis application.
 
-The work also produced a Python research tool that retrieves repository data through the GitHub API, calculates selected metrics, answers structured process questions, visualizes results, and exports them to CSV. The project therefore connects a software-engineering research question with an executable repository-analysis workflow.
+The Python tool retrieves repository data through the GitHub API, evaluates 15 metrics and 13 structured process questions, visualizes results, and exports them to CSV. The project therefore connects a software-engineering research question with an executable and tested analysis workflow.
 
 <div class="mt-3 mb-5">
   <a class="btn btn-primary mr-2 mb-2" href="{{ '/academic-work/bachelors-thesis/' | relative_url }}">
     Read detailed overview
   </a>
-  <a class="btn btn-outline-primary mr-2 mb-2" href="{{ '/assets/pdf/Cagatay_Gultekin_Bachelors_Thesis_DIP_User_Manual.pdf' | relative_url }}" target="_blank" rel="noopener">
-    <i class="fa-solid fa-file-pdf"></i>&nbsp; Download thesis document
+  <a class="btn btn-outline-primary mr-2 mb-2" href="{{ '/assets/pdf/Cagatay_Gultekin_Bachelors_Thesis_Final_Report.pdf' | relative_url }}" target="_blank" rel="noopener">
+    <i class="fa-solid fa-file-pdf"></i>&nbsp; Download thesis PDF
   </a>
   <a class="btn btn-outline-primary mb-2" href="{{ '/academic-work/metu-coursework/' | relative_url }}">
     View METU coursework

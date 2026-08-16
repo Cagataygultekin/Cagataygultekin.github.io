@@ -6,7 +6,7 @@ description: A Python desktop application that turns GitHub issue activity into 
 img: assets/img/projects/bachelors-thesis/issue-tracking-analytics.png
 importance: 9
 category: professional
-technologies: [Python, GitHub API, Repository Analytics, Tkinter, CSV Export]
+technologies: [Python, PyGithub, GitHub API, Tkinter, Matplotlib]
 github: https://github.com/DIP-Group/GithubTracker
 permalink: /projects/issue-tracking-team-analytics/
 ---
@@ -19,8 +19,8 @@ The system was developed as part of my bachelor's thesis in Computer Engineering
   <a class="btn btn-primary mr-2 mb-2" href="https://github.com/DIP-Group/GithubTracker" target="_blank" rel="noopener">
     <i class="fa-brands fa-github"></i>&nbsp; View source code
   </a>
-  <a class="btn btn-outline-primary mb-2" href="{{ '/assets/pdf/Cagatay_Gultekin_Bachelors_Thesis_DIP_User_Manual.pdf' | relative_url }}" target="_blank" rel="noopener">
-    <i class="fa-solid fa-file-pdf"></i>&nbsp; Download project document
+  <a class="btn btn-outline-primary mb-2" href="{{ '/assets/pdf/Cagatay_Gultekin_Bachelors_Thesis_Final_Report.pdf' | relative_url }}" target="_blank" rel="noopener">
+    <i class="fa-solid fa-file-pdf"></i>&nbsp; Download final report
   </a>
 </div>
 
@@ -34,6 +34,8 @@ The application supports a complete repository-analysis workflow:
 4. calculate results from issue, contributor, label, comment, assignee, and milestone data,
 5. present the results as charts, summary values, or structured answers,
 6. export the selected outputs to CSV for further analysis.
+
+The implemented analysis layer provides **15 repository metrics** and **13 structured process questions**. These cover issue state, contributor responsibility, labels, milestones, comments, response behavior, and completion patterns.
 
 <div class="row my-4">
   <div class="col-md-4 mb-3">
@@ -58,9 +60,11 @@ The application supports a complete repository-analysis workflow:
 
 ## Engineering scope
 
-The implementation is a Python desktop application built with Tkinter. It uses PyGithub for repository access, Matplotlib for visual analysis, and CSV output for portable results. The code separates repository retrieval, metric calculation, question evaluation, visualization, and export operations within one user-facing workflow.
+The implementation is a Python desktop application built with Tkinter. It uses PyGithub for repository access, Matplotlib for visual analysis, and CSV output for portable results. Repository objects can be serialized locally with pickle to reduce repeated GitHub API requests. The code separates repository retrieval, metric calculation, question evaluation, visualization, and export operations within one user-facing workflow.
 
 The tool evaluates both quantitative measures and practical process questions. Examples include the distribution of issues across contributors, label adoption, comment consistency, milestone usage, average issue response and completion times, and whether responsibilities are assigned consistently.
+
+The final report also documents unit, integration, system, load, and stress testing. Repository retrieval was tested against the GitHub API, generated CSV files were used for end-to-end system checks, and repositories of different sizes were used to evaluate performance and expose the practical impact of API rate limits.
 
 <div class="row justify-content-center">
   <div class="col-md-12 mt-3">
@@ -77,4 +81,4 @@ This was one of my earliest end-to-end software analytics projects. It connected
 
 ## Core stack
 
-`Python` / `PyGithub` / `GitHub API` / `Tkinter` / `Matplotlib` / `Repository analytics` / `CSV export`
+`Python` / `PyGithub` / `GitHub API` / `Tkinter` / `Matplotlib` / `pickle` / `Repository analytics` / `CSV export`

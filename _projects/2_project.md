@@ -24,7 +24,7 @@ I built a backend platform at **Legalian GmbH** that turns complex data from the
   </div>
   <div class="col-sm-4 mb-3">
     <h3>&lt; 1 second</h3>
-    <p class="mb-0">typical response time in the documented test scenarios</p>
+    <p class="mb-0">observed response time in the documented test scenarios</p>
   </div>
 </div>
 

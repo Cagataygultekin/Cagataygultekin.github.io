@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Discovering Issue-Tracking Profiles of Software Development Teams
+title: Discovering Issue-tracking Profiles of Software Development Teams
 permalink: /academic-work/bachelors-thesis/
 description: Bachelor's thesis on measurable issue-tracking practices and repository-based software process analysis.
 nav: false
 ---
 
 <div class="mb-4">
-  <a class="btn btn-primary mr-2 mb-2" href="{{ '/assets/pdf/Cagatay_Gultekin_Bachelors_Thesis_DIP_User_Manual.pdf' | relative_url }}" target="_blank" rel="noopener">
-    <i class="fa-solid fa-file-pdf"></i>&nbsp; Download the thesis document
+  <a class="btn btn-primary mr-2 mb-2" href="{{ '/assets/pdf/Cagatay_Gultekin_Bachelors_Thesis_Final_Report.pdf' | relative_url }}" target="_blank" rel="noopener">
+    <i class="fa-solid fa-file-pdf"></i>&nbsp; Download the final report
   </a>
   <a class="btn btn-outline-primary mb-2" href="https://github.com/DIP-Group/GithubTracker" target="_blank" rel="noopener">
     <i class="fa-brands fa-github"></i>&nbsp; View research tool
@@ -19,7 +19,7 @@ nav: false
 
 Issue trackers are central to collaborative software development, but their effective use depends on more than recording tasks. Teams make different choices about assignment, labels, milestones, comments, response behavior, and issue completion. When these practices are inconsistent, the tracker becomes less useful as both an operational system and a source of research data.
 
-My bachelor's thesis, completed in June 2021 with Ilbey Evcil, Burak Kaan Kahraman, and Muhammed Didin at **Middle East Technical University Northern Cyprus Campus**, investigated how these practices could be represented through measurable repository indicators. The work was supervised by Dr. Sukru Eraslan.
+My bachelor's thesis, completed in June 2021 with İlbey Evcil, Burak Kaan Kahraman, and Muhammed Didin at **Middle East Technical University Northern Cyprus Campus**, investigated how these practices could be represented through measurable repository indicators. The work was supervised by Dr. Sukru Eraslan.
 
 ## Research objective
 
@@ -29,7 +29,7 @@ The intended outcome was practical as well as analytical. The resulting framewor
 
 ## Analytical framework
 
-The study considered several dimensions of issue-tracking behavior:
+The implemented framework contains 15 repository metrics and 13 structured process questions. It considers several dimensions of issue-tracking behavior:
 
 - the balance between opened and closed issues,
 - distribution of issues and comments across contributors,
@@ -43,7 +43,7 @@ These measures were complemented by process questions such as whether labels are
 
 ## Method and research tool
 
-To make the framework executable, the thesis team developed a Python research tool that retrieves GitHub repository data, stores it for repeatable analysis, calculates selected metrics, answers structured process questions, and visualizes the findings. Results can also be exported to CSV for further analysis.
+To make the framework executable, the thesis team developed a Python desktop research tool using Tkinter, PyGithub, and Matplotlib. It retrieves GitHub repository data, stores repository objects locally for repeatable analysis, calculates selected metrics, answers structured process questions, and visualizes the findings. Results can also be exported to CSV for further analysis.
 
 The method follows five stages:
 
@@ -58,6 +58,10 @@ The method follows five stages:
 The main contribution is an operational bridge between software-process questions and observable repository data. Instead of relying only on general recommendations, the framework makes issue-tracking behavior inspectable through explicit metrics and repeatable calculations.
 
 The thesis also produced a working desktop application rather than only a conceptual model. The engineering implementation is described separately on the [project page]({{ '/projects/issue-tracking-team-analytics/' | relative_url }}), where the focus is on the GitHub integration, desktop workflow, visualization, and export pipeline.
+
+## Validation and documented limitations
+
+The final report documents unit tests for metric and question calculations, an integration test for GitHub API retrieval, system-level checks based on generated CSV output, and performance and stress tests across repositories of different sizes. These tests also made the main operational limitation explicit: GitHub API rate limits become significant as repository and issue counts grow. Local serialization reduced repeated API calls, while larger-scale analysis remained dependent on the available request budget.
 
 ## Main takeaway
 

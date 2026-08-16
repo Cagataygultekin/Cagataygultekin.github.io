@@ -19,7 +19,7 @@ I built a machine learning workflow at **accu:rate GmbH**, in collaboration with
   </div>
   <div class="col-sm-4 mb-3">
     <h3>R² = 0.993</h3>
-    <p class="mb-0">test accuracy on the multi-story scenario</p>
+    <p class="mb-0">R² on the held-out multi-story test set</p>
   </div>
   <div class="col-sm-4 mb-3">
     <h3>9 runs</h3>
@@ -70,7 +70,7 @@ Each configuration is defined by three inputs:
 
 The simulations were repeated to capture stochastic variation. I retained the configuration, replicate identifier, and total evacuation time, producing **17,410 simulation runs** for modeling and evaluation.
 
-## From simulation output to a tested prediction service
+## From simulation output to a tested production pipeline
 
 I implemented the workflow that turns raw simulation results into repeatable model experiments:
 
