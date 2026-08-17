@@ -10,8 +10,6 @@ technologies: [React + TypeScript, Flask, OCR Workflows, JWT Security, Docker]
 permalink: /projects/legal-ai-data-labelling-platform/
 ---
 
-{% include project_context.liquid role="Full-stack project contributor" organization="Legalian GmbH" period="Mar 2024 to Jun 2024" project_type="Team collaboration" visibility="Internal, portfolio reconstruction" %}
-
 In collaboration with **Legalian GmbH**, I worked on an internal platform for extracting, classifying, reviewing, and labelling information from legal documents. The project addressed a recurring legal-tech problem: large document collections contain valuable structured data, while manual extraction and categorization are slow, inconsistent, and difficult to scale.
 
 I worked across two architectural phases. The platform began with an Expo-based interface prototype used to explore the annotation workflow and later moved to a React/TypeScript web application supported by a Flask backend. My work covered interface prototyping, frontend development, backend integration, frontend-backend contracts, Docker-based setup, and secure access to protected OCR and machine-learning services.

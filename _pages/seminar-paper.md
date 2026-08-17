@@ -29,7 +29,7 @@ The paper focuses on four connected questions:
 
 ## Linear regions and activation patterns
 
-Each ReLU neuron introduces a linear boundary in its input space. Combining neurons and layers produces a partition into activation regions, with a different affine mapping active in each region. Theoretical upper bounds can be very large, especially for deep networks, but empirical work shows that trained networks often use far fewer activation patterns than their architecture could theoretically express.
+Each ReLU activation changes regime according to the sign of its preactivation. The resulting activation patterns partition the network's input space into piecewise-affine regions, with a different affine mapping active in each region. Theoretical upper bounds can be very large, especially for deep networks, but empirical work shows that trained networks often use far fewer activation patterns than their architecture could theoretically express.
 
 This distinction between theoretical capacity and learned behavior is central to the paper. A network may be able to represent a very large family of functions, while initialization and gradient-based optimization explore only a smaller subset of that space.
 
@@ -37,7 +37,7 @@ This distinction between theoretical capacity and learned behavior is central to
 
 The paper reviews the relationship between piecewise linear geometry and adversarial robustness. Within a linear region, the classifier can be analyzed using its local affine representation. This allows lower and upper bounds to be derived for the perturbation required to change a prediction.
 
-The Maximization of Linear Regions approach is discussed as a regularization method for improving robustness guarantees while maintaining useful test performance. The paper also emphasizes that linear-region geometry is only one part of robustness and should be combined with broader evaluation and training strategies.
+The paper discusses a regularization scheme that improves provable robustness by enlarging linear regions around data points and increasing their distance from the decision boundary, while maintaining competitive test performance. The paper also emphasizes that linear-region geometry is only one part of robustness and should be combined with broader evaluation and training strategies.
 
 ## Expressivity and performance
 

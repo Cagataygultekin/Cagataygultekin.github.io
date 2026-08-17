@@ -11,8 +11,6 @@ github: https://github.com/Cagataygultekin/parallel-navier-stokes-solver-hdf5
 permalink: /projects/parallel-hdf5-cfd-output/
 ---
 
-{% include project_context.liquid role="Project contributor" organization="TUM Chair of Scientific Computing" period="During M.Sc. studies" project_type="Individual and team contributions" visibility="Public repository" %}
-
 At the **Technical University of Munich (TUM)**, I joined an additional high-performance computing project built around NS-EOF, a distributed-memory C++ framework for incompressible Navier-Stokes simulations. I worked as a project contributor, combining individual solver and profiling tasks with a team effort to redesign the simulation output pipeline.
 
 My more recent engineering work had focused mainly on Python and Java, so this project also gave me a practical route back into C/C++ and systems-oriented development. It involved MPI process coordination, parallel I/O, memory-conscious data structures, build configuration, profiling, and direct work with scientific file formats.
@@ -123,3 +121,9 @@ The project delivered a configurable, ParaView-compatible HDF5 output pipeline f
 ## Project context
 
 I worked with the **TUM Chair of Scientific Computing** as an additional project contributor. The engagement sat outside the standard requirements of my degree and was one of several extra technical projects through which I completed 26 additional ECTS credits. My contribution included individual solver-side improvements and profiling, followed by the team-based HDF5 integration and benchmarking work described here.
+
+The implementation and project documentation are available in the public GitHub repository linked below.
+
+<div class="mt-4">
+  <a class="btn btn-sm btn-primary" href="https://github.com/Cagataygultekin/parallel-navier-stokes-solver-hdf5" target="_blank" rel="noopener">View source code on GitHub</a>
+</div>

@@ -36,7 +36,7 @@ The first scenario uses three origin rooms that evacuate into a shared target ar
 
 ### Scenario 2: vertical evacuation
 
-The second scenario uses a regulation-derived vertical evacuation dataset based on the Gd99 guideline. Its parameters describe building and population characteristics such as the number of floors, stair width, and people per floor. This scenario provides a more realistic benchmark for testing model accuracy and practical applicability.
+The second scenario uses a regulation-derived vertical evacuation dataset based on the Gd99 guideline. Its parameters describe building and population characteristics such as the number of floors, stair width, and people per floor. This scenario provides a more realistic benchmark for evaluating predictive performance and practical applicability.
 
 ### Sampling study
 
@@ -54,13 +54,13 @@ Each sampled subset was used to train a SWIM surrogate, followed by validation, 
 
 | Result                    | Outcome                                                           |
 | ------------------------- | ----------------------------------------------------------------- |
-| Synthetic room scenario   | Predictive accuracy up to R² = 0.89                               |
-| Regulation-based scenario | Predictive accuracy above R² = 0.99 with the full dataset         |
+| Synthetic room scenario   | Predictive performance: R² up to 0.89                             |
+| Regulation-based scenario | Predictive performance: R² above 0.99 with the full dataset       |
 | Best low-budget method    | Randomized Quasi-Monte Carlo sampling                             |
 | Low-budget performance    | R² between 0.95 and 0.97 with only 9 to 14 simulations            |
 | Practical impact          | More than an order-of-magnitude reduction in required simulations |
 
-Randomized Quasi-Monte Carlo sampling provided the most reliable accuracy-cost trade-off. It generalized strongly with very small training sets, while entropy-based and sparse-grid methods required more simulations for comparable performance. KMeans sampling was less stable in the evaluated configurations.
+Randomized Quasi-Monte Carlo sampling provided the most reliable performance-cost trade-off. It generalized strongly with very small training sets, while entropy-based and sparse-grid methods required more simulations for comparable performance. KMeans sampling was less stable in the evaluated configurations.
 
 ## Main contributions
 

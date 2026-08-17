@@ -20,7 +20,7 @@ nav_order: 3
 
 This thesis investigates how neural surrogate models can accelerate evacuation analysis. Microscopic crowd simulations provide detailed results, but they are expensive to run repeatedly during large parameter studies or iterative building design. The work combines crowd:it simulation data, the SWIM neural network training algorithm, and several sampling strategies to predict total evacuation times with substantially fewer simulations.
 
-The evaluation covers a controlled room-based scenario and a regulation-derived vertical evacuation scenario. With the full dataset, the surrogate models achieved predictive accuracy above R² = 0.99. Under strict simulation budgets, Randomized Quasi-Monte Carlo sampling reached R² values between 0.95 and 0.97 using only 9 to 14 simulations.
+The evaluation covers a controlled room-based scenario and a regulation-derived vertical evacuation scenario. With the full dataset, the surrogate models demonstrated strong predictive performance, with R² above 0.99. Under strict simulation budgets, Randomized Quasi-Monte Carlo sampling reached R² values between 0.95 and 0.97 using only 9 to 14 simulations.
 
 <div class="mt-3 mb-5">
   <a class="btn btn-primary mr-2 mb-2" href="{{ '/academic-work/master-thesis/' | relative_url }}">

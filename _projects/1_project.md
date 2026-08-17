@@ -81,7 +81,7 @@ I implemented the workflow that turns raw simulation results into repeatable mod
 5. Benchmark against conventional PyTorch neural networks.
 6. Evaluate the selected configuration on held-out and previously unseen parameter combinations.
 
-The best SWIM configuration used a single wide hidden layer with 512 units and achieved **R² = 0.997 on validation data and R² = 0.993 on the held-out test set**. In the runtime benchmark, SWIM trained approximately **50 times faster** than the conventional neural network baseline while reaching comparable accuracy.
+The best SWIM configuration used a single wide hidden layer with 512 units and achieved **R² = 0.997 on validation data and R² = 0.993 on the held-out test set**. In the runtime benchmark, SWIM trained approximately **50 times faster** than the conventional neural network baseline while reaching comparable predictive performance.
 
 <div class="row justify-content-center">
   <div class="col-md-9 mt-3">
@@ -128,7 +128,7 @@ With only **9 simulations**, the model reached **R² = 0.95** on the remaining u
 - **Generalization-first evaluation:** Sampled models were tested on the complement of the selected training set, not only on a small random test split.
 - **Baseline comparison:** SWIM results were compared with conventional neural networks instead of being assessed in isolation.
 - **Pipeline ownership:** I handled data preparation, experiment orchestration, model training, evaluation, visualization, and technical documentation end to end.
-- **Cost-aware optimization:** I treated the number of required crowd simulations as a primary system metric alongside predictive accuracy.
+- **Cost-aware optimization:** I treated the number of required crowd simulations as a primary system metric alongside predictive performance.
 
 ## Outcome
 
