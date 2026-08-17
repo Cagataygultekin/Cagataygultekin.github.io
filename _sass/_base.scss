@@ -265,6 +265,64 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// About page hero
+.about-hero {
+  display: grid;
+  grid-template-areas:
+    "heading profile"
+    "intro profile";
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 30%);
+  column-gap: 2rem;
+  align-items: start;
+
+  .post-header {
+    grid-area: heading;
+  }
+
+  .about-hero-profile {
+    grid-area: profile;
+    float: none !important;
+    width: 100%;
+    margin: 0;
+  }
+
+  .about-hero-intro {
+    grid-area: intro;
+    min-width: 0;
+  }
+
+  &.about-hero--profile-left {
+    grid-template-areas:
+      "profile heading"
+      "profile intro";
+    grid-template-columns: minmax(220px, 30%) minmax(0, 1fr);
+  }
+
+  &.about-hero--without-profile {
+    grid-template-areas:
+      "heading"
+      "intro";
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about-hero,
+  .about-hero.about-hero--profile-left {
+    grid-template-areas:
+      "heading"
+      "profile"
+      "intro";
+    grid-template-columns: minmax(0, 1fr);
+
+    .about-hero-profile {
+      width: 58vw;
+      max-width: 210px;
+      margin: 0 auto 1.5rem;
+    }
+  }
+}
+
 .post-description {
   margin-bottom: 2rem;
   font-size: 0.875rem;
