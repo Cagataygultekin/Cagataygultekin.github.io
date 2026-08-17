@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: project-zorluteks
 published: true
 title: Material and Database Operations Desktop App
 description: A C#/.NET desktop application that moved spreadsheet-based material records into a clearer interface with controlled SQL updates and database operations.

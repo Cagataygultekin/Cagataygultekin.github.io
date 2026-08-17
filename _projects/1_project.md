@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: project-evacuation
 title: Simulation-Efficient Evacuation Prediction
 description: An end-to-end machine learning pipeline for predicting multi-story evacuation times with far fewer crowd simulations.
 img: assets/img/projects/master-thesis/prediction-results.png

@@ -1,5 +1,7 @@
 ---
 layout: post
+lang: en
+translation_key: news-legalian
 date: 2024-09-02 09:00:00+02:00
 inline: true
 related_posts: false

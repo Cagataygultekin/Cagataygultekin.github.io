@@ -19,7 +19,8 @@ layout: default
   </article>
 
   {% if page.related_publications %}
-    <h2>References</h2>
+    {% assign current_lang = page.lang | default: site.lang %}
+    <h2>{% if current_lang == 'de' %}Literatur{% elsif current_lang == 'tr' %}Kaynaklar{% else %}References{% endif %}</h2>
     <div class="publications">
       {% bibliography --cited_in_order %}
     </div>

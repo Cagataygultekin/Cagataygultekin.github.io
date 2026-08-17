@@ -1,5 +1,7 @@
 ---
 layout: about
+lang: en
+translation_key: home
 title: about
 permalink: /
 subtitle: Software Engineer · Backend Systems · Machine Learning

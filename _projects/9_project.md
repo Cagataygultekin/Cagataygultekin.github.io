@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: project-issue-tracking
 published: true
 title: GitHub Issue-Tracking Research Tool
 description: A Python desktop application that turns GitHub issue activity into process metrics, visual analyses, and exportable research data.

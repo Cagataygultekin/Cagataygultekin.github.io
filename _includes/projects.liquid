@@ -1,3 +1,5 @@
+{% assign current_lang = page.lang | default: site.lang %}
+{% assign translations = site.data.i18n[current_lang] %}
 <div class="col">
     <article class="card project-card h-100">
       {% if project.img %}
@@ -6,7 +8,7 @@
           loading="eager"
           path=project.img
           sizes = "250px"
-          alt="project thumbnail"
+          alt=translations.project_thumbnail
           class="card-img-top"
         %}
       {% elsif project.visual %}
@@ -27,8 +29,8 @@
         <p class="card-text">{{ project.description }}</p>
         <div class="project-card-footer mt-auto">
           {% if project.technologies %}
-            <div class="project-tech-stack" aria-label="Key technologies">
-              <span class="project-tech-label">Key technologies</span>
+            <div class="project-tech-stack" aria-label="{{ translations.key_technologies }}">
+              <span class="project-tech-label">{{ translations.key_technologies }}</span>
               {% for technology in project.technologies %}
                 <span class="project-tech">{{ technology }}</span>
               {% endfor %}
@@ -36,11 +38,11 @@
           {% endif %}
           <div class="project-card-actions">
             <a class="project-card-action" href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
-              View project <i class="fa-solid fa-arrow-right"></i>
+              {{ translations.view_project }} <i class="fa-solid fa-arrow-right"></i>
             </a>
             {% if project.github %}
-              <div class="github-icon" data-toggle="tooltip" title="Code repository">
-                <a href="{{ project.github }}" target="_blank" rel="noopener" aria-label="Open code repository">
+              <div class="github-icon" data-toggle="tooltip" title="{{ translations.code_repository }}">
+                <a href="{{ project.github }}" target="_blank" rel="noopener" aria-label="{{ translations.open_code_repository }}">
                   <i class="fa-brands fa-github gh-icon"></i>
                 </a>
                 {% if project.github_stars %}

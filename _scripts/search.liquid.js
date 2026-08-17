@@ -5,18 +5,20 @@ permalink: /assets/js/search-data.js
 const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
-ninja.data = [
-  {%- for page in site.pages -%}
-    {%- if page.permalink == '/' -%}{%- assign about_title = page.title | strip -%}{%- endif -%}
+const allSearchData = [
+  {%- for home_page in site.pages -%}
+    {%- if home_page.translation_key == 'home' -%}
+      {
+        id: "nav-home-{{ home_page.lang | default: site.lang }}",
+        lang: "{{ home_page.lang | default: site.lang }}",
+        title: "{{ home_page.title | strip | truncatewords: 13 }}",
+        section: "Navigation",
+        handler: () => {
+          window.location.href = "{{ home_page.url | relative_url }}";
+        },
+      },
+    {%- endif -%}
   {%- endfor -%}
-  {
-    id: "nav-{{ about_title | slugify }}",
-    title: "{{ about_title | truncatewords: 13 }}",
-    section: "Navigation",
-    handler: () => {
-      window.location.href = "{{ '/' | relative_url }}";
-    },
-  },
   {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
   {%- for p in sorted_pages -%}
     {%- if p.nav and p.autogen == null -%}
@@ -27,6 +29,7 @@ ninja.data = [
               {%- assign title = child.title | escape | strip -%}
               {%- if child.permalink contains "/blog/" -%}{%- assign url = "/blog/" -%} {%- else -%}{%- assign url = child.permalink -%}{%- endif -%}
               id: "dropdown-{{ title | slugify }}",
+              lang: "{{ p.lang | default: site.lang }}",
               title: "{{ title | truncatewords: 13 }}",
               description: "{{ child.description | strip_html | strip_newlines | escape | strip }}",
               section: "Dropdown",
@@ -42,6 +45,7 @@ ninja.data = [
           {%- assign title = p.title | escape | strip -%}
           {%- if p.permalink contains "/blog/" -%}{%- assign url = "/blog/" -%} {%- else -%}{%- assign url = p.url -%}{%- endif -%}
           id: "nav-{{ title | slugify }}",
+          lang: "{{ p.lang | default: site.lang }}",
           title: "{{ title | truncatewords: 13 }}",
           description: "{{ p.description | strip_html | strip_newlines | escape | strip }}",
           section: "Navigation",
@@ -57,6 +61,7 @@ ninja.data = [
       {
         {%- assign title = post.title | escape | strip -%}
         id: "post-{{ title | slugify }}",
+        lang: "{{ post.lang | default: site.lang }}",
         {% if post.redirect == blank %}
           title: "{{ title | truncatewords: 13 }}",
         {% elsif post.redirect contains '://' %}
@@ -88,6 +93,7 @@ ninja.data = [
             {%- assign title = item.title | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | escape | strip -%}
           {%- endif -%}
           id: "{{ collection.label }}-{{ title | slugify }}",
+          lang: "{{ item.lang | default: site.lang }}",
           title: '{{ title | escape | emojify | truncatewords: 13 }}',
           description: "{{ item.description | strip_html | strip_newlines | escape | strip }}",
           section: "{{ collection.label | capitalize }}",
@@ -331,3 +337,43 @@ ninja.data = [
     },
   {%- endif -%}
 ];
+
+const pageLanguage = document.documentElement.lang || "en";
+const searchUi = {
+  en: {
+    sections: { Navigation: "Navigation", Dropdown: "Navigation", Posts: "Posts", Projects: "Projects", News: "News", Socials: "Social links", Theme: "Theme" },
+    commands: {
+      "light-theme": ["Change theme to light", "Use the light color theme"],
+      "dark-theme": ["Change theme to dark", "Use the dark color theme"],
+      "system-theme": ["Use system default theme", "Follow the system color theme"],
+    },
+  },
+  de: {
+    sections: { Navigation: "Navigation", Dropdown: "Navigation", Posts: "Beiträge", Projects: "Projekte", News: "Neuigkeiten", Socials: "Soziale Links", Theme: "Farbschema" },
+    commands: {
+      "light-theme": ["Helles Farbschema verwenden", "Zum hellen Farbschema wechseln"],
+      "dark-theme": ["Dunkles Farbschema verwenden", "Zum dunklen Farbschema wechseln"],
+      "system-theme": ["Systemeinstellung verwenden", "Dem Farbschema des Systems folgen"],
+    },
+  },
+  tr: {
+    sections: { Navigation: "Gezinme", Dropdown: "Gezinme", Posts: "Yazılar", Projects: "Projeler", News: "Haberler", Socials: "Sosyal bağlantılar", Theme: "Tema" },
+    commands: {
+      "light-theme": ["Açık temayı kullan", "Açık renk temasına geç"],
+      "dark-theme": ["Koyu temayı kullan", "Koyu renk temasına geç"],
+      "system-theme": ["Sistem temasını kullan", "Sistemin renk temasını izle"],
+    },
+  },
+};
+const activeSearchUi = searchUi[pageLanguage] || searchUi.en;
+ninja.data = allSearchData
+  .filter((item) => !item.lang || item.lang === pageLanguage)
+  .map((item) => {
+    const localizedItem = { ...item, section: activeSearchUi.sections[item.section] || item.section };
+    const command = activeSearchUi.commands[item.id];
+    if (command) {
+      localizedItem.title = command[0];
+      localizedItem.description = command[1];
+    }
+    return localizedItem;
+  });

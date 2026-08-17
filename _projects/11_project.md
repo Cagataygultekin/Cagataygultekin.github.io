@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: project-fruit-tree
 published: true
 title: Fruit Tree Recognition System
 description: A classical computer vision pipeline using shape, moment, and color features with k-fold validation for image recognition.

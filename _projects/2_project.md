@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: project-company-registry
 published: true
 title: Historical Company Registry Data Platform
 description: A FastAPI backend for retrieving, normalizing, storing, and searching current and historical data from the Danish Business Register.

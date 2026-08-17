@@ -1,13 +1,20 @@
 ---
 ---
+{% assign current_lang = page.lang | default: site.lang | default: 'en' %}
+{% assign translations = site.data.i18n[current_lang] %}
+{% assign localized_entry = site.data.publications_i18n[current_lang][entry.key] %}
+{% assign display_abbr = localized_entry.abbr | default: entry.abbr %}
+{% assign display_month = localized_entry.month | default: entry.month %}
+{% assign display_note = localized_entry.note | default: entry.note %}
+{% assign display_website = localized_entry.website | default: entry.website %}
 <div class="row">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
-      {%- if entry.abbr -%}
-        {%- if site.data.venues[entry.abbr] -%}
+      {%- if display_abbr -%}
+        {%- if site.data.venues[display_abbr] -%}
           {% assign venue_style = null %}
-          {% if site.data.venues[entry.abbr].color != blank %}
-            {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
+          {% if site.data.venues[display_abbr].color != blank %}
+            {% assign venue_style = site.data.venues[display_abbr].color | prepend: 'style="background-color:' | append: '"' %}
           {%- endif -%}
           <abbr
             class="badge rounded w-100"
@@ -15,14 +22,14 @@
               {{ venue_style }}
             {% endif -%}
           >
-            {% if site.data.venues[entry.abbr].url %}
-              <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
+            {% if site.data.venues[display_abbr].url %}
+              <a href="{{ site.data.venues[display_abbr].url }}">{{ display_abbr }}</a>
             {% else %}
-              <div>{{- entry.abbr -}}</div>
+              <div>{{- display_abbr -}}</div>
             {% endif %}
           </abbr>
         {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
+          <abbr class="badge rounded w-100">{{ display_abbr }}</abbr>
         {% endif %}
       {% endif %}
       {% if entry.preview %}
@@ -82,7 +89,7 @@
           {% if forloop.first == false -%}
             {%- if forloop.length > 2 %}, {% elsif forloop.length == 2 %}  {% endif %}
           {%- endif %}
-          {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
+          {%- if forloop.last and author_array_limit == author_array_size %}{{ translations.and_word }} {% endif -%}
         {% endif %}
         {%- if author_is_self -%}
           <em>
@@ -103,10 +110,10 @@
       {% endfor %}
       {%- assign more_authors = author_array_size | minus: author_array_limit -%}
 
-      {%- assign more_authors_hide = more_authors | append: ' more author' -%}
+      {%- assign more_authors_hide = more_authors | append: ' ' | append: translations.more_author -%}
       {% if more_authors > 0 %}
         {%- if more_authors > 1 -%}
-          {% assign more_authors_hide = more_authors_hide | append: 's' %}
+          {% assign more_authors_hide = more_authors | append: ' ' | append: translations.more_authors %}
         {%- endif -%}
         {% assign more_authors_show = '' %}
         {%- for author in entry.author_array offset: author_array_limit -%}
@@ -116,10 +123,10 @@
           {% endunless %}
         {%- endfor -%}
         {%- assign more_authors_show = more_authors_show | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
-        , and
+        , {{ translations.and_word }}
         <span
           class="more-authors"
-          title="click to view {{ more_authors_hide }}"
+          title="{{ translations.click_to_view }} {{ more_authors_hide }}"
           onclick="
               var element = $(this);
               element.attr('title', '');
@@ -160,8 +167,8 @@
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
-    {% if entry.month %}
-      {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
+    {% if display_month %}
+      {% capture entrymonth %}{{ " " }}{{ display_month | capitalize }}{% endcapture %}
     {% endif %}
     {% if entry.year %}
       {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
@@ -182,7 +189,7 @@
       {{ periodical | strip }}
     </div>
     <div class="periodical">
-      {{ entry.note | strip }}
+      {{ display_note | strip }}
     </div>
 
     <!-- Links/Buttons -->
@@ -250,8 +257,8 @@
           <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
         {% endif %}
       {% endif %}
-      {% if entry.website %}
-        <a href="{{ entry.website | relative_url }}" class="btn btn-sm z-depth-0" role="button">Details</a>
+      {% if display_website %}
+        <a href="{{ display_website | relative_url }}" class="btn btn-sm z-depth-0" role="button">{{ translations.details }}</a>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}

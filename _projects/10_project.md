@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: project-career-diaries
 published: true
 title: Career Diaries Multi-Role Career Community
 description: A Python/Tkinter and MySQL application connecting students, alumni, academics, workplaces, and career reviews through a multi-role relational model.

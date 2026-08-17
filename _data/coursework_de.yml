@@ -1,0 +1,386 @@
+tum:
+  - name: Machine Learning und Datenanalyse
+    summary: Statistisches Lernen, neuronale Netze, praktische Datenanalyse und medizinische Anwendungen von KI.
+    courses:
+      - code: IN2064
+        title: Machine Learning
+        ects: 8
+        details: Das Modul entwickelt eine probabilistische Sicht auf Machine Learning, von Regression und Klassifikation bis zu unüberwachten Methoden. Es umfasst Bayes'sche Entscheidungstheorie, Dichteschätzung, Mischmodelle, Expectation Maximization, Dimensionsreduktion, Kernelmethoden und die methodische Bewertung gelernter Modelle.
+        official_url: https://support.moodle.tum.de/course/info.php?id=100567
+      - code: IN2346
+        title: Introduction to Deep Learning
+        ects: 6
+        details: Der Kurs beginnt mit linearen Klassifikatoren und Maximum-Likelihood-Lernen und entwickelt anschließend neuronale Netze, stochastischen Gradientenabstieg, Backpropagation, Aktivierungsfunktionen, Initialisierung, Batch Normalization und Hyperparameteroptimierung. Danach folgen Convolutional Architectures, Regularisierung, rekurrente Netze, LSTMs, Transformer und praktische Bildklassifikation.
+        official_url: https://academics.nat.tum.de/en/studies/org/mh/details/mod/IN2346
+      - code: IN2339
+        title: Data Analysis and Visualization in R
+        ects: 6
+        details: Das Modul ist um das Erfassen, Erkunden und Interpretieren realer Daten aufgebaut. Es behandelt R-Programmierung, reproduzierbare Berichte, Import und Bereinigung von Daten sowie Visualisierung mit der Grammar of Graphics. Weitere Themen sind Clustering, Hauptkomponentenanalyse, resamplingbasierte Inferenz, statistische Tests, überwachtes Lernen und vollständige Fallstudien.
+        official_url: https://www.cs.cit.tum.de/en/cmm/training-and-teaching/winter-term-2020/data-analysis-and-visualization-in-r/
+      - code: IN2403
+        title: Artificial Intelligence in Medicine
+        ects: 5
+        details: Die Vorlesungsreihe untersucht den Einsatz von Machine-Learning- und neuronalen Methoden in medizinischen Anwendungen. Der Schwerpunkt liegt neben dem Modellbau auf den Eigenschaften klinischer und bildgebender Daten, sinnvoller Evaluation, Zuverlässigkeit und den praktischen Bedingungen, die medizinische KI von allgemeinen Benchmarkproblemen unterscheiden.
+        official_url: https://kiinformatik.mri.tum.de/es/node/2826
+
+  - name: Softwarequalität und verlässliche KI
+    summary: Software Testing, Requirements und Entwicklung sicherer, resilienter Systeme mit lernenden Komponenten.
+    courses:
+      - code: CIT423002
+        title: AI Testing
+        ects: 5
+        details: Das Modul behandelt gelernte Komponenten als Software, deren Verhalten von Daten, Training und Einsatzkontext abhängt. Es untersucht, wie klassische Testkonzepte für KI-Systeme angepasst werden müssen, darunter Testdatendesign, Verhaltenseigenschaften, Abdeckungskriterien, Robustheitsbewertung und Evaluation ohne eindeutiges Testorakel.
+        official_url: https://www.moodle.tum.de/course/info.php?id=105602&lang=en
+      - code: CIT4230005
+        title: Engineering Resilient Cognitive Systems
+        ects: 3
+        details: Die Vorlesung versteht Resilienz als Aufrechterhaltung von Sicherheit bei gleichzeitiger Nutzenoptimierung in unsicheren Umgebungen. Sie behandelt Grundlagen von Sicherheit und Zuverlässigkeit, Safety of the Intended Functionality, Assurance für KI-Systeme und selbstadaptive Sicherheitsarchitekturen für autonome Fahrzeuge, Robotik, Medizingeräte und weitere kognitive cyber-physische Systeme.
+        official_url: https://www.cs.cit.tum.de/en/ercs/teaching/lecture-engineering-resilient-cognitive-systems/
+      - code: IN2084
+        title: Advanced Topics of Software Testing
+        ects: 5
+        details: Das fortgeschrittene Modul untersucht systematische Methoden, um Fehler aufzudecken und Softwarequalität über einfache Unit-Tests hinaus zu bewerten. Es umfasst Testentwurf und -auswahl, strukturelle und verhaltensbasierte Abdeckung, Automatisierung, regressionsorientierte Strategien und forschungsbasierte Ansätze für komplexe, sich entwickelnde Softwaresysteme.
+        official_url: https://www.cs.cit.tum.de/en/sse/teaching/
+      - title: Requirements Engineering
+        ects: 3
+        details: Der Kurs verfolgt Anforderungen von der Ermittlung bei Stakeholdern bis zur kontrollierten Weiterentwicklung. Er behandelt Erhebung, Dokumentation, Modellierung, Priorisierung, Validierung, Konfliktlösung, Rückverfolgbarkeit und Änderungsmanagement für funktionale Anforderungen und Qualitätsmerkmale.
+        official_url: https://www.cs.cit.tum.de/en/sse/teaching/
+
+  - name: Scientific Computing
+    summary: Grundlagen des Quantencomputings und systemnahe wissenschaftliche Simulationsarbeit.
+    courses:
+      - code: IN2381
+        title: Introduction to Quantum Computing
+        ects: 5
+        details: Das Modul führt in die mathematische Darstellung von Qubits und Mehr-Qubit-Systemen, unitäre Gatter, Quantenschaltkreise, Verschränkung und Messung ein. Anschließend entwickelt es die rechnerischen Ideen ausgewählter Quantenalgorithmen und vergleicht Quanteninformationsverarbeitung mit klassischer Berechnung.
+        official_url: https://www.cs.cit.tum.de/en/qc/teaching/
+      - code: IN2311
+        title: Turbulent Flow Simulation on HPC-Systems
+        ects: 5
+        tag: Als Projekt dokumentiert
+        details: Das Modul verbindet numerische Strömungssimulation mit High-Performance-Implementierung. Es behandelt die Struktur eines verteilten C++-Solvers, Domänenzerlegung, MPI-Kommunikation, parallele numerische Kernel, wissenschaftliche Ausgabeformate, skalierbare Ein-/Ausgabe, Visualisierungsworkflows, Profiling und Performance-Bewertung auf HPC-Systemen.
+        official_url: https://www.cs.cit.tum.de/en/sccs/people/benjamin-rueth/
+        link: /de/projects/parallel-hdf5-cfd-output/
+
+  - name: Fortschritt in Deutsch
+    summary: Abgeschlossene Deutschmodule von A1.2 bis B1.2, Fortsetzung an der TUM bis B2.1 und weitere individuelle Kurse außerhalb der Universität.
+    courses:
+      - title: German as a Foreign Language A1.2
+        ects: 4
+        details: Fortsetzung der Deutschgrundlagen mit Alltagswortschatz, elementarer Grammatik, Hör- und Leseverstehen, mündlicher Interaktion und kurzen schriftlichen Mitteilungen.
+        official_url: https://www.sprachenzentrum.tum.de/en/sz/languages/german/
+      - code: SZ0303
+        title: German as a Foreign Language A2.1
+        ects: 6
+        details: Entwicklung praktischer Deutschkenntnisse für persönliche, universitäre und alltägliche Situationen mit erweitertem Satzbau, Wortschatz, Verständnis und Interaktion.
+        official_url: https://www.sprachenzentrum.tum.de/en/sz/languages/german/
+      - title: German as a Foreign Language A2.2
+        ects: 6
+        details: Abschluss der A2-Stufe mit breiterer praktischer Kommunikation, stärker zusammenhängendem Sprechen und Schreiben sowie verbessertem Verständnis routinemäßiger Situationen.
+        official_url: https://www.sprachenzentrum.tum.de/en/sz/languages/german/
+      - title: German as a Foreign Language B1.1
+        ects: 4
+        details: Einstieg in die Mittelstufe mit stärkerem Schwerpunkt auf selbstständiger Kommunikation, zusammenhängenden Texten, Beschreibung von Erfahrungen und Diskussion vertrauter beruflicher und gesellschaftlicher Themen.
+        official_url: https://www.sprachenzentrum.tum.de/en/sz/languages/german/
+      - title: German as a Foreign Language B1.2
+        ects: 4
+        details: Festigung der B1-Stufe durch detaillierteres Lesen und Hören, strukturiertes Schreiben, spontane Interaktion und klareren Ausdruck von Meinungen und Begründungen.
+        official_url: https://www.sprachenzentrum.tum.de/en/sz/languages/german/
+      - title: German as a Foreign Language B2.1
+        status: An der TUM besucht
+        details: Der Kurs führte in komplexere Texte, ausführlichere Diskussionen, präzisen schriftlichen Ausdruck und Wortschatz für akademische und berufliche Kontexte ein. Ich besuchte die Lehrveranstaltung und erzielte ein gutes Ergebnis in der Zwischenprüfung, nahm aber nicht an der Abschlussprüfung teil.
+        official_url: https://www.sprachenzentrum.tum.de/en/sz/languages/german/
+      - title: German B2.2 Individual Tuition
+        status: Externer Kurs
+        details: Individueller Unterricht setzte die B2-Entwicklung mit gezielter Sprechpraxis, fortgeschrittener Grammatik, Hörverstehen, Wortschatzarbeit und Korrekturen auf Basis meiner konkreten Lücken und Kommunikationsbedürfnisse fort.
+        external: true
+      - title: German General Revision
+        status: Externer Kurs
+        details: Ein ergänzender Wiederholungskurs griff Strukturen früherer Stufen auf und festigte Genauigkeit, Flüssigkeit, Wortschatzabruf und praktische Alltagskommunikation durch angeleitete Gespräche und Übungen.
+        external: true
+
+metu:
+  - name: Programmierung, Algorithmen und Theorie
+    summary: Der programmiertechnische und theoretische Kern des Computer-Engineering-Studiums.
+    courses:
+      - code: CNG111
+        title: Introduction to Computer Engineering Concepts
+        ects: 4
+        details: Der Kurs gibt zunächst einen Überblick über Rechnerorganisation, Betriebssysteme, Sprachprozessoren und Benutzeroberflächen und führt anschließend in Algorithmen und Programmierung ein. Praktische Aufgaben nutzen funktionale Programmierung, um informelles Denken über Korrektheit und Effizienz von Programmen zu entwickeln.
+      - code: CNG140
+        title: C Programming
+        ects: 4
+        details: Einführung in algorithmische Problemlösung und strukturierte Programmierung in C. Die Themen umfassen Ausdrücke, Kontrollfluss, Funktionen, Arrays, Zeiger, Zeichenketten, Strukturen, Dateiverarbeitung, dynamischen Speicher und den Zusammenhang zwischen Programmorganisation und effizienter Speichernutzung.
+      - code: CNG213
+        title: Data Structures
+        ects: 6
+        details: Behandelt verkettete Listen, Stacks, Queues, Rekursion, Bäume, binäre Suchbäume, array- und zeigerbasierte Darstellungen, Sortieren und Suchen. Speicher- und Laufzeitbedarf dienen zum Vergleich alternativer Datenstrukturen und Implementierungen.
+      - code: CNG223
+        title: Discrete Computational Structures
+        ects: 6
+        details: Legt die diskret-mathematische Grundlage der Informatik mit Aussagen- und Prädikatenlogik, Mengen, Relationen, Funktionen, Induktion, Graphentheorie, Bäumen, einführenden algebraischen Strukturen und Verbänden.
+      - code: CNG242
+        title: Programming Language Concepts
+        ects: 7
+        details: Untersucht Entwurf und Implementierung von Programmiersprachen, darunter Übersetzung, virtuelle Maschinen, Laufzeitumgebungen, Namen und Bindung, Gültigkeitsbereiche, Werte und Typen, Speicher, prozedurale Abstraktion und Generics. Verglichen werden auch funktionale und objektorientierte Paradigmen einschließlich Kapselung, Vererbung, Polymorphie und dynamischer Bindung.
+      - code: CNG280
+        title: Formal Languages and Abstract Machines
+        ects: 6
+        details: Führt in reguläre Sprachen und endliche Automaten, kontextfreie Grammatiken und Kellerautomaten, Turingmaschinen, Entscheidbarkeit sowie Beziehungen zwischen Sprachklassen und abstrakten Berechnungsmodellen ein.
+      - code: CNG315
+        title: Algorithms
+        ects: 6
+        details: Entwickelt Methoden für Entwurf und Analyse von Algorithmen, darunter asymptotische Analyse, Divide and Conquer, Greedy-Strategien, dynamische Programmierung, Graphtraversierung und -optimierung sowie Grenzen effizienter Berechnung durch NP-Vollständigkeit.
+      - code: CNG443
+        title: Introduction to Object-Oriented Programming Languages and Systems
+        ects: 6
+        details: Führt von grundlegenden und fortgeschrittenen objektorientierten Konzepten zu Exceptions, Streams, Nebenläufigkeit, grafischen Oberflächen, Sicherheit, Netzwerkobjekten, Datenbankanbindung, Serialisierung, Remote Method Invocation und Enterprise-Komponenten. Im Mittelpunkt stehen wiederverwendbare Abstraktionen und die Laufzeitmechanismen dahinter.
+      - code: CNG445
+        title: Software Development with Scripting Languages
+        ects: 6
+        tag: Kursprojekt
+        details: Untersucht Möglichkeiten von Skriptsprachen für Systemprogrammierung, Integration mit anderen Programmen, objektorientierten Entwurf, Nebenläufigkeit und Webentwicklung auf Server- und Browserseite. Das zugehörige Projekt wandte diese Konzepte in einer Python-TCP-Anwendung mit mehreren Clients an.
+        link: /de/projects/python-coffee-shop-client-server/
+      - code: CNG457
+        title: Software Construction
+        ects: 6
+        tag: Dreiteilige Implementierung
+        details: Konzentriert sich auf den Aufbau eines vollständigen Systems mit Referenzarchitekturen und zeitgemäßen Werkzeugen. Themen sind Architekturstile, Nebenläufigkeit, Entwurfsmuster, Frameworks, Services und APIs, GUI-Implementierung, wiederverwendbare Komponenten und Tests auf Unit-, Komponenten- und Systemebene.
+        link: /de/projects/java-spring-ecommerce-service/
+        links:
+          - label: Webservice
+            url: https://github.com/457Proje-CSS/team6-cng457--webservice
+          - label: Desktop-Client
+            url: https://github.com/457Proje-CSS/team-6--cng457-desktopapp
+          - label: Projekt-Repository
+            url: https://github.com/457Proje-CSS/457_Proje_Cagatay-Serhat-Soykan
+
+  - name: Software- und Datensysteme
+    summary: Softwarelebenszyklen, persistente Daten, Betriebssysteme und vernetzte Systeme.
+    courses:
+      - code: CNG350
+        title: Software Engineering
+        ects: 5.5
+        details: Behandelt den Entwicklungslebenszyklus von Projektplanung und Aufwandsschätzung über Anforderungsanalyse, Softwareentwurf und Implementierung bis zu Qualitätssicherung und Testen. Metriken und Managementmethoden verbinden technische Arbeit mit Termin- und Auslieferungsentscheidungen.
+      - code: CNG351
+        title: Data Management and File Structures
+        ects: 6
+        details: Untersucht sequentielle und geordnete Dateien, externes Sortieren, Heap- und Replacement-Selection-Sortierung, Sortierung mit großem Speicher, B+-Baum-Indizes sowie klassisches und lineares Hashing. Anschließend folgen relationale Datenbanken, relationale Algebra und Kalkül, SQL, QBE, QUEL, Joins und Entity-Relationship-Modellierung.
+      - code: CNG352
+        title: Database Management Systems
+        ects: 6
+        tag: Kursprojekt
+        details: Entwickelt relationale Algebra und Anfrageoptimierung gemeinsam mit Entity-Relationship-Modellierung, Normalisierung, physischem Entwurf und Tuning. Systemthemen umfassen Transaktionen, Nebenläufigkeitskontrolle, Wiederherstellung, Client-Server-Architektur, Autorisierung, XML, XQuery, Webdaten und Webservices. Das Career-Diaries-Projekt setzte diese Konzepte in einer normalisierten relationalen Mehrrollenplattform für Studierende, Alumni, Forschende und Berufstätige um.
+        link: /de/projects/career-diaries-community-platform/
+      - code: CNG334
+        title: Introduction to Operating Systems
+        ects: 5.5
+        details: Führt in Prozess- und Prozessorverwaltung, nebenläufige Prozesse, Synchronisation, Deadlocks, Speicherverwaltung, I/O- und Geräteverwaltung, Dateisysteme und moderne Betriebssystemtechnologien ein. Behandelt werden auch verteilte Betriebssysteme, verteilte Synchronisation und verteilte Dateisysteme.
+      - code: CNG435
+        title: Data Communications and Computer Networking
+        ects: 6
+        details: Folgt dem OSI-Modell von physischer Übertragung und elektrischen Schnittstellen über Data Link und Media Access Control, LAN- und MAN-Technologien, Internetworking, Bridging, Routing und Transport bis zu einer Einführung in die höheren Netzwerkschichten.
+
+  - name: Rechnerarchitektur und Embedded Systems
+    summary: Zusammenspiel von Hardware und Software, von digitaler Logik bis zur Embedded-Entwicklung.
+    courses:
+      - code: CNG232
+        title: Logic Design
+        ects: 7
+        details: Behandelt Zahlensysteme, Boolesche Algebra, Gatter, Flipflops und den Entwurf kombinatorischer und sequentieller Schaltungen. Register, Zähler, Bustransfers, RAM und ROM, Instruktionsausführung und festverdrahtete Steuerung verbinden digitale Logik mit elementarer Rechnerarchitektur.
+      - code: EEE281
+        title: Electrical Circuits
+        ects: 6
+        details: Legt die Grundlagen elektrischer Schaltungsanalyse mit Spannung, Strom, Leistung, Schaltungsgesetzen, Netzwerktheoremen, Energiespeichern sowie transientem und stationärem Verhalten. Das Modul unterstützt spätere Arbeit an digitaler Hardware und Embedded-Schnittstellen.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=356
+      - code: CNG331
+        title: Computer Organization
+        ects: 6
+        tag: MIPS-Assembler-Projekt
+        details: Untersucht mikroprogrammierte Steuerung, I/O-Geräte und -Schnittstellen, Speicherhierarchie und -verwaltung, schnelle Multiplikation und Gleitkommaarithmetik, RISC-Organisation und Rechnerkommunikation. Mein MIPS-Assembler-Projekt verband diese Konzepte mit Parsing, Kodierung und Erzeugung von Maschinencode.
+        link: /de/projects/python-mips-assembler/
+      - code: CNG336
+        title: Introduction to Embedded Systems Development
+        ects: 5.5
+        tag: Controllernahe Assemblersprache
+        details: Verbindet Assemblersprachenprogrammierung und Controllerarchitektur mit praktischen Hardwareschnittstellen. Der Lehrplan umfasst A/D- und D/A-Wandlung, serielle und parallele Ports, Interrupts, Timer und Zähler, I/O-Busse, Sensoren, Aktoren, Embedded-Entwurf und -Analyse sowie Echtzeitbetriebssysteme.
+      - code: CNG384
+        title: Signals and Systems for Computer Engineers
+        ects: 5
+        details: Führt in kontinuierliche und diskrete Signale, linear zeitinvariante Systeme, Faltung, Differential- und Differenzengleichungen, Fourier-Analyse, Laplace- und z-Transformation, Abtastung und frequenzbereichsorientiertes Denken für Computer Engineering ein.
+
+  - name: Machine Learning und rechnergestützte Anwendungen
+    summary: Statistische Grundlagen und angewandte Informatik in Machine Learning, Bioinformatik und Bildverarbeitung.
+    courses:
+      - code: CNG409
+        title: Introduction to Machine Learning
+        ects: 6
+        tag: Wahlfach auf Masterniveau
+        details: Behandelt den vollständigen Machine-Learning-Workflow mit Datenrepräsentation, überwachtem und unüberwachtem Lernen, Regression, Klassifikation, Clustering, Feature Selection und Transformation, Regularisierung, Training, Validierung und Modellvergleich. Der Kurs war normalerweise für Masterstudierende vorgesehen, wurde bei verfügbaren Plätzen aber auch für Bachelorstudierende geöffnet und von mir im Bachelor abgeschlossen.
+      - code: CNG465
+        title: Introduction to Bioinformatics
+        ects: 6
+        details: Führt in rechnergestützte Methoden für biologische Sequenzen und molekulare Daten ein, darunter paarweises und multiples Alignment, Suche in Sequenzdatenbanken, Motif Discovery, phylogenetische Analyse und Data-Mining-Ansätze für biologische Interpretation.
+      - code: CNG466
+        title: Fundamental Image Processing Techniques
+        ects: 6
+        tag: Kursprojekt
+        details: Entwickelt zentrale Methoden digitaler Bildverarbeitung, darunter Bildrepräsentation, Enhancement, räumliche und Frequenzfilterung, Segmentierung, Morphologie, Merkmalsextraktion und Erkennung. Das Kursprojekt nutzte Chain Codes, Formdeskriptoren, statistische Momente, Farbmerkmale und K-Fold-Validierung für die Erkennung von Obstbäumen.
+        link: /de/projects/fruit-tree-recognition/
+      - code: STAS221
+        title: Statistics for Engineers I
+        ects: 5
+        details: Bietet eine ingenieurorientierte Einführung in Wahrscheinlichkeitsmodelle, Zufallsvariablen und Verteilungen, Stichproben, deskriptive Statistik, Punkt- und Intervallschätzung, Hypothesentests und Interpretation statistischer Evidenz.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=361
+
+  - name: Engineering Design und Berufspraxis
+    summary: Teamorientierte Entwurfsarbeit und zwei betreute Industriepraktika.
+    courses:
+      - code: CNG491
+        title: Computer Engineering Design I
+        ects: 7
+        details: Die erste Capstone-Phase überführt ein technisches Problem in einen realisierbaren Systemplan. Dazu gehören Literatur- und Kontextanalyse, Stakeholder- und Systemanforderungen, Architektur- und Entwurfsalternativen, Projektplanung, Risikobewertung, Prototyping, technische Dokumentation und formale Präsentation.
+      - code: CNG492
+        title: Computer Engineering Design II
+        ects: 7
+        details: Die zweite Capstone-Phase implementiert und bewertet den gewählten Entwurf. Sie konzentriert sich auf Integration, Verifikation und Validierung, Ergebnisanalyse, iterative Verbesserung, abschließende technische Berichte und Präsentation des fertigen Systems.
+        link: /de/projects/issue-tracking-team-analytics/
+      - code: CNG300
+        title: Summer Practice I
+        ects: 2
+        details: Ein betreutes Praktikum zur Anwendung von Computer-Engineering-Wissen im Arbeitsumfeld, Beobachtung professioneller Prozesse, Dokumentation technischer Arbeit und Reflexion über technische Praxis und organisatorische Rahmenbedingungen.
+        official_url: https://www.ncc.metu.edu.tr/cng/summer-practice
+      - code: CNG400
+        title: Summer Practice II
+        ects: 2
+        details: Ein zweites betreutes Praktikum mit stärkerem Schwerpunkt auf selbstständigem technischen Beitrag, Kommunikation am Arbeitsplatz, technischer Verantwortung und systematischer Dokumentation der abgeschlossenen Arbeit.
+        official_url: https://www.ncc.metu.edu.tr/cng/summer-practice
+
+  - name: Mathematik und Naturwissenschaften
+    summary: Die quantitative und naturwissenschaftliche Grundlage des Ingenieurstudiums.
+    courses:
+      - code: MAT119
+        title: Calculus with Analytic Geometry
+        ects: 7.5
+        details: Behandelt Funktionen, Grenzwerte, Stetigkeit, Ableitungen und Anwendungen, Extremwerte, Mittelwertsatz, Kurvendiskussion, bestimmte und unbestimmte Integrale, Flächen und Volumen, transzendente Funktionen, Regel von L'Hospital, Integrationstechniken und uneigentliche Integrale.
+        official_url: https://catalog.metu.edu.tr/course.php?course_code=3570119&prog=0
+      - code: MAT120
+        title: Calculus for Functions of Several Variables
+        ects: 7.5
+        details: Erweitert die Analysis auf mehrere Variablen mit Vektorgeometrie, partiellen und Richtungsableitungen, Gradienten, Optimierung, Mehrfachintegration, Linien- und Oberflächenintegralen und den zentralen Sätzen der Vektoranalysis.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=357
+      - code: MAT260
+        title: Basic Linear Algebra
+        ects: 5
+        details: Führt in lineare Gleichungssysteme, Matrizenoperationen, Determinanten, Vektorräume und Unterräume, Basis und Dimension, lineare Abbildungen, Eigenwerte und Eigenvektoren, Diagonalisierung und geometrische Interpretationen linearer Strukturen ein.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=357
+      - code: MAT219
+        title: Introduction to Differential Equations
+        ects: 7
+        details: Entwickelt analytische Methoden für gewöhnliche Differentialgleichungen erster und höherer Ordnung, lineare Systeme, Reihenlösungen, Laplace-Transformationen, qualitatives Verhalten und mathematische Modelle technischer und naturwissenschaftlicher Prozesse.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=357
+      - code: PHY105
+        title: General Physics I
+        ects: 6.5
+        details: Ein Analysis-basiertes Physikmodul für Ingenieurstudierende, das konzeptionelle und praktische Grundlagen der Mechanik aufbaut. Es verbindet mathematische Problemlösung mit Experimenten und bereitet auf die Analyse physikalischer Systeme im weiteren Studium vor.
+        official_url: https://catalog.metu.edu.tr/course.php?course_code=3580105&prog=367
+      - code: PHY106
+        title: General Physics II
+        ects: 6.5
+        details: Setzt die Analysis-basierte Physik mit elektrischen Feldern und Potentialen, Kapazität, Strom und Schaltungen, Magnetfeldern, Induktion und elektromagnetischen Phänomenen fort, unterstützt durch Laborexperimente und quantitative Problemlösung.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=358
+      - code: CHM107
+        title: General Chemistry
+        ects: 6
+        details: Führt in Atomstruktur, Periodentrends, chemische Bindung, Molekülgeometrie, Stöchiometrie, Gase, Flüssigkeiten und Feststoffe, Lösungen, Thermochemie, Gleichgewichte, Säuren und Basen sowie quantitative Laborarbeit für Ingenieurstudierende ein.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=360
+
+  - name: Fremdsprachen
+    summary: Wahlsprachunterricht bis A2 in Französisch und Spanisch, ergänzt durch ein englischsprachiges Studium und Kurse zur akademischen Kommunikation.
+    courses:
+      - code: FRN201
+        title: Beginning French I
+        ects: 4
+        tag: A1 abgeschlossen
+        details: Führt mit Alltagswortschatz, elementarer Grammatik, Hör- und Leseverstehen, kurzen Texten und einfacher Interaktion in gesprochenes und geschriebenes Französisch ein. Die abgeschlossene Sequenz bildet die erste Stufe meines A1-Fortschritts.
+        official_url: https://catalog.metu.edu.tr/course.php?course_code=3700201
+      - code: FRN202
+        title: Beginning French II
+        ects: 4
+        tag: A2 abgeschlossen
+        details: Baut mit breiterem Wortschatz, weiterentwickelter Grammatik, zusammenhängender mündlicher und schriftlicher Kommunikation und Verständnis routinemäßiger Situationen auf dem Einführungskurs auf. Gemeinsam mit dem ersten Kurs schloss er meinen Fortschritt bis A2 ab.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=370
+      - code: SPN201
+        title: Beginning Spanish I
+        ects: 4
+        tag: A1 abgeschlossen
+        details: Führt mit Alltagswortschatz, elementarer Grammatik, Hör- und Leseverstehen, kurzen Texten und einfacher Interaktion in gesprochenes und geschriebenes Spanisch ein. Die abgeschlossene Sequenz bildet die erste Stufe meines A1-Fortschritts.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=371
+      - code: SPN202
+        title: Beginning Spanish II
+        ects: 4
+        tag: A2 abgeschlossen
+        details: Baut mit breiterem Wortschatz, weiterentwickelter Grammatik, zusammenhängender mündlicher und schriftlicher Kommunikation und Verständnis routinemäßiger Situationen auf dem Einführungskurs auf. Gemeinsam mit dem ersten Kurs schloss er meinen Fortschritt bis A2 ab.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=371
+      - code: ENGL101
+        title: Development of Reading and Writing Skills I
+        ects: 6
+        details: Entwickelt akademische Lesestrategien und den Aufbau klarer Absätze und kurzer Essays. Der Schwerpunkt liegt auf Organisation, Kohäsion, Wortschatz im Kontext, Interpretation von Quelltexten und präziser schriftlicher Kommunikation in einem englischsprachigen Studium.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=359
+      - code: ENGL102
+        title: Development of Reading and Writing Skills II
+        ects: 6
+        details: Erweitert akademische Sprachkompetenz durch längere Texte, Synthese mehrerer Quellen, Argumentationsaufbau, Evidenznutzung, Überarbeitung und strukturierte Essays. Der Kurs legt mehr Gewicht auf kritische Reaktion und durchgängige schriftliche Begründung.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=359
+      - code: ENGL211
+        title: Academic Oral Presentation Skills
+        ects: 4
+        details: Entwickelt Planung und Durchführung akademischer Präsentationen einschließlich Recherche, Auswahl und Organisation der Inhalte, Zielgruppenorientierung, visueller Unterstützung, Signposting, Aussprache, Vortrag, Beantwortung von Fragen und Beteiligung an akademischen Diskussionen.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=359
+      - code: ENGL311
+        title: Advanced Communication Skills
+        ects: 4
+        details: Wendet fortgeschrittene englische Kommunikation in beruflichen und akademischen Situationen an, durch analytisches Lesen, formelles Schreiben, Präsentationen, Meetings, Teamarbeit und zielgruppengerechte Botschaften. Im Mittelpunkt stehen Klarheit, Überzeugungskraft und sichere Kommunikation in komplexen Situationen.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=359
+
+  - name: Universitätsstudium und berufliche Grundlagen
+    summary: Studienorientierung, Türkisch, moderne türkische Geschichte und Arbeitssicherheit.
+    courses:
+      - code: CNG100
+        title: Introduction to Information Technologies and Applications
+        ects: 1
+        details: Vermittelt zu Beginn des Studiums praktische Erfahrung mit verbreiteten Informationstechnologien, digitalen Werkzeugen, universitären IT-Diensten, Online-Zusammenarbeit, Informationszugang und verantwortungsvoller Nutzung von IT-Systemen.
+      - code: CNG101
+        title: Computer Engineering Orientation
+        ects: 1
+        details: Führt in Aufbau und Erwartungen des Computer-Engineering-Programms, zentrale technische Gebiete, effektive Lern- und Teampraktiken, berufliche Rollen, Ingenieurethik sowie mögliche akademische und berufliche Wege ein.
+      - code: TUR101
+        title: Turkish I
+        ects: 2
+        details: Untersucht Struktur und wirkungsvollen Gebrauch des Türkischen durch Lesen, Wortschatz, Satz- und Absatzorganisation, schriftlichen Ausdruck und die Rolle von Sprache in akademischer, gesellschaftlicher und beruflicher Kommunikation.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=365
+      - code: TUR102
+        title: Turkish II
+        ects: 2
+        details: Entwickelt türkisches Verständnis und Ausdruck durch längere Texte, strukturiertes Schreiben, Interpretation, Argumentation und sprachliche Genauigkeit weiter, mit Schwerpunkt auf klarer und zielgerichteter Kommunikation.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=365
+      - code: HST201
+        title: Principles of Kemal Ataturk I
+        ects: 2
+        details: Untersucht die späte osmanische Zeit, politische und gesellschaftliche Transformation, den Ersten Weltkrieg, den türkischen nationalen Befreiungskampf und die Gründung der Republik als historischen Kontext der modernen Türkei.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=366
+      - code: HST202
+        title: Principles of Kemal Ataturk II
+        ects: 2
+        details: Behandelt Reformen und Institutionen der Türkischen Republik, politischen und gesellschaftlichen Wandel, innen- und außenpolitische Entwicklungen und die historische Rolle der mit Atatürk verbundenen Prinzipien.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=366
+      - code: OCHS101
+        title: Occupational Health and Safety I
+        ects: 2
+        details: Führt in Arbeits- und Gesundheitsschutz, Gefahren am Arbeitsplatz, Risikoerkennung, Präventionsprinzipien, Unfallbewusstsein, persönliche und organisatorische Verantwortung und Grundlagen sicherer Ingenieurpraxis ein.
+        official_url: https://catalog.metu.edu.tr/program.php?fac_prog=355
+      - code: OCHS301
+        title: Occupational Health and Safety II
+        ects: 2
+        details: Erweitert Wissen zur Arbeitssicherheit durch Risikobewertung, Kontrollmaßnahmen, Notfall- und Unfallverfahren, Präventionskultur, Verantwortlichkeiten und Anwendung von Sicherheitsprinzipien in technischen Arbeitsumgebungen.
+        official_url: https://catalog.metu.edu.tr/program.php?fac_prog=355

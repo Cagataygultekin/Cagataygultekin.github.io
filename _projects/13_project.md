@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: project-mips
 published: true
 title: MIPS Assembler in Python
 description: A Python assembler that translates core MIPS instructions and selected pseudo-instructions into hexadecimal machine code.

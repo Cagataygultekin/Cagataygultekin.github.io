@@ -1,0 +1,48 @@
+en:
+  gultekin2025crowd:
+    abbr: M.Sc. Thesis
+    month: Oct
+    note: Supervised by Prof. Dr. Felix Dietrich; presented at accu:rate GmbH on 1 October
+    website: /academic-work/master-thesis/
+  gultekin2023relu:
+    abbr: Seminar Paper
+    month: July
+    note: Presented on 17 July 2023 as part of Selected Topics in Machine Learning Research; supervised by Prof. Dr. Stephan Günnemann
+    website: /academic-work/seminar-paper/
+  gultekin2021issuetracking:
+    abbr: B.Sc. Thesis
+    month: June
+    note: Supervised by Dr. Sukru Eraslan
+    website: /academic-work/bachelors-thesis/
+de:
+  gultekin2025crowd:
+    abbr: Masterarbeit
+    month: Okt
+    note: Betreut von Prof. Dr. Felix Dietrich; am 1. Oktober bei accu:rate GmbH präsentiert
+    website: /de/academic-work/master-thesis/
+  gultekin2023relu:
+    abbr: Seminararbeit
+    month: Juli
+    note: Am 17. Juli 2023 im Seminar Selected Topics in Machine Learning Research präsentiert; betreut von Prof. Dr. Stephan Günnemann
+    website: /de/academic-work/seminar-paper/
+  gultekin2021issuetracking:
+    abbr: Bachelorarbeit
+    month: Juni
+    note: Betreut von Dr. Sukru Eraslan
+    website: /de/academic-work/bachelors-thesis/
+tr:
+  gultekin2025crowd:
+    abbr: Yüksek Lisans Tezi
+    month: Eki
+    note: Prof. Dr. Felix Dietrich danışmanlığında; 1 Ekim'de accu:rate GmbH ofisinde sunuldu
+    website: /tr/academic-work/master-thesis/
+  gultekin2023relu:
+    abbr: Seminar Paper
+    month: Tem
+    note: 17 Temmuz 2023'te Selected Topics in Machine Learning Research kapsamında sunuldu; Prof. Dr. Stephan Günnemann danışmanlığında
+    website: /tr/academic-work/seminar-paper/
+  gultekin2021issuetracking:
+    abbr: Lisans Tezi
+    month: Haz
+    note: Dr. Sukru Eraslan danışmanlığında
+    website: /tr/academic-work/bachelors-thesis/

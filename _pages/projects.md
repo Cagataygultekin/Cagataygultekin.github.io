@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: projects
 title: projects
 permalink: /projects/
 description: Selected software engineering, machine learning, and scientific computing projects.
@@ -14,7 +16,7 @@ horizontal: false
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
-  {% assign categorized_projects = site.projects | where: "category", category %}
+  {% assign categorized_projects = site.projects | where: "category", category | where: "lang", page.lang %}
   {% assign sorted_projects = categorized_projects | sort: "importance" %}
   <!-- Generate cards for each project -->
   {% if page.horizontal %}
@@ -38,7 +40,7 @@ horizontal: false
 
 <!-- Display projects without categories -->
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
+{% assign sorted_projects = site.projects | where: "lang", page.lang | sort: "importance" %}
 
   <!-- Generate cards for each project -->
 
@@ -61,7 +63,7 @@ horizontal: false
 {% endif %}
 </div>
 
-{% assign earlier_projects = site.projects | where: "category", "earlier" %}
+{% assign earlier_projects = site.projects | where: "category", "earlier" | where: "lang", page.lang %}
 {% if earlier_projects.size > 0 %}
   <div class="earlier-projects-cta mt-4">
     <a class="btn btn-outline-primary" href="{{ '/projects/earlier/' | relative_url }}">

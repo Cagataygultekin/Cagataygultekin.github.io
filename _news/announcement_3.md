@@ -1,5 +1,7 @@
 ---
 layout: post
+lang: en
+translation_key: news-hpc-published
 date: 2026-05-22 09:00:00+02:00
 inline: true
 related_posts: false

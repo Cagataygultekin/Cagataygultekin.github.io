@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: metu-coursework
 title: METU coursework
 permalink: /academic-work/metu-coursework/
 description: Completed coursework from the B.S. Computer Engineering programme at Middle East Technical University Northern Cyprus Campus.

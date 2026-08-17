@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: project-antipattern
 published: true
 title: Java Performance Anti-Pattern Analyzer
 description: A static and dynamic analysis tool that traces repository calls through Java call chains and delivers severity-ranked findings inside IntelliJ IDEA.

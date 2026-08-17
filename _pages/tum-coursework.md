@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: tum-coursework
 title: TUM coursework
 permalink: /academic-work/tum-coursework/
 description: Completed coursework from the M.Sc. Informatics programme at the Technical University of Munich.

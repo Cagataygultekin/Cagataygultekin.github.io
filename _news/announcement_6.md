@@ -1,5 +1,7 @@
 ---
 layout: post
+lang: en
+translation_key: news-itestra
 date: 2024-04-02 09:00:00+02:00
 inline: true
 related_posts: false

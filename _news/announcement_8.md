@@ -1,5 +1,7 @@
 ---
 layout: post
+lang: en
+translation_key: news-accurate
 date: 2025-03-03 09:00:00+01:00
 inline: true
 related_posts: false

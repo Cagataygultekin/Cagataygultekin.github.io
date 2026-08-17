@@ -1,5 +1,7 @@
 ---
 layout: post
+lang: en
+translation_key: news-ykt
 date: 2021-07-01 09:00:00+03:00
 inline: true
 related_posts: false

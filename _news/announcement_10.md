@@ -1,5 +1,7 @@
 ---
 layout: post
+lang: en
+translation_key: news-chemcpa
 date: 2023-02-01 09:00:00+01:00
 inline: true
 related_posts: false

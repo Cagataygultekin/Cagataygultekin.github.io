@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: earlier-projects
 title: earlier projects
 permalink: /projects/earlier/
 description: Selected earlier work in software analytics, relational database engineering, and application development.
@@ -11,7 +13,7 @@ nav: false
 </p>
 
 <div class="projects mt-4">
-  {% assign earlier_projects = site.projects | where: "category", "earlier" | sort: "importance" %}
+  {% assign earlier_projects = site.projects | where: "category", "earlier" | where: "lang", page.lang | sort: "importance" %}
   <div class="row row-cols-1 row-cols-md-2">
     {% for project in earlier_projects %}
       {% include projects.liquid %}

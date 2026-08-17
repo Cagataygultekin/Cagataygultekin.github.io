@@ -2,6 +2,8 @@
 layout: default
 ---
 <div class="post">
+  {% assign current_lang = page.lang | default: site.lang %}
+  {% assign translations = site.data.i18n[current_lang] %}
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
@@ -28,7 +30,7 @@ layout: default
           {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
           {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=translations.profile_photo
             cache_bust=true
           %}
         {% endif %}
@@ -48,9 +50,10 @@ layout: default
     <!-- Selected projects -->
     {% if page.selected_projects %}
       <h2 class="mt-5 mb-3">
-        <a href="{{ '/projects/' | relative_url }}" style="color: inherit">selected projects</a>
+        <a href="{{ translations.routes.projects | relative_url }}" style="color: inherit">{{ translations.selected_projects }}</a>
       </h2>
-      {% assign selected_projects = site.projects | sort: 'importance' %}
+      {% assign localized_projects = site.projects | where: 'lang', current_lang %}
+      {% assign selected_projects = localized_projects | sort: 'importance' %}
       <div class="row row-cols-1 row-cols-md-2 home-selected-projects">
         {% for project in selected_projects limit: 4 %}
           {% include projects.liquid %}
@@ -61,7 +64,7 @@ layout: default
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2 class="mt-5 mb-3">
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ translations.routes.news | relative_url }}" style="color: inherit">{{ translations.news }}</a>
       </h2>
       {% include news.liquid compact=true %}
     {% endif %}
@@ -69,7 +72,7 @@ layout: default
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">{{ translations.latest_posts }}</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
@@ -77,7 +80,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2 class="mt-5 mb-3">
-        <a href="{{ '/academic-work/' | relative_url }}" style="color: inherit">selected academic work</a>
+        <a href="{{ translations.routes.academic_work | relative_url }}" style="color: inherit">{{ translations.selected_academic_work }}</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}

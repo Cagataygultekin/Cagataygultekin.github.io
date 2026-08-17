@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: project-ykt
 published: true
 title: Sprint Reporting and Productivity Workflow
 description: A full-stack internal workflow that improved sprint-data quality and turned team inputs into consistent newsletters and monthly productivity reporting.

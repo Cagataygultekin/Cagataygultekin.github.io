@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: project-hpc
 published: true
 title: Parallel HDF5 Output for CFD Simulations
 description: A C++/MPI extension to NS-EOF that added structured HDF5 output and XDMF metadata for faster, smaller, ParaView-ready simulation data.

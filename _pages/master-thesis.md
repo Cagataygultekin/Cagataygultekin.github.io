@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: master-thesis
 title: Predicting Macroscopic Crowd Properties Using the SWIM Algorithm
 permalink: /academic-work/master-thesis/
 description: Master's thesis in Informatics at the Technical University of Munich.

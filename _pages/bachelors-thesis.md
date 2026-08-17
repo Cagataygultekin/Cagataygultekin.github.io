@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: bachelors-thesis
 title: Discovering Issue-tracking Profiles of Software Development Teams
 permalink: /academic-work/bachelors-thesis/
 description: Bachelor's thesis on measurable issue-tracking practices and repository-based software process analysis.

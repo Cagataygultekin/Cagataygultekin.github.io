@@ -1,0 +1,386 @@
+tum:
+  - name: Makine öğrenmesi ve veri analizi
+    summary: İstatistiksel öğrenme, sinir ağları, uygulamalı veri analizi ve tıbbi yapay zeka uygulamaları.
+    courses:
+      - code: IN2064
+        title: Machine Learning
+        ects: 8
+        details: Modül, regresyon ve sınıflandırmadan gözetimsiz yöntemlere uzanan olasılıksal bir makine öğrenmesi yaklaşımı geliştirir. Bayesian decision theory, density estimation, mixture model, expectation maximization, dimensionality reduction, kernel yöntemleri ve öğrenilen modellerin ilkeli değerlendirmesini kapsar.
+        official_url: https://support.moodle.tum.de/course/info.php?id=100567
+      - code: IN2346
+        title: Introduction to Deep Learning
+        ects: 6
+        details: Ders linear classifier ve maximum-likelihood learning ile başlayıp sinir ağları, stochastic gradient descent, backpropagation, aktivasyon fonksiyonları, initialization, batch normalization ve hiperparametre optimizasyonuna geçer. Ardından convolutional mimariler, regularization, recurrent ağlar, LSTM, transformer ve pratik görüntü sınıflandırma problemlerini ele alır.
+        official_url: https://academics.nat.tum.de/en/studies/org/mh/details/mod/IN2346
+      - code: IN2339
+        title: Data Analysis and Visualization in R
+        ects: 6
+        details: Gerçek dünya verisini alma, keşfetme ve yorumlama etrafında düzenlenen modül R programlama, tekrarlanabilir raporlar, veriyi içe aktarma ve düzenleme ile grammar of graphics tabanlı görselleştirmeyi kapsar. Sonraki konular clustering, principal-component analysis, resampling tabanlı inference, istatistiksel testler, supervised learning ve uçtan uca vaka çalışmalarını içerir.
+        official_url: https://www.cs.cit.tum.de/en/cmm/training-and-teaching/winter-term-2020/data-analysis-and-visualization-in-r/
+      - code: IN2403
+        title: Artificial Intelligence in Medicine
+        ects: 5
+        details: Ders serisi makine öğrenmesi ve sinir ağı yöntemlerinin tıbbi uygulamalarda kullanımını inceler. Yalnızca model kurmaya değil klinik ve görüntüleme verilerinin özelliklerine, anlamlı değerlendirmeye, güvenilirliğe ve tıbbi yapay zekayı genel benchmark problemlerinden ayıran pratik kısıtlara odaklanır.
+        official_url: https://kiinformatik.mri.tum.de/es/node/2826
+
+  - name: Yazılım kalitesi ve güvenilir yapay zeka
+    summary: Yazılım testi, requirements ve güvenli, dayanıklı öğrenen sistemlerin mühendisliği.
+    courses:
+      - code: CIT423002
+        title: AI Testing
+        ects: 5
+        details: Modül öğrenen bileşenleri davranışı veri, eğitim ve çalışma bağlamına bağlı yazılım olarak ele alır. Geleneksel test kavramlarının yapay zeka sistemlerine nasıl uyarlanacağını; test verisi tasarımı, davranış özellikleri, yeterlilik ölçütleri, robustness değerlendirmesi ve basit bir test oracle bulunmadığında evaluation dahil inceler.
+        official_url: https://www.moodle.tum.de/course/info.php?id=105602&lang=en
+      - code: CIT4230005
+        title: Engineering Resilient Cognitive Systems
+        ects: 3
+        details: Ders resilience'ı belirsiz ortamlarda faydayı optimize ederken güvenliği korumak olarak tanıtır. Safety ve reliability temelleri, Safety of the Intended Functionality, AI tabanlı sistemler için assurance sorunları ve otonom araçlar, robotik, tıbbi cihazlar ile diğer cognitive cyber-physical sistemler için self-adaptive safety mimarilerini kapsar.
+        official_url: https://www.cs.cit.tum.de/en/ercs/teaching/lecture-engineering-resilient-cognitive-systems/
+      - code: IN2084
+        title: Advanced Topics of Software Testing
+        ects: 5
+        details: İleri modül, temel unit testlerinin ötesinde hata ortaya çıkarma ve yazılım kalitesini değerlendirme yollarını inceler. Test tasarımı ve seçimi, yapısal ve davranışsal coverage, otomasyon, regression odaklı stratejiler ve karmaşık, gelişen sistemler için araştırma tabanlı test yaklaşımlarını kapsar.
+        official_url: https://www.cs.cit.tum.de/en/sse/teaching/
+      - title: Requirements Engineering
+        ects: 3
+        details: Ders requirementsı stakeholder keşfinden kontrollü değişime kadar izler. Functional requirement ve kalite özellikleri için elicitation, dokümantasyon, modelleme, önceliklendirme, validation, conflict resolution, traceability ve change management konularını ele alır.
+        official_url: https://www.cs.cit.tum.de/en/sse/teaching/
+
+  - name: Bilimsel hesaplama
+    summary: Kuantum hesaplamanın temelleri ve sistem odaklı bilimsel simülasyon çalışmaları.
+    courses:
+      - code: IN2381
+        title: Introduction to Quantum Computing
+        ects: 5
+        details: Modül qubit ve çok qubitli sistemlerin matematiksel temsili, unitary gate, quantum circuit, entanglement ve measurement konularını tanıtır. Ardından temsilî quantum algoritmaların hesaplama fikirlerini geliştirir ve quantum information processing'i klasik hesaplamayla karşılaştırır.
+        official_url: https://www.cs.cit.tum.de/en/qc/teaching/
+      - code: IN2311
+        title: Turbulent Flow Simulation on HPC-Systems
+        ects: 5
+        tag: Proje olarak belgelendi
+        details: Modül sayısal akış simülasyonunu yüksek performanslı geliştirmeyle birleştirir. Dağıtık C++ solver yapısı, domain decomposition, MPI iletişimi, paralel sayısal kernel, bilimsel çıktı formatları, ölçeklenebilir I/O, görselleştirme iş akışları, profilleme ve HPC sistemlerinde performans değerlendirmesini kapsar.
+        official_url: https://www.cs.cit.tum.de/en/sccs/people/benjamin-rueth/
+        link: /tr/projects/parallel-hdf5-cfd-output/
+
+  - name: Almanca ilerlemesi
+    summary: A1.2'den B1.2'ye tamamlanan Almanca modülleri, TUM'da B2.1'e devam ve üniversite dışında birebir eğitim.
+    courses:
+      - title: German as a Foreign Language A1.2
+        ects: 4
+        details: Günlük kelime bilgisi, temel gramer, dinleme, okuma, sözlü etkileşim ve kısa yazılı iletişimle başlangıç Almancasının devamı.
+        official_url: https://www.sprachenzentrum.tum.de/en/sz/languages/german/
+      - code: SZ0303
+        title: German as a Foreign Language A2.1
+        ects: 6
+        details: Cümle yapısı, kelime bilgisi, anlama ve etkileşimi genişleterek kişisel, üniversite ve günlük durumlar için pratik Almanca geliştirme.
+        official_url: https://www.sprachenzentrum.tum.de/en/sz/languages/german/
+      - title: German as a Foreign Language A2.2
+        ects: 6
+        details: Daha geniş pratik iletişim, bağlantılı konuşma ve yazma ve rutin Almanca durumlarını daha iyi anlama ile A2 seviyesinin tamamlanması.
+        official_url: https://www.sprachenzentrum.tum.de/en/sz/languages/german/
+      - title: German as a Foreign Language B1.1
+        ects: 4
+        details: Bağımsız iletişim, bağlantılı metinler, deneyimleri açıklama ve tanıdık mesleki ve sosyal konuları tartışmaya daha çok odaklanan orta seviye Almancaya giriş.
+        official_url: https://www.sprachenzentrum.tum.de/en/sz/languages/german/
+      - title: German as a Foreign Language B1.2
+        ects: 4
+        details: Daha ayrıntılı okuma ve dinleme, yapılandırılmış yazma, spontan etkileşim ve fikirlerle gerekçeleri daha açık ifade ederek B1 seviyesinin pekiştirilmesi.
+        official_url: https://www.sprachenzentrum.tum.de/en/sz/languages/german/
+      - title: German as a Foreign Language B2.1
+        status: TUM'da katılım sağlandı
+        details: Ders daha karmaşık metinlere, uzun tartışmalara, daha kesin yazılı ifadeye ve akademik ile mesleki bağlam kelimelerine giriş sağladı. Dönem boyunca katıldım ve midtermde iyi performans gösterdim, ancak final sınavına girmedim.
+        official_url: https://www.sprachenzentrum.tum.de/en/sz/languages/german/
+      - title: German B2.2 Individual Tuition
+        status: Harici kurs
+        details: Birebir eğitim, hedefli konuşma pratiği, ileri gramer, dinleme, kelime geliştirme ve kişisel eksiklerime göre düzeltmelerle B2 ilerlemesini sürdürdü.
+        external: true
+      - title: German General Revision
+        status: Harici kurs
+        details: Tamamlayıcı tekrar dersi önceki seviyelerdeki yapıları yeniden ele aldı ve rehberli konuşma ile egzersizler yoluyla doğruluk, akıcılık, kelime hatırlama ve günlük iletişimi pekiştirdi.
+        external: true
+
+metu:
+  - name: Programlama, algoritmalar ve teori
+    summary: Bilgisayar Mühendisliği programının programlama ve teori temeli.
+    courses:
+      - code: CNG111
+        title: Introduction to Computer Engineering Concepts
+        ects: 4
+        details: Ders algoritma ve programlamaya geçmeden önce bilgisayar organizasyonu, işletim sistemleri, dil işleyicileri ve kullanıcı arayüzlerini tanıtır. Uygulamalı çalışmalar program doğruluğu ve verimliliği hakkında gayriresmi muhakeme geliştirmek için functional programming kullanır.
+      - code: CNG140
+        title: C Programming
+        ects: 4
+        details: C ile algoritmik problem çözme ve structured programminge giriş. Expressions, control flow, functions, arrays, pointers, character strings, structures, file processing, dynamic memory ve program organizasyonuyla etkin bellek kullanımı arasındaki ilişkiyi kapsar.
+      - code: CNG213
+        title: Data Structures
+        ects: 6
+        details: Linked list, stack, queue, recursion, tree, binary-search tree, array ve pointer tabanlı temsiller, sorting ve searching konularını kapsar. Alternatif veri yapıları ve geliştirmeler zaman ve alan maliyetleriyle karşılaştırılır.
+      - code: CNG223
+        title: Discrete Computational Structures
+        ects: 6
+        details: Propositional ve predicate logic, set, relation, function, induction, graph theory, tree, temel algebraic structure ve lattice konularıyla bilgisayar bilimindeki ayrık matematik temelini kurar.
+      - code: CNG242
+        title: Programming Language Concepts
+        ects: 7
+        details: Translation, virtual machine, runtime environment, name and binding, scope, value and type, storage, procedural abstraction ve generic dahil programlama dillerinin tasarım ve geliştirmesini inceler. Encapsulation, inheritance, polymorphism ve dynamic binding dahil functional ve object-oriented paradigmaları karşılaştırır.
+      - code: CNG280
+        title: Formal Languages and Abstract Machines
+        ects: 6
+        details: Regular language ve finite automata, context-free grammar ve pushdown automata, Turing machine, decidability ve dil sınıflarıyla soyut hesaplama modelleri arasındaki ilişkileri tanıtır.
+      - code: CNG315
+        title: Algorithms
+        ects: 6
+        details: Asymptotic analysis, divide-and-conquer, greedy strategies, dynamic programming, graph traversal ve optimization ile NP-completeness üzerinden etkin hesaplamanın sınırları dahil algoritma tasarım ve analiz yöntemlerini geliştirir.
+      - code: CNG443
+        title: Introduction to Object-Oriented Programming Languages and Systems
+        ects: 6
+        details: Temel ve ileri object-oriented kavramlardan exception, stream, concurrency, graphical interface, security, network object, database connectivity, serialization, remote method invocation ve enterprise component konularına geçer. Tekrar kullanılabilir abstractionları ve bunları destekleyen runtime mekanizmalarını vurgular.
+      - code: CNG445
+        title: Software Development with Scripting Languages
+        ects: 6
+        tag: Ders projesi
+        details: Scripting dillerinin system programming, diğer programlarla entegrasyon, object-oriented design, concurrency ve hem server hem browser tarafında web development olanaklarını inceler. İlgili proje bu fikirleri çok istemcili bir Python TCP uygulamasında kullandı.
+        link: /tr/projects/python-coffee-shop-client-server/
+      - code: CNG457
+        title: Software Construction
+        ects: 6
+        tag: Üç parçalı geliştirme
+        details: Reference architecture ve güncel araçlarla eksiksiz sistem geliştirmeye odaklanır. Architectural style, concurrency, design pattern, framework, service ve API, GUI geliştirme, tekrar kullanılabilir bileşenler ve unit, component ve system düzeyinde test konularını kapsar.
+        link: /tr/projects/java-spring-ecommerce-service/
+        links:
+          - label: Web servisi
+            url: https://github.com/457Proje-CSS/team6-cng457--webservice
+          - label: Masaüstü istemcisi
+            url: https://github.com/457Proje-CSS/team-6--cng457-desktopapp
+          - label: Proje reposu
+            url: https://github.com/457Proje-CSS/457_Proje_Cagatay-Serhat-Soykan
+
+  - name: Yazılım ve veri sistemleri
+    summary: Yazılım yaşam döngüsü, kalıcı veri, işletim sistemleri ve ağ tabanlı hesaplama.
+    courses:
+      - code: CNG350
+        title: Software Engineering
+        ects: 5.5
+        details: Project planning ve estimationdan requirements analysis, software design, implementation, quality assurance ve testinge kadar mühendislik yaşam döngüsünü kapsar. Metrikler ve yönetim teknikleri teknik çalışmayı planlama ve teslimat kararlarıyla birleştirir.
+      - code: CNG351
+        title: Data Management and File Structures
+        ects: 6
+        details: Sequential ve ordered file, external sorting, heap ve replacement-selection sorting, large-memory sorting, B+ tree index ile classical ve linear hashing konularını inceler. Ardından relational database, relational algebra ve calculus, SQL, QBE, QUEL, join ve entity-relationship modeling konularına giriş yapar.
+      - code: CNG352
+        title: Database Management Systems
+        ects: 6
+        tag: Ders projesi
+        details: Relational algebra ve query optimizationı entity-relationship modeling, normalization, physical design ve tuning ile birlikte geliştirir. Sistem konuları transaction, concurrency control, recovery, client-server architecture, authorization, XML, XQuery, web-data management ve web serviceleri kapsar. Career Diaries projesi bu kavramları öğrenciler, mezunlar, akademisyenler ve profesyoneller için normalize edilmiş çok rollü ilişkisel bir platformda uyguladı.
+        link: /tr/projects/career-diaries-community-platform/
+      - code: CNG334
+        title: Introduction to Operating Systems
+        ects: 5.5
+        details: Process ve processor management, concurrent process, synchronization, deadlock, memory management, I/O ve device management, file system ve güncel operating-system teknolojilerini tanıtır. Distributed operating system, distributed synchronization ve distributed file system konularını da inceler.
+      - code: CNG435
+        title: Data Communications and Computer Networking
+        ects: 6
+        details: OSI modelini physical transmission ve electrical interface katmanından data-link ve media-access control, LAN ve MAN teknolojileri, internetworking, bridging, routing ve transport katmanlarına kadar izler; üst ağ katmanlarının sorunlarına girişle tamamlanır.
+
+  - name: Bilgisayar mimarisi ve gömülü sistemler
+    summary: Dijital mantıktan gömülü geliştirmeye donanım-yazılım etkileşimi.
+    courses:
+      - code: CNG232
+        title: Logic Design
+        ects: 7
+        details: Number system, Boolean algebra, gate, flip-flop ve combinational ile sequential circuit tasarımını kapsar. Register, counter, bus transfer, RAM ve ROM, instruction execution ve hardwired control dijital mantığı temel bilgisayar mimarisine bağlar.
+      - code: EEE281
+        title: Electrical Circuits
+        ects: 6
+        details: Voltage, current, power, circuit law, network theorem, energy-storage element ve transient ile steady-state davranışı üzerinden elektrik devre analizinin temelini kurar. Modül dijital donanım ve embedded interface çalışmalarını destekler.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=356
+      - code: CNG331
+        title: Computer Organization
+        ects: 6
+        tag: MIPS assembler projesi
+        details: Microprogrammed control, I/O device ve interface, memory hierarchy ve management, hızlı multiplication ve floating-point arithmetic, RISC organization ve computer communication konularını inceler. MIPS assembler projem bu kavramları instruction parsing, encoding ve makine kodu üretimiyle bağladı.
+        link: /tr/projects/python-mips-assembler/
+      - code: CNG336
+        title: Introduction to Embedded Systems Development
+        ects: 5.5
+        tag: Controller düzeyinde assembly
+        details: Assembly-language programming ve controller architectureı pratik donanım arayüzleriyle birleştirir. A/D ve D/A conversion, serial ve parallel port, interrupt, timer ve counter, I/O bus, sensor, actuator, embedded design ve analysis ile real-time operating system konularını içerir.
+      - code: CNG384
+        title: Signals and Systems for Computer Engineers
+        ects: 5
+        details: Continuous ve discrete-time signal, linear time-invariant system, convolution, differential ve difference-equation representation, Fourier analysis, Laplace ve z transform, sampling ve computer engineering uygulamaları için frequency-domain muhakemeyi tanıtır.
+
+  - name: Makine öğrenmesi ve hesaplamalı uygulamalar
+    summary: Makine öğrenmesi, biyoinformatik ve görüntü işlemede istatistiksel temeller ile uygulamalı hesaplama.
+    courses:
+      - code: CNG409
+        title: Introduction to Machine Learning
+        ects: 6
+        tag: Lisansüstü düzeyde seçmeli ders
+        details: Data representation, supervised ve unsupervised learning, regression, classification, clustering, feature selection ve transformation, regularization, training, validation ve model performance karşılaştırması dahil uçtan uca makine öğrenmesi iş akışını kapsar. Normalde lisansüstü düzeyde açılan ders, kontenjan olduğunda lisans öğrencilerine de açıldı ve ben lisans eğitimim sırasında tamamladım.
+      - code: CNG465
+        title: Introduction to Bioinformatics
+        ects: 6
+        details: Pairwise ve multiple alignment, sequence-database searching, motif discovery, phylogenetic analysis ve biyolojik yorumlama için data-mining yaklaşımları dahil biyolojik sekanslar ve moleküler veri için hesaplamalı yöntemleri tanıtır.
+      - code: CNG466
+        title: Fundamental Image Processing Techniques
+        ects: 6
+        tag: Ders projesi
+        details: Image representation, enhancement, spatial ve frequency filtering, segmentation, morphology, feature extraction ve recognition dahil temel dijital görüntü işleme yöntemlerini geliştirir. Ders projesi meyve ağacı tanıma için chain code, shape descriptor, statistical moment, color feature ve K-Fold validation kullandı.
+        link: /tr/projects/fruit-tree-recognition/
+      - code: STAS221
+        title: Statistics for Engineers I
+        ects: 5
+        details: Probability model, random variable ve distribution, sampling, descriptive statistics, point ve interval estimation, hypothesis testing ve istatistiksel kanıtların yorumlanmasına mühendislik odaklı giriş sağlar.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=361
+
+  - name: Mühendislik tasarımı ve mesleki uygulama
+    summary: Ekip tabanlı tasarım çalışması ve iki gözetimli sektör stajı.
+    courses:
+      - code: CNG491
+        title: Computer Engineering Design I
+        ects: 7
+        details: Capstone projesinin ilk aşaması bir mühendislik problemini uygulanabilir sistem planına dönüştürür. Literatür ve bağlam incelemesi, stakeholder ve system requirementlar, mimari ve tasarım alternatifleri, proje planlama, risk değerlendirme, prototipleme, teknik dokümantasyon ve resmi sunumu kapsar.
+      - code: CNG492
+        title: Computer Engineering Design II
+        ects: 7
+        details: İkinci capstone aşaması seçilen tasarımı geliştirir ve değerlendirir. Integration, verification ve validation, sonuç analizi, yinelemeli iyileştirme, final teknik raporu ve tamamlanan mühendislik sisteminin sunumunu vurgular.
+        link: /tr/projects/issue-tracking-team-analytics/
+      - code: CNG300
+        title: Summer Practice I
+        ects: 2
+        details: Bilgisayar mühendisliği bilgisini gerçek iş ortamında uygulamak, mesleki süreçleri gözlemlemek, teknik çalışmayı belgelemek ve mühendislik uygulamasıyla organizasyonel kısıtları değerlendirmek için gözetimli staj.
+        official_url: https://www.ncc.metu.edu.tr/cng/summer-practice
+      - code: CNG400
+        title: Summer Practice II
+        ects: 2
+        details: Bağımsız teknik katkı, iş yeri iletişimi, mühendislik sorumluluğu ve tamamlanan işin sistematik dokümantasyonuna daha fazla odaklanan ikinci gözetimli mesleki staj.
+        official_url: https://www.ncc.metu.edu.tr/cng/summer-practice
+
+  - name: Matematik ve fen bilimleri
+    summary: Mühendislik müfredatını destekleyen nicel ve bilimsel temel.
+    courses:
+      - code: MAT119
+        title: Calculus with Analytic Geometry
+        ects: 7.5
+        details: Function, limit, continuity, derivative ve uygulamaları, extreme value, mean-value theorem, graphing, definite ve indefinite integral, area ve volume, transcendental function, L'Hopital kuralı, integration tekniği ve improper integral konularını kapsar.
+        official_url: https://catalog.metu.edu.tr/course.php?course_code=3570119&prog=0
+      - code: MAT120
+        title: Calculus for Functions of Several Variables
+        ects: 7.5
+        details: Calculusu vector geometry, partial ve directional derivative, gradient, optimization, multiple integration, line ve surface integral ve vector calculusun temel teoremleriyle çok değişkenli fonksiyonlara genişletir.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=357
+      - code: MAT260
+        title: Basic Linear Algebra
+        ects: 5
+        details: Linear equation system, matrix operation, determinant, vector space ve subspace, basis ve dimension, linear transformation, eigenvalue ve eigenvector, diagonalization ve doğrusal yapının geometrik yorumlarını tanıtır.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=357
+      - code: MAT219
+        title: Introduction to Differential Equations
+        ects: 7
+        details: Birinci ve yüksek dereceli ordinary differential equation, linear system, series solution, Laplace transform, qualitative behavior ve mühendislik ile bilim süreçlerinin matematiksel modelleri için analitik yöntemler geliştirir.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=357
+      - code: PHY105
+        title: General Physics I
+        ects: 6.5
+        details: Mühendislik öğrencileri için mekanikte kavramsal ve pratik temeller oluşturan calculus tabanlı fizik modülü. Matematiksel problem çözmeyi deneylerle birleştirir ve sonraki mühendislik eğitimindeki fiziksel sistemleri analiz etmeye hazırlar.
+        official_url: https://catalog.metu.edu.tr/course.php?course_code=3580105&prog=367
+      - code: PHY106
+        title: General Physics II
+        ects: 6.5
+        details: Calculus tabanlı fiziği electric field ve potential, capacitance, current ve circuit, magnetic field, induction ve electromagnetic phenomenon konularıyla sürdürür; laboratuvar deneyleri ve nicel problem çözmeyle destekler.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=358
+      - code: CHM107
+        title: General Chemistry
+        ects: 6
+        details: Mühendislik öğrencileri için atomic structure, periodic trend, chemical bonding, molecular geometry, stoichiometry, gas, liquid ve solid, solution, thermochemistry, equilibrium, acid ve base ile nicel laboratuvar uygulamasını tanıtır.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=360
+
+  - name: Yabancı diller
+    summary: Fransızca ve İspanyolcada A2'ye kadar seçmeli dil eğitimi, İngilizce program ve akademik iletişim dersleriyle desteklendi.
+    courses:
+      - code: FRN201
+        title: Beginning French I
+        ects: 4
+        tag: A1 tamamlandı
+        details: Günlük kelime bilgisi, temel gramer, dinleme ve okuduğunu anlama, kısa yazılı üretim ve basit etkileşim yoluyla konuşma ve yazma düzeyinde temel Fransızcayı tanıtır. Tamamlanan ilk ders A1 ilerlememin ilk aşamasıdır.
+        official_url: https://catalog.metu.edu.tr/course.php?course_code=3700201
+      - code: FRN202
+        title: Beginning French II
+        ects: 4
+        tag: A2 tamamlandı
+        details: Daha geniş kelime bilgisi, gelişmiş gramer, bağlantılı sözlü ve yazılı iletişim ve rutin durumları anlama ile başlangıç dersinin üzerine kurulur. İlk dersle birlikte A2 seviyesine kadar ilerlememi tamamladı.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=370
+      - code: SPN201
+        title: Beginning Spanish I
+        ects: 4
+        tag: A1 tamamlandı
+        details: Günlük kelime bilgisi, temel gramer, dinleme ve okuduğunu anlama, kısa yazılı üretim ve basit etkileşim yoluyla konuşma ve yazma düzeyinde temel İspanyolcayı tanıtır. Tamamlanan ilk ders A1 ilerlememin ilk aşamasıdır.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=371
+      - code: SPN202
+        title: Beginning Spanish II
+        ects: 4
+        tag: A2 tamamlandı
+        details: Daha geniş kelime bilgisi, gelişmiş gramer, bağlantılı sözlü ve yazılı iletişim ve rutin durumları anlama ile başlangıç dersinin üzerine kurulur. İlk dersle birlikte A2 seviyesine kadar ilerlememi tamamladı.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=371
+      - code: ENGL101
+        title: Development of Reading and Writing Skills I
+        ects: 6
+        details: Akademik okuma stratejilerini ve açık paragraph ile kısa essaylerin kurulmasını geliştirir. İngilizce eğitim programı için organizasyon, cohesion, bağlam içinde kelime, kaynak metinlerin yorumu ve doğru yazılı iletişime odaklanır.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=359
+      - code: ENGL102
+        title: Development of Reading and Writing Skills II
+        ects: 6
+        details: Daha uzun okumalar, birden fazla kaynağın synthesis'i, argument kurma, evidence kullanımı, revision ve yapılandırılmış essay yazımıyla akademik okuryazarlığı genişletir. Critical response ve sürdürülen yazılı muhakemeye daha çok önem verir.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=359
+      - code: ENGL211
+        title: Academic Oral Presentation Skills
+        ects: 4
+        details: Research, içerik seçimi ve organizasyonu, audience awareness, visual support, signposting, pronunciation, delivery, soru yanıtlama ve akademik tartışmaya katılım dahil akademik sunumların planlanması ve sunulmasını geliştirir.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=359
+      - code: ENGL311
+        title: Advanced Communication Skills
+        ects: 4
+        details: Analytical reading, formal writing, presentation, meeting, teamwork ve audience-specific mesajlar yoluyla ileri İngilizce iletişimi mesleki ve akademik durumlara uygular. Karmaşık ortamlarda açıklık, ikna ve güvenli iletişime odaklanır.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=359
+
+  - name: Üniversite çalışmaları ve mesleki temeller
+    summary: Programa uyum, Türkçe, modern Türkiye tarihi ve iş sağlığı ile güvenliği.
+    courses:
+      - code: CNG100
+        title: Introduction to Information Technologies and Applications
+        ects: 1
+        details: Programın başında yaygın bilgi teknolojileri, dijital araçlar, üniversite bilişim servisleri, online iş birliği, bilgiye erişim ve IT sistemlerinin sorumlu kullanımı konusunda pratik aşinalık kazandırır.
+      - code: CNG101
+        title: Computer Engineering Orientation
+        ects: 1
+        details: Bilgisayar Mühendisliği programının yapısını ve beklentilerini, disiplinin ana teknik alanlarını, etkin çalışma ve takım pratiklerini, mesleki rolleri, mühendislik etiğini ve olası akademik ile kariyer yollarını tanıtır.
+      - code: TUR101
+        title: Turkish I
+        ects: 2
+        details: Okuma, kelime bilgisi, cümle ve paragraf düzeni, yazılı anlatım ve dilin akademik, sosyal ve mesleki iletişim aracı olarak incelenmesiyle Türkçenin yapısını ve etkili kullanımını ele alır.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=365
+      - code: TUR102
+        title: Turkish II
+        ects: 2
+        details: Uzun metinler, yapılandırılmış yazma, yorumlama, argument ve dil doğruluğu üzerinden Türkçe anlama ve anlatımı geliştirir; açık ve amaçlı iletişime odaklanır.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=365
+      - code: HST201
+        title: Principles of Kemal Ataturk I
+        ects: 2
+        details: Modern Türkiye'nin tarihsel bağlamı olarak geç Osmanlı dönemini, siyasi ve toplumsal dönüşümü, Birinci Dünya Savaşı'nı, Türk milli mücadelesini ve Cumhuriyetin kuruluşunu inceler.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=366
+      - code: HST202
+        title: Principles of Kemal Ataturk II
+        ects: 2
+        details: Türkiye Cumhuriyeti'nin reform ve kurumlarını, siyasi ve toplumsal değişimi, iç ve dış gelişmeleri ve Atatürk ilkelerinin tarihsel rolünü inceler.
+        official_url: https://catalog.metu.edu.tr/prog_courses.php?prog=366
+      - code: OCHS101
+        title: Occupational Health and Safety I
+        ects: 2
+        details: İş sağlığı ve güvenliği kavramları, iş yeri tehlikeleri, risk belirleme, önleme ilkeleri, olay farkındalığı, kişisel ve organizasyonel sorumluluklar ve güvenli mühendislik uygulamasının temellerini tanıtır.
+        official_url: https://catalog.metu.edu.tr/program.php?fac_prog=355
+      - code: OCHS301
+        title: Occupational Health and Safety II
+        ects: 2
+        details: Risk assessment, control measure, emergency ve incident procedure, önleme kültürü, ilgili sorumluluklar ve güvenlik ilkelerinin mühendislik ortamlarında uygulanmasıyla iş yeri güvenliği bilgisini genişletir.
+        official_url: https://catalog.metu.edu.tr/program.php?fac_prog=355

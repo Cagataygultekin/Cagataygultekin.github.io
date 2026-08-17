@@ -1,0 +1,182 @@
+en:
+  name: English
+  code: EN
+  flag: /assets/img/flags/en.svg
+  home_url: /
+  nav_about: about
+  selected_projects: selected projects
+  news: news
+  selected_academic_work: selected academic work
+  key_technologies: Key technologies
+  view_project: View project
+  code_repository: Code repository
+  open_code_repository: Open code repository
+  project_thumbnail: Project thumbnail
+  no_news: No news so far...
+  search: Search
+  search_placeholder: Type to start searching
+  change_theme: Change theme
+  toggle_navigation: Toggle navigation
+  current: current
+  last_updated: "Last updated:"
+  created_on: Created on
+  by_word: by
+  last_updated_on: last updated on
+  references: References
+  latest_posts: latest posts
+  profile_photo: Portrait of Çağatay Gültekin
+  email: Email
+  switch_language: Switch language
+  coursework_area: Area
+  course_content: Course content
+  course_summary_label: Official course content, summarized
+  official_catalog_source: Official catalog source
+  project_overview: Project overview
+  details: Details
+  and_word: and
+  more_author: more author
+  more_authors: more authors
+  click_to_view: click to view
+  og_locale: en_US
+  site_description: Software Engineer focused on backend systems, APIs, machine learning, and scientific computing.
+  keywords: software engineer, backend developer, Python, FastAPI, Java, machine learning, scientific computing, Munich
+  routes:
+    projects: /projects/
+    news: /news/
+    academic_work: /academic-work/
+    cv: /cv/
+  months:
+    "01": January
+    "02": February
+    "03": March
+    "04": April
+    "05": May
+    "06": June
+    "07": July
+    "08": August
+    "09": September
+    "10": October
+    "11": November
+    "12": December
+
+de:
+  name: Deutsch
+  code: DE
+  flag: /assets/img/flags/de.svg
+  home_url: /de/
+  nav_about: über mich
+  selected_projects: ausgewählte Projekte
+  news: Neuigkeiten
+  selected_academic_work: ausgewählte akademische Arbeiten
+  key_technologies: Schlüsseltechnologien
+  view_project: Projekt ansehen
+  code_repository: Code-Repository
+  open_code_repository: Code-Repository öffnen
+  project_thumbnail: Projektvorschau
+  no_news: Noch keine Neuigkeiten.
+  search: Suchen
+  search_placeholder: Suchbegriff eingeben
+  change_theme: Farbschema ändern
+  toggle_navigation: Navigation ein- oder ausblenden
+  current: aktuell
+  last_updated: "Zuletzt aktualisiert:"
+  created_on: Erstellt am
+  by_word: von
+  last_updated_on: zuletzt aktualisiert am
+  references: Literatur
+  latest_posts: neueste Beiträge
+  profile_photo: Porträt von Çağatay Gültekin
+  email: E-Mail
+  switch_language: Sprache wechseln
+  coursework_area: Bereich
+  course_content: Kursinhalt
+  course_summary_label: Offizieller Kursinhalt, zusammengefasst
+  official_catalog_source: Offizielle Katalogquelle
+  project_overview: Projektübersicht
+  details: Details
+  and_word: und
+  more_author: weiterer Autor
+  more_authors: weitere Autoren
+  click_to_view: Anzeigen
+  og_locale: de_DE
+  site_description: Software Engineer mit Schwerpunkt auf Backend-Systemen, APIs, Machine Learning und Scientific Computing.
+  keywords: Software Engineer, Backend-Entwickler, Python, FastAPI, Java, Machine Learning, Scientific Computing, München
+  routes:
+    projects: /de/projects/
+    news: /de/news/
+    academic_work: /de/academic-work/
+    cv: /de/cv/
+  months:
+    "01": Januar
+    "02": Februar
+    "03": März
+    "04": April
+    "05": Mai
+    "06": Juni
+    "07": Juli
+    "08": August
+    "09": September
+    "10": Oktober
+    "11": November
+    "12": Dezember
+
+tr:
+  name: Türkçe
+  code: TR
+  flag: /assets/img/flags/tr.svg
+  home_url: /tr/
+  nav_about: hakkımda
+  selected_projects: seçili projeler
+  news: haberler
+  selected_academic_work: seçili akademik çalışmalar
+  key_technologies: Öne çıkan teknolojiler
+  view_project: Projeyi incele
+  code_repository: Kod deposu
+  open_code_repository: Kod deposunu aç
+  project_thumbnail: Proje görseli
+  no_news: Henüz haber yok.
+  search: Ara
+  search_placeholder: Aramak için yazın
+  change_theme: Temayı değiştir
+  toggle_navigation: Gezinme menüsünü aç veya kapat
+  current: geçerli
+  last_updated: "Son güncelleme:"
+  created_on: Oluşturulma tarihi
+  by_word: yazan
+  last_updated_on: son güncelleme
+  references: Kaynaklar
+  latest_posts: son yazılar
+  profile_photo: Çağatay Gültekin portresi
+  email: E-posta
+  switch_language: Dili değiştir
+  coursework_area: Alan
+  course_content: Ders içeriği
+  course_summary_label: Resmi ders içeriğinin özeti
+  official_catalog_source: Resmi katalog kaynağı
+  project_overview: Proje özeti
+  details: Ayrıntılar
+  and_word: ve
+  more_author: yazar daha
+  more_authors: yazar daha
+  click_to_view: görmek için tıkla
+  og_locale: tr_TR
+  site_description: Backend sistemleri, API'ler, makine öğrenmesi ve bilimsel hesaplama odaklı yazılım mühendisi.
+  keywords: yazılım mühendisi, backend geliştirici, Python, FastAPI, Java, makine öğrenmesi, bilimsel hesaplama, Münih
+  routes:
+    projects: /tr/projects/
+    news: /tr/news/
+    academic_work: /tr/academic-work/
+    cv: /tr/cv/
+  months:
+    "01": Ocak
+    "02": Şubat
+    "03": Mart
+    "04": Nisan
+    "05": Mayıs
+    "06": Haziran
+    "07": Temmuz
+    "08": Ağustos
+    "09": Eylül
+    "10": Ekim
+    "11": Kasım
+    "12": Aralık

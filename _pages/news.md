@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: news
 title: news
 permalink: /news/
 nav: true

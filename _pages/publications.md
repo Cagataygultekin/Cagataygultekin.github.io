@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: academic-work
 permalink: /academic-work/
 title: academic work
 description: Selected research and academic work in machine learning and software systems.

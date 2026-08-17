@@ -1,0 +1,28 @@
+{% assign current_lang = page.lang | default: site.lang %}
+{% assign languages = 'en,de,tr' | split: ',' %}
+{% assign translated_content = site.pages | concat: site.projects | concat: site.news %}
+
+<div class="language-switcher" aria-label="{{ site.data.i18n[current_lang].switch_language }}">
+  {% for language in languages %}
+    {% assign language_data = site.data.i18n[language] %}
+    {% assign language_url = language_data.home_url %}
+    {% if page.translation_key %}
+      {% assign translation_candidates = translated_content | where: 'translation_key', page.translation_key | where: 'lang', language %}
+      {% assign translation = translation_candidates | first %}
+      {% if translation %}
+        {% assign language_url = translation.url %}
+      {% endif %}
+    {% endif %}
+    <a
+      class="language-link{% if current_lang == language %} active{% endif %}"
+      href="{{ language_url | relative_url }}"
+      lang="{{ language }}"
+      hreflang="{{ language }}"
+      aria-label="{{ language_data.name }}"
+      {% if current_lang == language %}aria-current="page"{% endif %}
+    >
+      <img src="{{ language_data.flag | relative_url }}" alt="" width="18" height="12">
+      <span>{{ language_data.code }}</span>
+    </a>
+  {% endfor %}
+</div>

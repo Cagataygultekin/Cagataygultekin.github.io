@@ -1,5 +1,7 @@
 ---
 layout: post
+lang: en
+translation_key: news-tum
 date: 2022-10-04 09:00:00+02:00
 inline: true
 related_posts: false

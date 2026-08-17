@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: seminar-paper
 title: Understanding Linear Regions of the ReLU Networks
 permalink: /academic-work/seminar-paper/
 description: Master's seminar paper on the geometry, robustness, and expressivity of ReLU networks.

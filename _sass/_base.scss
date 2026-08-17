@@ -234,6 +234,69 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
+// Language switcher
+.language-switcher-item {
+  display: flex;
+  align-items: center;
+  margin-left: 0.35rem;
+}
+
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.12rem;
+  padding-left: 0.45rem;
+  border-left: 1px solid var(--global-divider-color);
+
+  .language-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 0.2rem 0.28rem;
+    border-radius: 0.3rem;
+    color: var(--global-text-color-light);
+    font-size: 0.68rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    opacity: 0.72;
+
+    img {
+      width: 18px;
+      height: 12px;
+      object-fit: cover;
+      border-radius: 1px;
+      box-shadow: 0 0 0 1px rgba(127, 127, 127, 0.2);
+    }
+
+    &:hover,
+    &.active {
+      color: var(--global-theme-color);
+      background-color: var(--global-code-bg-color);
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .language-switcher-item {
+    justify-content: flex-end;
+    margin: 0.45rem 0 0.2rem;
+  }
+
+  .language-switcher {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .language-switcher .language-link span {
+    display: none;
+  }
+}
+
 @media (max-width: 575.98px) {
   .profile,
   .profile.float-right,

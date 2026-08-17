@@ -1,6 +1,9 @@
 <div class="news">
+  {% assign current_lang = page.lang | default: site.lang %}
+  {% assign translations = site.data.i18n[current_lang] %}
   {% if site.news != blank %}
-    {% assign news_size = site.news | size %}
+    {% assign localized_news = site.news | where: 'lang', current_lang %}
+    {% assign news_size = localized_news | size %}
     <div
       class="table-responsive"
       {% if include.compact and page.announcements.scrollable and news_size > 3 %}
@@ -8,7 +11,7 @@
       {% endif %}
     >
       <table class="table table-sm table-borderless">
-        {% assign news = site.news | reverse %}
+        {% assign news = localized_news | reverse %}
         {% if include.limit and page.announcements.limit %}
           {% assign news_limit = page.announcements.limit %}
         {% else %}
@@ -16,7 +19,8 @@
         {% endif %}
         {% for item in news limit: news_limit %}
           <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
+            {% assign month_number = item.date | date: '%m' %}
+            <th scope="row" style="width: 20%">{{ item.date | date: '%-d' }} {{ translations.months[month_number] }} {{ item.date | date: '%Y' }}</th>
             <td>
               {% if item.inline %}
                 {% if include.compact and item.summary %}
@@ -33,6 +37,6 @@
       </table>
     </div>
   {% else %}
-    <p>No news so far...</p>
+    <p>{{ translations.no_news }}</p>
   {% endif %}
 </div>

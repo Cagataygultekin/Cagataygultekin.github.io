@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: project-coffee-shop
 published: true
 title: Multi-Client Coffee Shop System
 description: A Python TCP client-server application for recording coffee-shop sales and producing operational statistics.

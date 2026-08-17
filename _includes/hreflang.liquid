@@ -1,0 +1,14 @@
+{% if page.translation_key %}
+  {% assign languages = 'en,de,tr' | split: ',' %}
+  {% assign translated_content = site.pages | concat: site.projects | concat: site.news %}
+  {% for language in languages %}
+    {% assign translation_candidates = translated_content | where: 'translation_key', page.translation_key | where: 'lang', language %}
+    {% assign translation = translation_candidates | first %}
+    {% if translation %}
+      <link rel="alternate" hreflang="{{ language }}" href="{{ translation.url | absolute_url }}">
+      {% if language == 'en' %}
+        <link rel="alternate" hreflang="x-default" href="{{ translation.url | absolute_url }}">
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}

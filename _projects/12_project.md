@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: project-ecommerce
 published: true
 title: E-commerce Web Service and Desktop Client
 description: A Spring Boot and MySQL product platform with a separate desktop client for computer and phone catalogue workflows.

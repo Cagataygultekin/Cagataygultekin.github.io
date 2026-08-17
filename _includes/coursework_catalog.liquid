@@ -1,8 +1,10 @@
+{% assign current_lang = page.lang | default: site.lang | default: 'en' %}
+{% assign translations = site.data.i18n[current_lang] %}
 <div class="coursework-catalog">
   {% for section in include.sections %}
     <section class="coursework-section">
       <div class="coursework-section-heading">
-        <p class="coursework-section-kicker">Area 0{{ forloop.index }}</p>
+        <p class="coursework-section-kicker">{{ translations.coursework_area }} 0{{ forloop.index }}</p>
         <h2>{{ section.name }}</h2>
         <p>{{ section.summary }}</p>
       </div>
@@ -45,17 +47,17 @@
                 </span>
                 <span class="course-title">{{ course.title }}</span>
                 <span class="course-expand-control">
-                  <span>Course content</span>
+                  <span>{{ translations.course_content }}</span>
                   <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
                 </span>
               </summary>
 
               <div class="course-card-details">
-                <p class="course-detail-label">Official course content, summarized</p>
+                <p class="course-detail-label">{{ translations.course_summary_label }}</p>
                 <p>{{ course.details | default: course.focus }}</p>
                 {% unless course.external %}
                   <a href="{{ official_url | default: include.catalog_url }}" target="_blank" rel="noopener">
-                    Official catalog source <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    {{ translations.official_catalog_source }} <i class="fa-solid fa-arrow-up-right-from-square"></i>
                   </a>
                 {% endunless %}
               </div>
@@ -69,7 +71,7 @@
                 {% if course.link or course.links %}
                   <div class="course-link-list">
                     {% if course.link %}
-                      <a href="{{ course.link | relative_url }}">Project overview <i class="fa-solid fa-arrow-right"></i></a>
+                      <a href="{{ course.link | relative_url }}">{{ translations.project_overview }} <i class="fa-solid fa-arrow-right"></i></a>
                     {% endif %}
                     {% for link in course.links %}
                       <a href="{{ link.url }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> {{ link.label }}</a>

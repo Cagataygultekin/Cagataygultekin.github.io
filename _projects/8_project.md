@@ -1,5 +1,7 @@
 ---
 layout: page
+lang: en
+translation_key: project-legal-ai
 published: true
 title: Legal AI Data Labelling Platform
 description: A React/TypeScript and Flask platform for document upload, OCR, ML-assisted classification, annotation workflows, and secure access to protected legal-data services.
