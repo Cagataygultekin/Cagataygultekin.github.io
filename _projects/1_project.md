@@ -70,7 +70,7 @@ Each configuration is defined by three inputs:
 
 The simulations were repeated to capture stochastic variation. I retained the configuration, replicate identifier, and total evacuation time, producing **17,410 simulation runs** for modeling and evaluation.
 
-## From simulation output to a tested production pipeline
+## From simulation output to a validated experimentation pipeline
 
 I implemented the workflow that turns raw simulation results into repeatable model experiments:
 

@@ -10,6 +10,8 @@ technologies: [Java + Spring Boot, React, Jira API, Workflow Automation, Reporti
 permalink: /projects/sprint-reporting-productivity-workflow/
 ---
 
+{% include project_context.liquid role="Software Engineer Intern" organization="Yapı Kredi Teknoloji A.Ş." period="Jul 2021 to Sep 2021" project_type="Internal team project" visibility="Internal, conceptual reconstruction" %}
+
 At **Yapı Kredi Teknoloji A.Ş.**, I worked on an internal full-stack application for agile teams. The system connected team-maintained sprint information with project-management data and turned it into structured sprint newsletters and monthly productivity views.
 
 The central problem was data quality. Employees documented details such as tags, expected duration, and whether a task had received an extension. When these fields were missing or entered inconsistently, the resulting reports were incomplete and comparisons between teams or periods became less reliable.

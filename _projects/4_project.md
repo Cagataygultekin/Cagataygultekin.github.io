@@ -11,6 +11,8 @@ permalink: /projects/chemcpa-research-engineering/
 github: https://github.com/theislab/chemcpa
 ---
 
+{% include project_context.liquid role="Graduate Student Research Assistant" organization="Helmholtz Munich and TUM" period="Feb 2023 to Aug 2023" project_type="Research team" visibility="Public codebase" %}
+
 At **Helmholtz Zentrum München - Deutsches Forschungszentrum für Gesundheit und Umwelt (GmbH)** and the **Technical University of Munich (TUM)**, I supported the chemCPA research codebase as a Graduate Student Research Assistant. My work focused on understanding, reproducing, and diagnosing issues across an existing Python/PyTorch system for single-cell drug-response prediction.
 
 The role sat between machine learning research and software engineering. Researchers needed to run experiments, prepare biological datasets, compare configurations, and reproduce results across different environments. I worked across those workflows and translated reported behavior into concrete technical findings for the development team.

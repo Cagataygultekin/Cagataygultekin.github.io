@@ -249,8 +249,8 @@ metu:
         title: Introduction to Machine Learning
         ects: 6
         tag: Graduate-level elective
-        focus: Opened to graduate students in the term I took it, but completed during my bachelor's degree. It covered supervised and unsupervised learning, feature representation, training, validation, and model assessment.
-        details: Covers the end-to-end machine-learning workflow, including data representation, supervised and unsupervised learning, regression, classification, clustering, feature selection and transformation, regularization, training, validation, and comparison of model performance. I completed the course during my bachelor's degree in a term when it was also opened to graduate students.
+        focus: A graduate-level course opened to undergraduate students when places were available. I completed it during my bachelor's degree, covering supervised and unsupervised learning, feature representation, training, validation, and model assessment.
+        details: Covers the end-to-end machine-learning workflow, including data representation, supervised and unsupervised learning, regression, classification, clustering, feature selection and transformation, regularization, training, validation, and comparison of model performance. Although normally offered at graduate level, the course was opened to undergraduate students when places were available, allowing me to complete it during my bachelor's degree.
       - code: CNG465
         title: Introduction to Bioinformatics
         ects: 6
