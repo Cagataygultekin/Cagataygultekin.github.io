@@ -23,8 +23,6 @@ latest_posts:
   enabled: false
 ---
 
-**TUM M.Sc. Informatics · Available immediately · Authorized to work in Germany without employer sponsorship**
-
 I am a software engineer based in Munich, working across backend systems, data-intensive applications, and applied machine learning.
 
 I design and implement production-oriented services with Python and Java, including APIs, microservices, database architectures, automation workflows, and secure system-to-system integrations. My project work has also covered static-analysis tooling, company registry and legal data platforms, scientific software, and machine learning pipelines built around simulation data.
