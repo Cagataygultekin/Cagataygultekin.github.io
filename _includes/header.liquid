@@ -2,7 +2,7 @@
   {% assign current_lang = page.lang | default: site.lang %}
   {% assign translations = site.data.i18n[current_lang] %}
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-xl {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
       {% if page.translation_key != 'home' %}
         <a class="navbar-brand title font-weight-lighter" href="{{ translations.home_url | relative_url }}">
@@ -76,7 +76,7 @@
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    {{- p.title }}
+                    {{- p.nav_title | default: p.title }}
                     {% if page.translation_key == p.translation_key or has_active_child %}
                       <span class="sr-only">({{ translations.current }})</span>
                     {% endif %}
@@ -107,7 +107,7 @@
                     {%- assign url = p.url -%}
                   {%- endif %}
                   <a class="nav-link" href="{{ url | relative_url }}">
-                    {{- p.title }}
+                    {{- p.nav_title | default: p.title }}
                     {% if page.translation_key == p.translation_key %}
                       <span class="sr-only">({{ translations.current }})</span>
                     {% endif %}

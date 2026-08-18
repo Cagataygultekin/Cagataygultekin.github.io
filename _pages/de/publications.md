@@ -4,6 +4,7 @@ lang: de
 translation_key: academic-work
 permalink: /de/academic-work/
 title: akademische Arbeiten
+nav_title: Akademisches
 description: Ausgewählte Forschungs- und Studienarbeiten zu Machine Learning und Softwaresystemen.
 nav: true
 nav_order: 3
