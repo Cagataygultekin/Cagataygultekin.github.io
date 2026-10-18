@@ -18,7 +18,7 @@ Choose the version that best fits your needs:
     </a>
   </div>
   <div class="col-sm-6 mb-3">
-    <a class="btn btn-outline-primary btn-lg w-100" href="{{ '/assets/pdf/Cagatay_Gultekin_CV_DE.pdf' | relative_url }}" target="_blank" rel="noopener">
+    <a class="btn btn-outline-primary btn-lg w-100" href="{{ '/assets/pdf/Cagatay_Gultekin_CV_DE.pdf' | relative_url }}?v=e35efd6b3435" target="_blank" rel="noopener">
       <i class="fa-solid fa-file-pdf"></i>&nbsp; Deutscher Lebenslauf
     </a>
   </div>
