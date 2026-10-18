@@ -13,7 +13,7 @@ Wählen Sie die passende Version:
 
 <div class="row mt-4">
   <div class="col-sm-6 mb-3">
-    <a class="btn btn-outline-primary btn-lg w-100" href="{{ '/assets/pdf/Cagatay_Gultekin_CV_EN.pdf' | relative_url }}" target="_blank" rel="noopener">
+    <a class="btn btn-outline-primary btn-lg w-100" href="{{ '/assets/pdf/Cagatay_Gultekin_CV_EN.pdf' | relative_url }}?v=930196d83ea5" target="_blank" rel="noopener">
       <i class="fa-solid fa-file-pdf"></i>&nbsp; Englischer Lebenslauf
     </a>
   </div>
